@@ -390,10 +390,10 @@ Human Review
 
 ## 30 秒開始使用
 
-呢個 Repository 目前係 Private Team Test。你需要先取得 Repository 權限並 Clone 到本機。
+呢個 Repository 目前公開可見，仍然係 `v0.1-team-test`。你可以直接 Clone、安裝同測試；公開可見不等於已經附帶自由重新分發嘅 License。
 
 ```bash
-git clone git@github.com:jimmylau-DOTAI/10x-ai-growth-marketing-kit.git
+git clone https://github.com/jimmylau-DOTAI/10x-ai-growth-marketing-kit.git
 cd 10x-ai-growth-marketing-kit
 ```
 
@@ -569,9 +569,17 @@ CTA 未定。
 
 ## 關於 Jimmy
 
+<p align="center">
+  <a href="https://github.com/jimmylau-DOTAI">
+    <img src="https://raw.githubusercontent.com/jimmylau-DOTAI/jimmylau-DOTAI/main/assets/jimmy-lau-speaking.jpg" alt="Jimmy Lau 分享 AI Growth Marketing 工作方法" width="72%">
+  </a>
+</p>
+
 我係 Jimmy Lau，DotAI Co-Founder／CMO。
 
-我由 Designer 開始，之後做 Marketer、Growth Marketer，再一路將 AI 放入真實 Research、Content、Campaign、Proposal、活動同公司知識工作，慢慢形成而家嘅 AI Growth Builder 方法。
+`Designer → Marketer → Growth Marketer → AI Growth Builder`
+
+我由設計開始，之後將品牌、內容、Campaign、Funnel 同增長連成系統，再一路將 AI 放入真實 Research、Content、Proposal、活動同公司知識工作。
 
 我唔係想整多一套「萬用 Prompt 大全」。
 
@@ -585,6 +593,8 @@ CTA 未定。
 - 邊啲適合你公司；
 - 邊啲應該被你改寫成自己嘅版本。
 
+👉 [睇完整 Jimmy GitHub Overview](https://github.com/jimmylau-DOTAI)
+
 ---
 
 ## 參考來源及原創界線
@@ -595,6 +605,6 @@ CTA 未定。
 
 ## 授權狀態
 
-目前版本只供團隊測試，暫未附帶公開分發 License。
+呢個 Repository 已經公開供查看、安裝及測試，但目前版本暫未附帶公開分發 License。
 
-公開 Repository 前，需要先確認 License、品牌名稱、案例、第三方資產及示範內容嘅分發權。未選定 License 不代表可以自由複製或重新分發。
+公開可見不代表可以自由複製、修改或重新分發。正式選定 License 前，仍然需要確認品牌名稱、案例、第三方資產及示範內容嘅分發權。

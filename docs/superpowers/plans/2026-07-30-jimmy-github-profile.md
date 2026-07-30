@@ -28,7 +28,7 @@
 - Consumes: the supplied 1600×1156 PNG.
 - Produces: a public special-profile repository checkout and a web-friendly canonical photo asset.
 
-- [ ] **Step 1: Create and clone the repository**
+- [x] **Step 1: Create and clone the repository**
 
 Run:
 
@@ -42,7 +42,7 @@ git -C /Users/jimmylau/Documents/Git-Jimmy/jimmylau-DOTAI-profile branch -M main
 
 Expected: the remote exists, the local checkout exists, and the active branch is `main`.
 
-- [ ] **Step 2: Prepare the photo**
+- [x] **Step 2: Prepare the photo**
 
 Run:
 
@@ -66,7 +66,7 @@ Expected: a 1400-pixel-wide JPEG exists with the original aspect ratio.
 - Consumes: `assets/jimmy-lau-speaking.jpg` and the accepted Jimmy positioning.
 - Produces: the public GitHub Overview shown on `https://github.com/jimmylau-DOTAI`.
 
-- [ ] **Step 1: Write the README**
+- [x] **Step 1: Write the README**
 
 Include:
 
@@ -79,11 +79,11 @@ Include:
 7. current direction;
 8. direct project link.
 
-- [ ] **Step 2: Validate**
+- [x] **Step 2: Validate**
 
 Check Markdown whitespace, image existence, relative links, required positioning, and absence of private paths, credentials, metrics, client claims, and contact PII.
 
-- [ ] **Step 3: Commit and push**
+- [x] **Step 3: Commit and push**
 
 Run:
 
@@ -104,7 +104,7 @@ git -C /Users/jimmylau/Documents/Git-Jimmy/jimmylau-DOTAI-profile push -u origin
 - Consumes: the live public profile photo and profile URL.
 - Produces: a Kit author card, accurate public state, and aligned repository description.
 
-- [ ] **Step 1: Update the Kit README**
+- [x] **Step 1: Update the Kit README**
 
 Replace the private installation sentence and enhance `關於 Jimmy` with:
 
@@ -112,7 +112,7 @@ Replace the private installation sentence and enhance `關於 Jimmy` with:
 - accepted positioning;
 - a link to `https://github.com/jimmylau-DOTAI`.
 
-- [ ] **Step 2: Update repository description**
+- [x] **Step 2: Update repository description**
 
 Run:
 
