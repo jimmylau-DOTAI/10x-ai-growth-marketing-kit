@@ -1,7 +1,7 @@
 # 10x AI Growth Marketing Kit README Productization Design
 
 **Date:** 2026-07-30
-**Scope:** Rewrite the repository root `README.md` only.
+**Scope:** Rewrite the repository root `README.md` and add the newly supplied presentation reference to `ATTRIBUTIONS.md`.
 **Audience:** Hong Kong marketers, SME teams, AI course students, and non-technical operators trying agent skills for the first time.
 
 ## Objective
@@ -289,4 +289,4 @@ The rewritten README passes when:
 - Changing repository visibility or license.
 - Publishing, pushing, or opening a pull request.
 
-Those remain part of the later v0.2 productized toolkit implementation after the root README is approved.
+Those remain part of the later v0.2 productized toolkit implementation after the root README is approved. The only adjacent documentation change in this scope is the required `speak-human-tw` credit in `ATTRIBUTIONS.md`.

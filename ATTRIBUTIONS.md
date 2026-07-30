@@ -9,6 +9,13 @@
 - Used as structural and quality inspiration for focused Skill boundaries、trigger descriptions、supporting references、marketing planning、social writing、SEO / AI Search thinking and evaluation.
 - 本 Package 沒有大量複製上游 Skill 文字或範例。
 
+## Raymond Hou — speak-human-tw
+
+- Repository: https://github.com/Raymondhou0917/speak-human-tw
+- License: MIT
+- Used as presentation inspiration for pain-led positioning、first-use explanation、workflow and boundary communication、quick-start guidance and evaluation transparency.
+- 本 Package 沒有複製 `speak-human-tw` 嘅品牌、AI 寫作痕跡規則、案例、評測內容或特色文案。
+
 ## Pluviobyte — rnskill
 
 - Repository: https://github.com/Pluviobyte/rnskill
@@ -38,4 +45,3 @@
 2. 再次檢查第三方文字及資產；
 3. 只加入已獲批准嘅公開案例；
 4. 記錄版本、作者及改動。
-
