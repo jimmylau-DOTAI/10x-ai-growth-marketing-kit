@@ -121,7 +121,7 @@ gh repo edit jimmylau-DOTAI/10x-ai-growth-marketing-kit \
   --description "A growing AI marketing skill kit for everyone who wants to grow with AI."
 ```
 
-- [ ] **Step 3: Validate, commit, and push**
+- [x] **Step 3: Validate, commit, and push**
 
 Validate README links, heading hierarchy, public state wording, photo URL, profile URL, and description. Then run:
 
@@ -140,7 +140,7 @@ git push origin main
 - Consumes: pushed commits and public GitHub metadata.
 - Produces: evidence that the photo, Profile README, Kit README, and description are live.
 
-- [ ] **Step 1: Verify Profile repository**
+- [x] **Step 1: Verify Profile repository**
 
 Use GitHub API to confirm:
 
@@ -149,7 +149,7 @@ Use GitHub API to confirm:
 - live `README.md`;
 - live `assets/jimmy-lau-speaking.jpg`.
 
-- [ ] **Step 2: Verify Kit repository**
+- [x] **Step 2: Verify Kit repository**
 
 Use GitHub API to confirm:
 
@@ -158,6 +158,6 @@ Use GitHub API to confirm:
 - the README no longer calls the repository private;
 - the Jimmy profile and photo links are present.
 
-- [ ] **Step 3: Confirm clean local repositories**
+- [x] **Step 3: Confirm clean local repositories**
 
 Run `git status --short` in both repositories. Expected: no output.
