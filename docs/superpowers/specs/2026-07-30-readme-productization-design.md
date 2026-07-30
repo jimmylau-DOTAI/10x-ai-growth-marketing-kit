@@ -65,6 +65,19 @@ Four installable Skills connect content research, Full Funnel campaign planning,
 - The package is a private team-test release.
 - No public distribution license is claimed.
 
+### Skills at a glance
+
+Immediately after the hero release-state block, add one compact table containing only the four implemented Skills.
+
+Columns:
+
+1. linked Skill name;
+2. the work it helps complete;
+3. the minimum useful input;
+4. the main output.
+
+Do not include roadmap Skills in this table. The separate roadmap table remains later in the README so planned and implemented work cannot be confused.
+
 ## Voice and Language
 
 - Traditional Chinese with natural Hong Kong Cantonese sentence structure.

@@ -30,6 +30,19 @@
 
 ---
 
+## 目前可用 Skills
+
+| Skill | 幫你做乜 | 你需要提供 | 主要輸出 |
+| --- | --- | --- | --- |
+| [Social Content Research](skills/social-content-research/) | 將社交內容變成可驗證研究 | 連結、影片、截圖或逐字稿 | Evidence、內容分析、原創角度 |
+| [Full Funnel Campaign Planner](skills/full-funnel-campaign-planner/) | 將 Marketing Idea 變成可執行 Campaign | Offer、受眾、目標及現況 | Funnel、90 日優先次序、Handoffs |
+| [SEO + GEO Content](skills/seo-geo-content/) | 建立有來源嘅搜尋及 AI 引用內容 | 搜尋問題、客群、公司資料、Sources | Brief、Claim Map、文章、QA |
+| [Social Post Writing](skills/social-post-writing/) | 將可靠觀點變成平台原生內容 | Idea、Audience、Voice、Platform、CTA | Threads、LinkedIn、Facebook、IG Drafts |
+
+四個 Skills 可以獨立使用；亦可以由 Research 開始，一路交接到 Strategy 同 Production。下面會逐個解釋我點解咁寫、每個 Skill 點樣運作，同埋點樣驗收。
+
+---
+
 ## 我點解會寫呢套 Skills？
 
 我一路由 Designer、Marketer、Growth Marketer，做到而家嘅 AI Growth Builder。
