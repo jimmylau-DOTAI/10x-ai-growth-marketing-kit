@@ -49,6 +49,15 @@ The README must not reuse the references' distinctive copy, examples, diagrams, 
 
 Four installable Skills connect content research, Full Funnel campaign planning, SEO/GEO content, and platform-native social writing into one reviewable workflow.
 
+### Audience and growth direction
+
+- The kit is for anyone who wants to grow content, brand, campaigns, teams, or a business with AI.
+- Hong Kong marketer and SME practice remains the distinctive source context, not an audience restriction.
+- The four implemented Skills are the starting point.
+- The current ten-Skill roadmap is the first development stage, not a permanent limit.
+- `10x` describes the direction of capability and growth; it does not mean the repository will contain exactly ten Skills.
+- New Skills should be added progressively only after they solve a real workflow and have been tested.
+
 ### Honest release state
 
 - The repository currently contains four implemented Skills.

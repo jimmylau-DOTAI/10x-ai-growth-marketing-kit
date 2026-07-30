@@ -1,5 +1,7 @@
 # 10x AI Growth Marketing Kit
 
+**A growing AI Marketing Skill Kit for everyone who wants to grow with AI.**
+
 **唔係再收集 Prompts，而係將你做 Marketing 嘅判斷，寫成 AI 可以重複執行嘅 Skills。**
 
 好多 Marketer 已經識叫 AI 寫 Post、做 Research、砌 Campaign。
@@ -14,7 +16,9 @@
 
 所以我整咗呢套 **10x AI Growth Marketing Kit**。
 
-目前包含四個可以安裝、閱讀、測試同修改嘅 AI Marketing Skills，將內容研究、Full Funnel 策劃、SEO／GEO 內容同社交文案，串成一條有來源、有判斷、有交接、有 Human Review 嘅工作流。
+目前先由四個可以安裝、閱讀、測試同修改嘅 AI Marketing Skills 開始，將內容研究、Full Funnel 策劃、SEO／GEO 內容同社交文案，串成一條有來源、有判斷、有交接、有 Human Review 嘅工作流。
+
+四個 Skills 只係起點。我哋會按照真實 Marketing 工作持續測試、改善同加入更多 Skills，令呢個 Kit 同每一個想用 AI 成長嘅人一齊成長。
 
 > **目前版本：** `v0.1-team-test`
 >
@@ -22,7 +26,7 @@
 >
 > **發展方向：** [10-Skill Roadmap](10-SKILL-INTRO-AND-FLOW.md)
 >
-> **適合對象：** 香港 Marketer、中小企團隊、AI 課程學員及非技術背景嘅 AI Builder
+> **適合對象：** 所有想用 AI 推動內容、品牌、Campaign、團隊或生意增長嘅人；方法源自 Jimmy 同香港市場嘅實戰
 
 ---
 
@@ -526,6 +530,10 @@ CTA 未定。
 ---
 
 ## 10-Skill Roadmap
+
+`10x` 代表能力同增長嘅方向，唔係限制呢個 Repository 只可以有十個 Skills。
+
+目前嘅 10-Skill Roadmap 係第一個發展階段。之後會繼續按照真實工作需要，加入更多有清楚用途、經過測試同可以驗收嘅 Skills，而唔係為咗數量增加 Folder。
 
 目前完成四個 Skills，其餘仍然係發展方向。
 
