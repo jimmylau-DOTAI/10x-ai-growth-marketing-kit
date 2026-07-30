@@ -1,0 +1,4 @@
+interface:
+  display_name: "Social Post Writing"
+  short_description: "將可靠觀點改寫成真正適合各個社交平台使用嘅內容草稿"
+  default_prompt: "Use $social-post-writing to turn this idea into platform-native social drafts."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Full Funnel Campaign Planner"
+  short_description: "規劃完整漏斗、90 日優先次序與可執行嘅專業工作交接"
+  default_prompt: "Use $full-funnel-campaign-planner to turn this offer into a focused 90-day campaign plan."
