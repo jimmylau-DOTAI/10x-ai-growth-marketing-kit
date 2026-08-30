@@ -1,4 +1,4 @@
 interface:
   display_name: "Social Content Research"
-  short_description: "研究社交內容、拆解 Hook，並發展可重用嘅原創內容角度"
-  default_prompt: "Use $social-content-research to analyse this social post and develop three original content angles."
+  short_description: "研究 Social Source、完成 SL，並整理經審核嘅內容見解"
+  default_prompt: "Use $social-content-research to inspect this source, state the access boundary, and choose only the smallest required mode: quick research, deep SL, three-day insight review, or post handoff."

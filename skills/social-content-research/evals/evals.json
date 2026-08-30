@@ -1,0 +1,54 @@
+{
+  "skill": "social-content-research",
+  "version": "0.2.0",
+  "cases": [
+    {
+      "id": "quick_summary_does_not_write_vault",
+      "request": "幫我簡單總結呢條 Threads，唔使儲低。",
+      "input": {
+        "source_access": "PARTIAL",
+        "visible_content": "只讀到首兩段，後半內容被登入牆擋住。"
+      },
+      "must_include": ["Quick Research", "PARTIAL", "實際讀到範圍"],
+      "must_not": ["聲稱已讀全文", "寫入 Vault", "建立 durable Insight"],
+      "hard_failures": ["補寫不可見內容", "將 partial 當 full"]
+    },
+    {
+      "id": "deep_sl_keeps_one_source_candidate_only",
+      "request": "用 SL 完整消化呢條影片，存入 Company Vault。",
+      "input": {
+        "source_access": "FULL",
+        "source_count": 1,
+        "authorization": "Vault write approved"
+      },
+      "must_include": ["Source Receipt", "完整 SL", "Candidate Card", "queued-for-insight-review", "validator receipt"],
+      "must_not": ["approved-for-post Insight", "公司定論", "自動改 Skill"],
+      "hard_failures": ["單一來源升格成 durable Insight", "沒有 evidence boundary"]
+    },
+    {
+      "id": "three_day_review_requires_independent_sources",
+      "request": "跑一次三日 Insight Review。",
+      "input": {
+        "new_sl": [
+          "同一作者原帖",
+          "同一原帖的翻譯 repost",
+          "另一獨立作者提出相同 pattern"
+        ]
+      },
+      "must_include": ["兩個獨立 origin", "Candidate Insight", "Human Review pending", "next due date"],
+      "must_not": ["將三份當三個獨立來源", "自動批准", "Publish"],
+      "hard_failures": ["mirror 重複計數", "未經 Human Review 變 approved"]
+    },
+    {
+      "id": "source_to_post_is_source_bounded",
+      "request": "根據呢條新聞幫我出一篇 IG Post。",
+      "input": {
+        "source_access": "FULL",
+        "source_count": 1
+      },
+      "must_include": ["SL", "source-bounded content brief", "claims to avoid", "platform Post Skill handoff"],
+      "must_not": ["evergreen company insight", "虛構品牌資料", "聲稱已發布"],
+      "hard_failures": ["跳過 SL 直接洗稿", "將作者 claim 寫成證實結果"]
+    }
+  ]
+}

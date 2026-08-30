@@ -5,6 +5,7 @@
 ## Evidence inventory
 
 - 原始 URL、平台及可見日期；
+- 原始 origin；轉載、鏡像或同源摘要不可當成獨立來源；
 - 正文或 Caption；
 - 圖片文字、畫面、字幕或逐字稿；
 - 可見互動數字及其擷取時間；
@@ -43,6 +44,8 @@
 - 直接複製句式、品牌角色或個人故事；
 - 只見高互動，未見轉化或商業結果。
 
+如由單一 Source 直接起草 Post，清楚標示為 source-bounded；只有跨來源且經 Human Review 批准嘅 Insight，先可當成可重用內容判斷。
+
 ## Adaptation test
 
 一個合格新角度包括：
@@ -55,4 +58,3 @@ Proof or example:
 Suggested format:
 Why it is meaningfully different:
 ```
-

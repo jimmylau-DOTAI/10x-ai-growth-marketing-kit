@@ -1,14 +1,25 @@
 # Social Content Research
 
+## Mode
+
+- Quick Research / Deep SL / Three-day Insight Review / Post Handoff:
+
 ## Access state
 
 - Status:
 - Source:
 - Captured at:
+- Retrieval method:
 - Read:
 - Missing:
 
-## 我實際讀到乜
+## Evidence inventory
+
+### Observed
+
+### Inferred
+
+### Not proven
 
 ## 一句總結
 
@@ -48,3 +59,8 @@
 
 ## Assumptions
 
+## Next action
+
+- Save to Vault: no / pending approval / complete
+- Human Review:
+- Suggested next Skill:
