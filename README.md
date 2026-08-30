@@ -16,13 +16,13 @@
 
 所以我整咗呢套 **10x AI Growth Marketing Kit**。
 
-目前先由五個可以安裝、閱讀、測試同修改嘅 AI Marketing Skills 開始，將內容研究、Full Funnel 策劃、SEO／GEO 內容、社交文案同 Sales Funnel Landing Page，串成一條有來源、有判斷、有交接、有 Human Review 嘅工作流。
+目前先由七個可以安裝、閱讀、測試同修改嘅 AI Marketing Skills 開始，將內容研究、Full Funnel 策劃、SEO／GEO 內容、社交文案、Instagram Carousel、香港 Threads 同 Sales Funnel Landing Page，串成一條有來源、有判斷、有交接、有 Human Review 嘅工作流。
 
-五個 Skills 只係起點。我哋會按照真實 Marketing 工作持續測試、改善同加入更多 Skills，令呢個 Kit 同每一個想用 AI 成長嘅人一齊成長。
+七個 Skills 只係起點。我哋會按照真實 Marketing 工作持續測試、改善同加入更多 Skills，令呢個 Kit 同每一個想用 AI 成長嘅人一齊成長。
 
 > **目前版本：** `v0.1-team-test`
 >
-> **目前可用：** 5 個完整 Skills
+> **目前可用：** 7 個完整 Skills
 >
 > **發展方向：** [10-Skill Roadmap](10-SKILL-INTRO-AND-FLOW.md)
 >
@@ -38,9 +38,11 @@
 | [Full Funnel Campaign Planner](skills/full-funnel-campaign-planner/) | 將 Marketing Idea 變成可執行 Campaign | Offer、受眾、目標及現況 | Funnel、90 日優先次序、Handoffs |
 | [SEO + GEO Blog Writing](skills/seo-geo-content/) | 將 Source 變成有觀點、有搜尋價值、適合 AI Search 理解嘅 Blog | Source、搜尋問題、客群、Company Brain、CTA | Source Guide、標題、文章、Meta、Links、HTML Review、QA |
 | [Social Post Writing](skills/social-post-writing/) | 將可靠觀點變成平台原生內容 | Idea、Audience、Voice、Platform、CTA | Threads、LinkedIn、Facebook、IG Drafts |
+| [HK Threads Writer](skills/hk-threads-writer/) | 寫自然香港廣東話、手機優先而且逐段驗證嘅 Threads | Source、新聞、觀點、故事或工作紀錄 | 單 Post、筆記 Link Reply、樓梯 Post、Python 字數 Receipt |
+| [Instagram Carousel Studio](skills/instagram-carousel-studio/) | 將 Source 變成可編輯、可 QA 嘅 Instagram Carousel | Source／Brief、受眾、One Message、CTA、Style reference | 10-card Story、Style comparison、HTML Review、QA Receipt |
 | [Sales Funnel Landing Page Builder](skills/sales-funnel-landing-page-builder/) | 將一個 Offer 變成簡單直接、可驗收嘅 Lead Funnel | Offer、Audience、Proof、CTA、Design reference、form／data rules | Brief、Style、Copy、Page、UTM、Design／Operations receipts |
 
-五個 Skills 可以獨立使用；亦可以由 Research 開始，一路交接到 Strategy、Production 同 Lead Operations。下面會逐個解釋我點解咁寫、每個 Skill 點樣運作，同埋點樣驗收。
+七個 Skills 可以獨立使用；亦可以由 Research 開始，一路交接到 Strategy、Production 同 Lead Operations。下面會逐個解釋我點解咁寫、每個 Skill 點樣運作，同埋點樣驗收。
 
 ---
 
@@ -153,7 +155,7 @@ AI 可以研究、整理、挑戰、建議同起 Draft；事實、品牌立場�
 
 ---
 
-## 目前五個 Skills
+## 目前七個 Skills
 
 ### 1. Social Content Research／社交內容研究
 
@@ -400,7 +402,50 @@ Offer Brief
 
 ---
 
-## 五個 Skills 點樣一齊工作？
+### 6. HK Threads Writer／香港 Threads 文案
+
+`預計 5–20 分鐘`
+
+👤 **你只需要提供：** Source、新聞、觀點、故事、工作紀錄或已有 Draft。
+
+#### 點解我會寫呢個 Skill？
+
+Threads 唔係將長文刪到 500 字，亦唔係每句斬開一行就叫有呼吸感。內容要先有一個值得講嘅判斷，再按證據揀 Hot Take、Reaction、Personal Story、Build Note、Review、Anti-pattern、Curated List 或 How-to。
+
+Skill 會分開處理 Hook 強度同 Claim 強度：L3 可以更尖銳，但唔可以新增數字、因果、引句或保證。`complete-single-500`、`notes-link-reply` 同 `staircase-thread` 三種模式都會保留手機閱讀節奏，並對每個可發布 Segment 使用 Python `len(text)` 計數。
+
+#### 主要輸出
+
+- 自然香港廣東話 Threads Draft；
+- Content Job、Hook Level 同 Format Mode；
+- Ordered root／replies；
+- 每段 Python count；
+- Unverified items、Claim boundary 同 `publication_status: draft`。
+
+➡️ [打開 HK Threads Writer Skill](skills/hk-threads-writer/)
+
+---
+
+### 7. Instagram Carousel Studio／Instagram Carousel
+
+`預計 45–120 分鐘`
+
+👤 **你只需要提供：** Source／Brief、Audience、One Message、CTA、品牌資料同可用 Style reference。
+
+呢個 Skill 會先鎖定題目同標題，再比較 Style route，將一個重點寫成預設 10 張、每張 `1080×1350px` 嘅完整故事。HTML 係可編輯 Human Review surface；AI image 只係其中一個 final route，唔會自動發布。
+
+#### 主要輸出
+
+- Content plan 同 10-card story；
+- Style comparison／Style Capsule；
+- Editable HTML review；
+- Final draft、QA receipt 同 project-local learning record。
+
+➡️ [打開 Instagram Carousel Studio Skill](skills/instagram-carousel-studio/)
+
+---
+
+## 七個 Skills 點樣一齊工作？
 
 ```text
 來源／社交內容
@@ -411,6 +456,8 @@ full-funnel-campaign-planner
       ├── seo-geo-content
       ├── sales-funnel-landing-page-builder
       └── social-post-writing
+              ├── hk-threads-writer
+              └── instagram-carousel-studio
       ↓
 Human Review
 ```
@@ -436,7 +483,37 @@ Human Review
 
 ## 30 秒開始使用
 
-呢個 Repository 目前公開可見，仍然係 `v0.1-team-test`。你可以直接 Clone、安裝同測試；公開可見不等於已經附帶自由重新分發嘅 License。
+呢個 Repository 目前公開可見，仍然係 `v0.1-team-test`。你可以直接 Clone、安裝同測試；整個 Kit 未有統一分發 License，但 `hk-threads-writer` 子目錄已獨立採用 MIT License。
+
+### 只安裝 HK Threads Writer（學生建議）
+
+Codex 用：
+
+```bash
+npx --yes skills add jimmylau-DOTAI/10x-ai-growth-marketing-kit --skill hk-threads-writer -g -a codex -y
+```
+
+Claude Code 用：
+
+```bash
+npx --yes skills add jimmylau-DOTAI/10x-ai-growth-marketing-kit --skill hk-threads-writer -g -a claude-code -y
+```
+
+想先睇內容再決定安裝位置：
+
+```bash
+npx --yes skills add jimmylau-DOTAI/10x-ai-growth-marketing-kit --skill hk-threads-writer
+```
+
+安裝後開一個新 Session：
+
+```text
+Use $hk-threads-writer。
+
+將以下新聞寫成香港 Threads news sharing。先核實可變資料，用 L3 Hook，但唔好加強 Claim；每個 Segment 用 Python 計 500 字。
+```
+
+Skill 只會交 Draft、逐段字數同 Claim boundary，唔會代你發布。你亦可以[直接打開 HK Threads Writer Folder](skills/hk-threads-writer/)閱讀內容。
 
 ### 只安裝 SEO + GEO Blog Writing Skill（建議）
 
@@ -554,6 +631,17 @@ CTA 未定。
 
 好嘅輸出應該有四個真正平台化版本，CTA 候選同公開 Post Body 分開，而且不會虛構優惠或 Keyword Automation。
 
+### 測試香港 Threads
+
+```text
+Use $hk-threads-writer。
+
+將以下新聞材料寫成一篇香港 Threads news sharing。
+要求手機分段、有明顯反差，但唔可以新增數字或因果；每段必須用 Python 計 500 字。
+```
+
+好嘅輸出應該先核實新聞同 Claim boundary，再揀 `reaction`、Hook Level 同 format；最後交付自然香港廣東話 Draft，同每個 Segment 嘅 Python count。
+
 完整測試題目及 Pass Criteria 見 [Team Test Guide](TEAM-TEST-GUIDE.md)。
 
 ---
@@ -611,6 +699,8 @@ CTA 未定。
     ├── full-funnel-campaign-planner/
     ├── seo-geo-content/
     ├── social-post-writing/
+    ├── hk-threads-writer/
+    ├── instagram-carousel-studio/
     └── sales-funnel-landing-page-builder/
 ```
 
@@ -631,7 +721,7 @@ CTA 未定。
 
 目前嘅 10-Skill Roadmap 係第一個發展階段。之後會繼續按照真實工作需要，加入更多有清楚用途、經過測試同可以驗收嘅 Skills，而唔係為咗數量增加 Folder。
 
-目前完成五個 Skills，其餘仍然係發展方向。
+目前 Repository 完成七個 Skills；以下十項仍然用作第一階段能力 Roadmap。
 
 | # | Skill | 狀態 |
 | --- | --- | --- |
@@ -644,7 +734,9 @@ CTA 未定。
 | 7 | Proposal Deck Builder | Roadmap |
 | 8 | Instagram Post | Roadmap |
 | 9 | LinkedIn Post Writing | Roadmap |
-| 10 | Threads Post Writing | Roadmap |
+| 10 | HK Threads Writer | **Implemented** |
+
+`Instagram Carousel Studio` 係額外完成嘅專項 Skill，唔等同 Roadmap #8 嘅 Instagram 單張 Post。
 
 每個 Roadmap Skill 嘅人話介紹、Input 同預期流程，見 [10-Skill Introductions and Workflows](10-SKILL-INTRO-AND-FLOW.md)。
 
@@ -682,12 +774,12 @@ CTA 未定。
 
 ## 參考來源及原創界線
 
-呢個 Package 參考咗開源 Skill Repository 點樣處理 Skill 邊界、Supporting References、安裝、工作流程同驗收；所有香港 SME 語境、四 Skill 組合、文字、Templates 同實際工作判斷均重新整理及撰寫。
+呢個 Package 參考咗開源 Skill Repository 點樣處理 Skill 邊界、Supporting References、安裝、工作流程同驗收；所有香港 SME 語境、Skill 組合、文字、Templates 同實際工作判斷均重新整理及撰寫。
 
 詳細來源、License 及原創界線見 [Attributions and Originality Note](ATTRIBUTIONS.md)。
 
 ## 授權狀態
 
-呢個 Repository 已經公開供查看、安裝及測試，但目前版本暫未附帶公開分發 License。
+呢個 Repository 已經公開供查看、安裝及測試，但目前版本暫未附帶統一公開分發 License。
 
-公開可見不代表可以自由複製、修改或重新分發。正式選定 License 前，仍然需要確認品牌名稱、案例、第三方資產及示範內容嘅分發權。
+公開可見不代表整個 Kit 可以自由複製、修改或重新分發。例外係 [`skills/hk-threads-writer/`](skills/hk-threads-writer/)：該子目錄附有獨立 MIT License，同第三方機制參考說明；學生可以按該 License 使用及修改。其他內容正式選定 License 前，仍然需要確認品牌名稱、案例、第三方資產及示範內容嘅分發權。

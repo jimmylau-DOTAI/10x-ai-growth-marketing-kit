@@ -37,6 +37,15 @@
 
 公開 Skill 已移除內部路徑、客戶資料、Credentials、私人案例、Agent 名稱及公司專用 Publishing 流程。
 
+## HK Threads Writer
+
+- Path: `skills/hk-threads-writer/`
+- License: 該子目錄獨立採用 MIT License；不會自動改變 Repository 其他內容嘅授權狀態。
+- `speak-human-hk`：作香港語言、本地化及去 AI 化機制參考，MIT。
+- `SpaceZephyr/creator-buddy` 嘅 `space-xhs-writer`：只參考 material inventory、content-job routing、Hook drafting、mobile structure 同 QA；Repository README 標示 MIT。
+- 無搬用小紅書字數範圍、hashtag／search 規則、emoji quota、moderation claim 或平台專用例子。
+- 詳細邊界見 [`skills/hk-threads-writer/THIRD_PARTY_NOTICES.md`](skills/hk-threads-writer/THIRD_PARTY_NOTICES.md)。
+
 ## Landing Page design dependencies
 
 - `design-taste-frontend`：源自 [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill)；用作獨立 Design Read、anti-slop、responsive composition 同 visual pre-flight。此 Repository 只記錄 dependency contract，沒有複製上游 Skill。
@@ -45,7 +54,7 @@
 
 ## Public release reminder
 
-目前係 Team Test Package，未選定公開分發 License。公開前需要：
+目前 Kit 整體係 Team Test Package，未選定統一公開分發 License；`skills/hk-threads-writer/` 已獨立採用 MIT。其餘內容公開前需要：
 
 1. 由擁有人選定 License；
 2. 再次檢查第三方文字及資產；

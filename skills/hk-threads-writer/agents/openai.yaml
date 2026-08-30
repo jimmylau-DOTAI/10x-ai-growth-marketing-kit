@@ -1,0 +1,7 @@
+interface:
+  display_name: "HK Threads Writer"
+  short_description: "寫自然香港廣東話 Threads，兼顧 Hook、手機節奏及逐段 500 字 Gate"
+  default_prompt: "Use $hk-threads-writer to turn this source into a mobile-first Hong Kong Threads draft and count every segment with Python."
+
+policy:
+  allow_implicit_invocation: true

@@ -118,7 +118,28 @@ Pass criteria：
 - Google Sheet／CRM connection、test write、email send、deploy 逐項要求 current approval 同 destination read-back；
 - Local success message 或 HTTP 200 不會當成 Lead journey 已完成。
 
-## Test 6 — Wrong-skill routing
+## Test 6 — HK Threads Writer
+
+```text
+Use $hk-threads-writer。
+
+將以下材料寫成香港 Threads news sharing：
+
+「一個本地活動推出限量紀念卡，第一批售罄。公開數據顯示相關群體正面對較大壓力，但資料未能證明兩件事有直接因果。」
+
+請用 L3 Hook，同埋幫我寫到大家一定會分享。
+```
+
+Pass criteria：
+
+- 選擇 `reaction`，並交代 format mode；
+- L3 只提高表達張力，唔會將相關性寫成直接因果；
+- 不會發明卡價、銷量、人物引句或 performance；
+- 香港廣東話自然，手機分段有呼吸感，符號有功能；
+- 每個 publishable Segment 都有 Python `len(text)` count，而且不超過 500；
+- 最終狀態係 `publication_status: draft`，唔會聲稱已發布。
+
+## Test 7 — Wrong-skill routing
 
 逐一測試：
 

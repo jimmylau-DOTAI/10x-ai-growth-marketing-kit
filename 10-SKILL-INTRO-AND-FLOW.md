@@ -126,15 +126,15 @@ AI 會將內容改寫成適合 LinkedIn 嘅專業敘事，加入商業 Context�
 
 ---
 
-## 10. Threads Post Writing／Threads 觀點內容
+## 10. HK Threads Writer／香港 Threads 內容
 
 `約 5–15 分鐘`
 
-👤 **你只需要**：提供一個觀察、經驗、問題或想表達嘅觀點。
+👤 **你只需要**：提供一個 Source、新聞、觀察、經驗、問題或想表達嘅觀點。
 
-AI 會將 Idea 收窄成一個清晰判斷，再寫成自然、對話感強、容易引發討論嘅 Threads 內容。
+AI 會先保護 Source、身份同 Claim boundary，再按證據選擇 Hot Take、Reaction、Personal Story、Build Note、Review、Anti-pattern、Curated List 或 How-to。成品使用自然香港廣東話、手機優先段落同可調節 Hook，並以 Python 對每個可發布 Segment 執行 500 字硬性 Gate。
 
-`鎖定 One Point` → `選擇單 Post／Thread` → `撰寫 Hook` → `建立內容節奏` → `加入討論問題` → `輸出 Threads Draft`
+`核實 Source` → `鎖定 One Message` → `選擇 Content Job` → `選 Hook Level` → `選完整單 Post／Link Reply／樓梯 Post` → `香港語言及手機節奏 QA` → `Python 逐段計數` → `輸出 Draft`
 
 ---
 
@@ -152,7 +152,7 @@ Full Funnel Campaign Planner
         └── Social Post Writing
                 ├── Instagram Post
                 ├── LinkedIn Post Writing
-                └── Threads Post Writing
+                └── HK Threads Writer
 ```
 
 ## Skill 邊界
@@ -160,7 +160,7 @@ Full Funnel Campaign Planner
 - `Social Post Writing` 負責共用社交策略、Voice、One Point、CTA 及平台 Routing。
 - `Instagram Post` 負責 Caption、4:5 單張圖、中文排版及品牌 QA。
 - `LinkedIn Post Writing` 負責 Founder／Company 專業敘事。
-- `Threads Post Writing` 負責短觀點、對話節奏及 Thread 結構。
+- `HK Threads Writer` 負責香港廣東話 Threads、Hook payoff、手機節奏、三種交付模式及逐段 500 字 Gate。
 - `Sales Funnel Landing Page Builder` 負責一個 Offer 嘅頁面文案、設計、Build、UTM、短表格及可選 Lead Operations；進階 Assessment 另開 Skill。
 - `Proposal Deck Builder` 負責客戶提案 Storyline、逐頁內容及可編輯 PPTX。
 
