@@ -1,0 +1,14 @@
+project_name: "{{PROJECT_NAME}}"
+status: "BRIEF_REQUIRED"
+language: "zh-HK"
+card_count: 10
+dimensions: "1080x1350"
+style_route: "unselected"
+style_id: "unselected"
+style_version: "unselected"
+final_route: "unselected"
+cta_type: "unselected"
+cta_keyword: ""
+delivery_status: "not_applicable"
+learning_mode: "local_review_only"
+published: false

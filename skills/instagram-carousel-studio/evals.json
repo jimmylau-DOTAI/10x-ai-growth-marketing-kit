@@ -1,0 +1,58 @@
+{
+  "skill": "instagram-carousel-studio",
+  "evals": [
+    {
+      "id": "no-style-no-reference",
+      "prompt": "幫我整一個 IG 教學 Carousel，我未有品牌 Style，亦未有參考圖。",
+      "expected": [
+        "lock the brief and title first",
+        "present four materially different Starter Styles with identical cover content",
+        "stop for Style selection before the full carousel"
+      ]
+    },
+    {
+      "id": "existing-style",
+      "prompt": "用我 project 入面已批准嘅 STYLE-CAPSULE.md 做 10 張。",
+      "expected": [
+        "use the existing project-local Style without asking for references",
+        "produce editable 1080×1350 HTML before final output"
+      ]
+    },
+    {
+      "id": "reference-deconstruction",
+      "prompt": "我有四張參考圖，但唔想你溝埋一齊。",
+      "expected": [
+        "classify reference roles",
+        "cluster visually different directions",
+        "create separate bounded Style Capsules rather than averaging them"
+      ]
+    },
+    {
+      "id": "comment-cta",
+      "prompt": "封面叫人留言『筆記』攞 guide。",
+      "expected": [
+        "propose a short uppercase ASCII keyword",
+        "keep keyword identical across cover, final card, caption, asset, and route",
+        "mark needs_live_automation when delivery is unverified"
+      ]
+    },
+    {
+      "id": "learning-boundary",
+      "prompt": "呢次我鍾意個大主角，幫我記低下次都用。",
+      "expected": [
+        "record KEEP and WHY in a project-local run receipt",
+        "ask for or verify explicit save approval before adding a bounded candidate",
+        "not update the reusable Skill, shared memory, or external Vault"
+      ]
+    },
+    {
+      "id": "ai-image-route",
+      "prompt": "HTML 批准咗，轉做 AI 圖像版，logo 要準。",
+      "expected": [
+        "use one generation pass per card by default",
+        "use an official logo asset as deterministic post-production",
+        "review the controlled batch once as a contact sheet"
+      ]
+    }
+  ]
+}

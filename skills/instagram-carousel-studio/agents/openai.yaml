@@ -1,0 +1,4 @@
+interface:
+  display_name: "Instagram Carousel Studio"
+  short_description: "Create reviewed carousels with four-style selection."
+  default_prompt: "Use $instagram-carousel-studio to turn my brief or source into a reviewed 1080×1350 Instagram carousel."
