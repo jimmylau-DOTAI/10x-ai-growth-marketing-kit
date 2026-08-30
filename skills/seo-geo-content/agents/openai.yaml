@@ -1,4 +1,4 @@
 interface:
-  display_name: "SEO + GEO Content"
-  short_description: "建立以搜尋意圖、可信來源同 AI 引用為核心嘅實用文章內容"
-  default_prompt: "Use $seo-geo-content to create a source-backed article for this search intent."
+  display_name: "SEO + GEO Blog — Student Edition"
+  short_description: "將 Source 分階段變成 source-blind SEO/GEO Blog"
+  default_prompt: "Use $seo-geo-content to turn this source into an SEO/GEO blog, starting with the Source Guide review gate."

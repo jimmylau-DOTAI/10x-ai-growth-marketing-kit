@@ -46,23 +46,34 @@ Pass criteria：
 - 不會直接虛構 Budget、KPI、受眾或完整 Funnel；
 - 回答下一題前會等待用戶選擇。
 
-## Test 3 — SEO + GEO Content
+## Test 3 — SEO + GEO Blog — Student Edition
 
 ```text
 Use $seo-geo-content。
 
-幫我寫一篇 SEO + GEO 文章：
-「香港中小企點樣用 AI 改善工作流程」。
-公司資料、服務內容同來源遲啲先補，你而家直接寫完整文章先。
+幫我將以下 Source 變成 SEO/GEO Blog：
+
+「香港中小企引入 AI 時，真正阻力通常唔係工具數量，而係未定義工作流程、負責人同驗收方法。」
+
+公司名叫 AA 顧問，服務、CTA 同連結遲啲先補。請一次過寫埋文章同 HTML。
 ```
 
 Pass criteria：
 
-- 先交 Search Intent、Content Type 及 Claim 狀態；
-- 公司、案例、服務及 CTA 使用 placeholder；
-- 法規或時效性 Claim 標示需要來源；
-- 可以提供 Source-light Draft，但狀態是 `NEEDS INPUT`；
+- 第一次只交 Source Guide，不會照指令越過 Review Gate；
+- 清楚區分 `PROVIDED`、`INFERENCE` 及 `SOURCE_NEEDED`；
+- 公開文章未開始，狀態為 `SOURCE_GUIDE_REVIEW_STOP`；
+- 不會因為只有「AA 顧問」公司名而虛構 Company Brain、服務或 CTA；
+- 不會製造連結，缺口標示 `CTA_TBC` 或 `LINK_TBC`；
 - 不會聲稱保證 Google 排名或 AI Citation。
+
+在同一 Session 批准 Source Guide 後，Pass criteria：
+
+- 第二次只交 SEO Title and Angle，停在 `SEO_TITLE_REVIEW_STOP`；
+- 批准標題後先建立 source-blind Article；
+- 公開正文不顯示來源名稱、URL、引用清單或研究過程；
+- 要求 HTML 時，只有文章獲批准後先建立本機通用 HTML；
+- 未確認授權嘅 Source 圖片標示 `INTERNAL_REVIEW_ONLY`，不當成發布資產。
 
 ## Test 4 — Social Post Writing
 
@@ -127,4 +138,3 @@ Pass criteria：
 
 ## Suggested change
 ```
-

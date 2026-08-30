@@ -56,9 +56,9 @@ AI 會先讀取現有資料，再用 Grill Me 逐題確認重要決定，建立�
 
 👤 **你只需要**：提供題目、搜尋問題、目標客戶及可用來源。
 
-AI 會先理解搜尋意圖、核實資料及 Claims，再建立同時適合讀者、Google 及 AI Search 理解嘅實用文章。
+AI 會先建立 Source Guide，經你確認後先逐步處理標題、文章同本機 HTML。公開文章保持 source-blind；Company Brain、CTA、連結及圖片權利未確認時會保留清楚缺口。
 
-`確認搜尋意圖` → `選擇文章類型` → `核實來源` → `建立大綱` → `撰寫文章` → `SEO／GEO QA`
+`Source Guide` → `Human Review` → `SEO Title` → `Human Review` → `Article + QA` → `Human Review` → `Local HTML`
 
 ---
 
@@ -170,4 +170,3 @@ Full Funnel Campaign Planner
 - Draft 不等於 Approved；Approved 不等於 Published。
 - 對外發佈、發送訊息、花費預算及使用客戶資料需要人手批准。
 - 涉及時效性資料、法規、產品功能或外部 Claims 時，先核實當前來源。
-

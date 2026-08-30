@@ -36,7 +36,7 @@
 | --- | --- | --- | --- |
 | [Social Content Research](skills/social-content-research/) | 將社交內容變成可驗證研究 | 連結、影片、截圖或逐字稿 | Evidence、內容分析、原創角度 |
 | [Full Funnel Campaign Planner](skills/full-funnel-campaign-planner/) | 將 Marketing Idea 變成可執行 Campaign | Offer、受眾、目標及現況 | Funnel、90 日優先次序、Handoffs |
-| [SEO + GEO Content](skills/seo-geo-content/) | 建立有來源嘅搜尋及 AI 引用內容 | 搜尋問題、客群、公司資料、Sources | Brief、Claim Map、文章、QA |
+| [SEO + GEO Blog — Student Edition](skills/seo-geo-content/) | 將 Source 分階段變成公開 source-blind SEO／GEO Blog | Source、搜尋問題、客群、Company Brain、CTA | Source Guide、標題、文章、HTML Review、QA |
 | [Social Post Writing](skills/social-post-writing/) | 將可靠觀點變成平台原生內容 | Idea、Audience、Voice、Platform、CTA | Threads、LinkedIn、Facebook、IG Drafts |
 
 四個 Skills 可以獨立使用；亦可以由 Research 開始，一路交接到 Strategy 同 Production。下面會逐個解釋我點解咁寫、每個 Skill 點樣運作，同埋點樣驗收。
@@ -254,7 +254,7 @@ Discover → Engage／Capture → Nurture → Convert → Retain → Refer
 
 ---
 
-### 3. SEO + GEO Content／搜尋及 AI 引用內容
+### 3. SEO + GEO Blog — Student Edition／搜尋及 AI 引用內容
 
 `預計 45–90 分鐘`
 
@@ -266,37 +266,33 @@ SEO／GEO 唔應該由「幫我加多啲 Keywords」開始。
 
 應該先理解搜尋者真正想了解、比較、解決定購買甚麼，再判斷公司有冇足夠資料同資格回答。
 
-呢個 Skill 會將重要 Claim 分成：
+呢個學生版 Skill 會將重要 Claim 分成：
 
 - `VERIFIED`：已有可靠來源核實；
 - `PROVIDED`：由用戶提供但未獨立核實；
 - `INFERENCE`：根據證據作出嘅判斷；
-- `SOURCE NEEDED`：未補來源前不可當成公開事實。
+- `SOURCE_NEEDED`：未補來源前不可當成公開事實。
 
 #### 工作流程
 
 ```text
-確認 Search Intent
-→ 選擇 Content Type
-→ 研究 Sources
-→ 建立 Source and Claim Map
-→ 設計文章結構
-→ 撰寫 Draft
-→ SEO／GEO／Citation QA
-→ Human Review
+Source Guide → Human Review
+→ SEO Title → Human Review
+→ Article + Meta + CTA + Link Ledger → Human Review
+→ Local HTML → Human Review
 ```
 
-SEO 同 GEO 共用同一個底層：內容要準確、具體、有來源、結構清楚，而且真係幫讀者完成一個決定。唔會為咗迎合演算法而大量堆砌 FAQ、短答案或者 Keywords。
+SEO 同 GEO 共用同一個底層：內容要準確、具體、有來源、結構清楚，而且真係幫讀者完成一個決定。公開文章不會顯示研究來源、URL 或引用清單；provenance 會留在內部 Source Guide 同 Claim Notes。每次只完成一個階段，唔會一收到 Source 就直接跳到 HTML 或發布。
+
+如有公司資料，AI 必須先讀 Company profile 同 Current Offer；只有公司名並不足夠。CTA、站內連結同直接目的地要逐條確認，欠資料時使用 `CTA_TBC` 或 `LINK_TBC`。Source 圖片授權未確認時，只可放入本機 HTML 作 `INTERNAL_REVIEW_ONLY`，不當成已批准發布資產。
 
 #### 主要輸出
 
-- Search Intent Brief；
-- Source and Claim Notes；
-- Outline；
-- Article Draft；
-- Meta Title and Description；
-- Suggested Internal Links；
-- QA Status and Open Items。
+- Source Guide 及 Claim Notes；
+- SEO Title and Angle；
+- Article、Meta、CTA 及 Reader Link Ledger；
+- 本機通用 HTML Review（按要求）；
+- Phase Receipt、QA Status and Open Items。
 
 ➡️ [打開 SEO + GEO Content Skill](skills/seo-geo-content/)
 
@@ -392,6 +388,41 @@ Human Review
 
 呢個 Repository 目前公開可見，仍然係 `v0.1-team-test`。你可以直接 Clone、安裝同測試；公開可見不等於已經附帶自由重新分發嘅 License。
 
+### 只安裝 SEO + GEO Student Skill（建議）
+
+唔使 Clone 成個 Repository。Codex 用：
+
+```bash
+npx --yes skills add jimmylau-DOTAI/10x-ai-growth-marketing-kit --skill seo-geo-content -g -a codex -y
+```
+
+Claude Code 用：
+
+```bash
+npx --yes skills add jimmylau-DOTAI/10x-ai-growth-marketing-kit --skill seo-geo-content -g -a claude-code -y
+```
+
+想先睇清楚再揀安裝位置，可以用互動模式：
+
+```bash
+npx --yes skills add jimmylau-DOTAI/10x-ai-growth-marketing-kit --skill seo-geo-content
+```
+
+安裝後開一個新 Session，直接講：
+
+```text
+Use $seo-geo-content。
+
+幫我將以下 Source 變成 SEO/GEO Blog：
+<貼上 URL、文字或檔案>
+```
+
+第一次輸出會停在 Source Guide，等你確認後先處理標題。你亦可以[直接打開 Skill Folder](skills/seo-geo-content/)閱讀內容。
+
+如果唔用 Terminal，可以[下載整個 Repository ZIP](https://github.com/jimmylau-DOTAI/10x-ai-growth-marketing-kit/archive/refs/heads/main.zip)，解壓後只取 `skills/seo-geo-content`。
+
+### 安裝全部 Skills
+
 ```bash
 git clone https://github.com/jimmylau-DOTAI/10x-ai-growth-marketing-kit.git
 cd 10x-ai-growth-marketing-kit
@@ -455,11 +486,11 @@ Use $full-funnel-campaign-planner。
 ```text
 Use $seo-geo-content。
 
-幫我規劃一篇「香港中小企點樣用 AI 改善工作流程」嘅文章。
-公司服務同案例資料未提供。
+幫我將以下 Source 變成 SEO/GEO Blog：
+<貼上 URL、文字或檔案>
 ```
 
-好嘅輸出應該先交 Intent、Content Type 同 Claim 狀態；缺少公司資料嘅位置要清楚標示，唔可以補寫成真實案例。
+好嘅第一次輸出只會交 Source Guide，公開文章未開始寫，並停在 `SOURCE_GUIDE_REVIEW_STOP`。之後每次獲批准先逐步處理標題、文章及本機 HTML；缺少 Company Brain、CTA、連結或圖片權利時要清楚標示，唔可以補寫成真實資料。
 
 ### 測試社交文案
 

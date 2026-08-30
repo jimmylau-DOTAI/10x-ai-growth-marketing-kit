@@ -16,13 +16,16 @@
 - Working title:
 - Core answer:
 - Distinct point of view:
-- CTA:
+- Company Brain status: PROVIDED / NOT PROVIDED / SYNTHETIC_BRAND
+- Offer status: VERIFIED / TBC / NOT APPLICABLE
+- CTA: VERIFIED / CTA_TBC / NOT APPLICABLE
+- Public source disclosure: NO / REQUIRED
 
 ## Source and claim map
 
 | Claim / section | Status | Source | Notes |
 | --- | --- | --- | --- |
-|  | VERIFIED / PROVIDED / INFERENCE / SOURCE NEEDED |  |  |
+|  | VERIFIED / PROVIDED / INFERENCE / SOURCE_NEEDED |  |  |
 
 ## Structure
 
@@ -32,13 +35,21 @@
 
 ## Links
 
-- Internal:
-- External:
+| Anchor | Destination | Link class | Purpose | Status |
+| --- | --- | --- | --- | --- |
+|  |  | authority / internal / CTA / provenance |  | VERIFIED / LINK_TBC / INTERNAL_ONLY |
+
+## Images
+
+| Image | Intended section | Rights status | Review-only | Notes |
+| --- | --- | --- | --- | --- |
+|  |  | VERIFIED / TBC | YES / NO |  |
 
 ## Production
 
 - Owner:
 - Reviewer:
 - Deadline:
+- Current phase:
 - Status: DRAFT
-
+- Next approval needed:
