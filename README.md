@@ -16,15 +16,15 @@
 
 所以我整咗呢套 **10x AI Growth Marketing Kit**。
 
-目前先由七個可以安裝、閱讀、測試同修改嘅 AI Marketing Skills 開始，將內容研究、Full Funnel 策劃、SEO／GEO 內容、社交文案、Instagram Carousel、香港 Threads 同 Sales Funnel Landing Page，串成一條有來源、有判斷、有交接、有 Human Review 嘅工作流。
+目前先由六個可以安裝、閱讀、測試同修改嘅 AI Marketing Skills 開始，將內容研究、SEO／GEO 內容、社交文案、Instagram Carousel、香港 Threads 同 Sales Funnel Landing Page，串成一條有來源、有判斷、有交接、有 Human Review 嘅工作流。
 
-七個 Skills 只係起點。我哋會按照真實 Marketing 工作持續測試、改善同加入更多 Skills，令呢個 Kit 同每一個想用 AI 成長嘅人一齊成長。
+六個 Skills 只係起點。我哋會按照真實 Marketing 工作持續測試、改善同加入更多 Skills，令呢個 Kit 同每一個想用 AI 成長嘅人一齊成長。
 
 > **目前版本：** `v0.1-team-test`
 >
-> **目前可用：** 7 個完整 Skills
+> **目前可用：** 6 個完整 Skills
 >
-> **發展方向：** [10-Skill Roadmap](10-SKILL-INTRO-AND-FLOW.md)
+> **發展方向：** [Skill Roadmap](10-SKILL-INTRO-AND-FLOW.md)
 >
 > **適合對象：** 所有想用 AI 推動內容、品牌、Campaign、團隊或生意增長嘅人；方法源自 Jimmy 同香港市場嘅實戰
 
@@ -35,14 +35,13 @@
 | Skill | 幫你做乜 | 你需要提供 | 主要輸出 |
 | --- | --- | --- | --- |
 | [Social Content Research](skills/social-content-research/) | 將社交內容變成可驗證研究 | 連結、影片、截圖或逐字稿 | Evidence、內容分析、原創角度 |
-| [Full Funnel Campaign Planner](skills/full-funnel-campaign-planner/) | 將 Marketing Idea 變成可執行 Campaign | Offer、受眾、目標及現況 | Funnel、90 日優先次序、Handoffs |
 | [SEO + GEO Blog Writing](skills/seo-geo-content/) | 將 Source 變成有觀點、有搜尋價值、適合 AI Search 理解嘅 Blog | Source、搜尋問題、客群、Company Brain、CTA | Source Guide、標題、文章、Meta、Links、HTML Review、QA |
 | [Social Post Writing](skills/social-post-writing/) | 將可靠觀點變成平台原生內容 | Idea、Audience、Voice、Platform、CTA | Threads、LinkedIn、Facebook、IG Drafts |
 | [HK Threads Writer](skills/hk-threads-writer/) | 寫自然香港廣東話、手機優先而且逐段驗證嘅 Threads | Source、新聞、觀點、故事或工作紀錄 | 單 Post、筆記 Link Reply、樓梯 Post、Python 字數 Receipt |
 | [Instagram Carousel Studio](skills/instagram-carousel-studio/) | 將 Source 變成可編輯、可 QA 嘅 Instagram Carousel | Source／Brief、受眾、One Message、CTA、Style reference | 10-card Story、Style comparison、HTML Review、QA Receipt |
 | [Sales Funnel Landing Page Builder](skills/sales-funnel-landing-page-builder/) | 將一個 Offer 變成簡單直接、可驗收嘅 Lead Funnel | Offer、Audience、Proof、CTA、Design reference、form／data rules | Brief、Style、Copy、Page、UTM、Design／Operations receipts |
 
-七個 Skills 可以獨立使用；亦可以由 Research 開始，一路交接到 Strategy、Production 同 Lead Operations。下面會逐個解釋我點解咁寫、每個 Skill 點樣運作，同埋點樣驗收。
+六個 Skills 可以獨立使用；亦可以由 Research 開始，一路交接到 Production 同 Lead Operations。下面會逐個解釋我點解咁寫、每個 Skill 點樣運作，同埋點樣驗收。
 
 ---
 
@@ -155,7 +154,7 @@ AI 可以研究、整理、挑戰、建議同起 Draft；事實、品牌立場�
 
 ---
 
-## 目前七個 Skills
+## 目前六個 Skills
 
 ### 1. Social Content Research／社交內容研究
 
@@ -203,6 +202,8 @@ AI 可以研究、整理、挑戰、建議同起 Draft；事實、品牌立場�
 ➡️ [打開 Social Content Research Skill](skills/social-content-research/)
 
 ---
+
+<!-- Temporarily hidden from the public kit.
 
 ### 2. Full Funnel Campaign Planner／完整漏斗企劃
 
@@ -257,7 +258,9 @@ Discover → Engage／Capture → Nurture → Convert → Retain → Refer
 
 ---
 
-### 3. SEO + GEO Blog Writing／搜尋及 AI 引用內容
+-->
+
+### 2. SEO + GEO Blog Writing／搜尋及 AI 引用內容
 
 `預計 45–90 分鐘`
 
@@ -307,7 +310,7 @@ SEO 同 GEO 共用同一個底層：內容要準確、具體、有來源、結�
 
 ---
 
-### 4. Social Post Writing／平台原生社交文案
+### 3. Social Post Writing／平台原生社交文案
 
 `預計 10–20 分鐘`
 
@@ -361,7 +364,7 @@ Founder、Company 同 Neutral Expert Voice 亦會分開處理。AI 不可以為�
 
 ---
 
-### 5. Sales Funnel Landing Page Builder／銷售漏斗頁面
+### 4. Sales Funnel Landing Page Builder／銷售漏斗頁面
 
 `預計 45–120 分鐘；Operations 視乎連接範圍`
 
@@ -402,7 +405,7 @@ Offer Brief
 
 ---
 
-### 6. HK Threads Writer／香港 Threads 文案
+### 5. HK Threads Writer／香港 Threads 文案
 
 `預計 5–20 分鐘`
 
@@ -426,7 +429,7 @@ Skill 會分開處理 Hook 強度同 Claim 強度：L3 可以更尖銳，但唔�
 
 ---
 
-### 7. Instagram Carousel Studio／Instagram Carousel
+### 6. Instagram Carousel Studio／Instagram Carousel
 
 `預計 45–120 分鐘`
 
@@ -445,14 +448,12 @@ Skill 會分開處理 Hook 強度同 Claim 強度：L3 可以更尖銳，但唔�
 
 ---
 
-## 七個 Skills 點樣一齊工作？
+## 六個 Skills 點樣一齊工作？
 
 ```text
 來源／社交內容
       ↓
 social-content-research
-      ↓
-full-funnel-campaign-planner
       ├── seo-geo-content
       ├── sales-funnel-landing-page-builder
       └── social-post-writing
@@ -471,7 +472,7 @@ Human Review
 假設一間香港中小企準備推出「AI 工作流程培訓」。
 
 1. 用 `social-content-research` 研究市場上相關影片、貼文同客戶討論，分開證據、觀點同可發展角度；
-2. 用 `full-funnel-campaign-planner` 確認主要受眾、Offer、核心訊息、CTA、渠道同轉化路徑；
+2. 由負責人確認主要受眾、Offer、核心訊息、CTA、渠道同轉化路徑；
 3. 將需要建立搜尋信任嘅題目交俾 `seo-geo-content`；
 4. 將已確認 Offer、Proof 同 CTA 交俾 `sales-funnel-landing-page-builder`，完成文案、設計、UTM 同 Lead journey；
 5. 將 Campaign 觀點同活動訊息交俾 `social-post-writing`，分別製作平台原生 Draft；
@@ -597,17 +598,6 @@ Use $social-content-research。
 
 好嘅輸出應該先交代 `FULL`、`PARTIAL`、`IMAGE_ONLY` 或 `BLOCKED`，再分開實際證據同 AI 判斷。
 
-### 測試 Full Funnel
-
-```text
-Use $full-funnel-campaign-planner。
-
-我想為一個香港中小企 AI 課程做 Campaign。
-目標客戶、預算同主要 CTA 未決定。
-```
-
-好嘅輸出唔應該立即虛構完整 Funnel，而係先整理已知資料，再用 Grill Me 一次問一個關鍵問題。
-
 ### 測試 SEO／GEO
 
 ```text
@@ -696,7 +686,6 @@ Use $hk-threads-writer。
 ├── ATTRIBUTIONS.md
 └── skills/
     ├── social-content-research/
-    ├── full-funnel-campaign-planner/
     ├── seo-geo-content/
     ├── social-post-writing/
     ├── hk-threads-writer/
@@ -715,30 +704,29 @@ Use $hk-threads-writer。
 
 ---
 
-## 10-Skill Roadmap
+## Skill Roadmap
 
 `10x` 代表能力同增長嘅方向，唔係限制呢個 Repository 只可以有十個 Skills。
 
-目前嘅 10-Skill Roadmap 係第一個發展階段。之後會繼續按照真實工作需要，加入更多有清楚用途、經過測試同可以驗收嘅 Skills，而唔係為咗數量增加 Folder。
+目前嘅 Skill Roadmap 係第一個發展階段。之後會繼續按照真實工作需要，加入更多有清楚用途、經過測試同可以驗收嘅 Skills，而唔係為咗數量增加 Folder。
 
-目前 Repository 完成七個 Skills；以下十項仍然用作第一階段能力 Roadmap。
+目前 Repository 完成六個 Skills；以下九項用作第一階段能力 Roadmap。
 
 | # | Skill | 狀態 |
 | --- | --- | --- |
 | 1 | Company Brain Setup | Roadmap |
 | 2 | Social Content Research | **Implemented** |
-| 3 | Full Funnel Campaign Planner | **Implemented** |
-| 4 | SEO + GEO Content | **Implemented** |
-| 5 | Social Post Writing | **Implemented** |
-| 6 | Sales Funnel Landing Page Builder | **Implemented** |
-| 7 | Proposal Deck Builder | Roadmap |
-| 8 | Instagram Post | Roadmap |
-| 9 | LinkedIn Post Writing | Roadmap |
-| 10 | HK Threads Writer | **Implemented** |
+| 3 | SEO + GEO Content | **Implemented** |
+| 4 | Social Post Writing | **Implemented** |
+| 5 | Sales Funnel Landing Page Builder | **Implemented** |
+| 6 | Proposal Deck Builder | Roadmap |
+| 7 | Instagram Post | Roadmap |
+| 8 | LinkedIn Post Writing | Roadmap |
+| 9 | HK Threads Writer | **Implemented** |
 
-`Instagram Carousel Studio` 係額外完成嘅專項 Skill，唔等同 Roadmap #8 嘅 Instagram 單張 Post。
+`Instagram Carousel Studio` 係額外完成嘅專項 Skill，唔等同 Roadmap #7 嘅 Instagram 單張 Post。
 
-每個 Roadmap Skill 嘅人話介紹、Input 同預期流程，見 [10-Skill Introductions and Workflows](10-SKILL-INTRO-AND-FLOW.md)。
+每個 Roadmap Skill 嘅人話介紹、Input 同預期流程，見 [Skill Introductions and Workflows](10-SKILL-INTRO-AND-FLOW.md)。
 
 ---
 

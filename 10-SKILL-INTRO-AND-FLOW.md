@@ -38,6 +38,8 @@ AI 會先確認實際讀到乜，再拆解內容重點、Hook、結構、Proof �
 
 ---
 
+<!-- Temporarily hidden from the public roadmap.
+
 ## 3. Full Funnel Campaign Planner／完整漏斗企劃
 
 `約 30–60 分鐘`
@@ -50,7 +52,9 @@ AI 會先讀取現有資料，再用 Grill Me 逐題確認重要決定，建立�
 
 ---
 
-## 4. SEO + GEO Content／搜尋及 AI 引用內容
+-->
+
+## 3. SEO + GEO Content／搜尋及 AI 引用內容
 
 `約 45–90 分鐘`
 
@@ -62,7 +66,7 @@ AI 會先建立 Source Guide，經你確認後先逐步處理標題、文章同�
 
 ---
 
-## 5. Social Post Writing／社交內容總監
+## 4. Social Post Writing／社交內容總監
 
 `約 10–20 分鐘`
 
@@ -76,7 +80,7 @@ AI 會確認受眾、Voice、Post 目的及唯一重點，再建立共用 Social
 
 ---
 
-## 6. Sales Funnel Landing Page Builder／銷售漏斗頁面
+## 5. Sales Funnel Landing Page Builder／銷售漏斗頁面
 
 `約 45–90 分鐘`
 
@@ -88,7 +92,7 @@ AI 會先鎖定 Brief，再逐步確認 Style 同 Copy，建立簡單直接嘅 L
 
 ---
 
-## 7. Proposal Deck Builder／客戶提案簡報
+## 6. Proposal Deck Builder／客戶提案簡報
 
 `約 60–120 分鐘`
 
@@ -100,7 +104,7 @@ AI 會將散亂資料整理成有說服力嘅 Proposal Storyline，再製作逐�
 
 ---
 
-## 8. Instagram Post／IG 單張圖文
+## 7. Instagram Post／IG 單張圖文
 
 `約 20–45 分鐘`
 
@@ -114,7 +118,7 @@ AI 會將一個重點變成完整 Instagram Post，包括 Hook、Caption、4:5 �
 
 ---
 
-## 9. LinkedIn Post Writing／LinkedIn 專業內容
+## 8. LinkedIn Post Writing／LinkedIn 專業內容
 
 `約 10–25 分鐘`
 
@@ -126,7 +130,7 @@ AI 會將內容改寫成適合 LinkedIn 嘅專業敘事，加入商業 Context�
 
 ---
 
-## 10. HK Threads Writer／香港 Threads 內容
+## 9. HK Threads Writer／香港 Threads 內容
 
 `約 5–15 分鐘`
 
@@ -138,14 +142,12 @@ AI 會先保護 Source、身份同 Claim boundary，再按證據選擇 Hot Take�
 
 ---
 
-## 十個 Skills 嘅整體 Flow
+## 九個 Skills 嘅整體 Flow
 
 ```text
 Company Brain Setup
         ↓
 Social Content Research
-        ↓
-Full Funnel Campaign Planner
         ├── SEO + GEO Content
         ├── Sales Funnel Landing Page Builder
         ├── Proposal Deck Builder

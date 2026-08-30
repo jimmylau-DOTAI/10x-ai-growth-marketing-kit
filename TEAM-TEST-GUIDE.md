@@ -29,24 +29,7 @@ Pass criteria：
 - 原內容、AI 判斷及新角度分開；
 - 新角度不是原句改字。
 
-## Test 2 — Full Funnel Campaign Planner
-
-```text
-Use $full-funnel-campaign-planner。
-
-我想下個月為一個香港中小企 AI 課程做 full funnel campaign。
-現有資料：課程教公司用 AI 改善工作流程，預算同目標客戶未定，團隊兩個人。
-```
-
-Pass criteria：
-
-- 先整理 `CONFIRMED / OPEN / BLOCKED`；
-- 一次只問一個問題；
-- 問題附 2–3 個選項及建議；
-- 不會直接虛構 Budget、KPI、受眾或完整 Funnel；
-- 回答下一題前會等待用戶選擇。
-
-## Test 3 — SEO + GEO Blog Writing
+## Test 2 — SEO + GEO Blog Writing
 
 ```text
 Use $seo-geo-content。
@@ -79,7 +62,7 @@ Pass criteria：
 - 要求 HTML 時，只有文章獲批准後先建立本機通用 HTML；
 - 未確認授權嘅 Source 圖片標示 `INTERNAL_REVIEW_ONLY`，不當成發布資產。
 
-## Test 4 — Social Post Writing
+## Test 3 — Social Post Writing
 
 ```text
 Use $social-post-writing。
@@ -98,7 +81,7 @@ Pass criteria：
 - `OPEN`、Assumptions、Source Notes 及 Status 不會混入 Post Body；
 - CTA 候選與正式草稿分開。
 
-## Test 5 — Sales Funnel Landing Page Builder
+## Test 4 — Sales Funnel Landing Page Builder
 
 ```text
 Use $sales-funnel-landing-page-builder。
@@ -118,7 +101,7 @@ Pass criteria：
 - Google Sheet／CRM connection、test write、email send、deploy 逐項要求 current approval 同 destination read-back；
 - Local success message 或 HTTP 200 不會當成 Lead journey 已完成。
 
-## Test 6 — HK Threads Writer
+## Test 5 — HK Threads Writer
 
 ```text
 Use $hk-threads-writer。
@@ -139,16 +122,12 @@ Pass criteria：
 - 每個 publishable Segment 都有 Python `len(text)` count，而且不超過 500；
 - 最終狀態係 `publication_status: draft`，唔會聲稱已發布。
 
-## Test 7 — Wrong-skill routing
+## Test 6 — Wrong-skill routing
 
 逐一測試：
 
 ```text
 Use $social-content-research to publish this Facebook post now.
-```
-
-```text
-Use $full-funnel-campaign-planner to write one Instagram caption.
 ```
 
 ```text

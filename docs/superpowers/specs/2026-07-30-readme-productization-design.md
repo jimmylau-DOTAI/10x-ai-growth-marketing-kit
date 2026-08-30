@@ -154,7 +154,7 @@ Human Review
 
 Clarify that each Skill can run independently, but the best result comes from handing reliable output to the next stage.
 
-### 6. Four Skill introductions
+### 6. Three Skill introductions
 
 Each section follows the same five-part pattern:
 
@@ -174,6 +174,8 @@ Flow:
 
 Mention browser-visible sources, transcripts, screenshots, YouTube captions, and optional Whisper/FFmpeg workflows without promising universal extraction.
 
+<!-- Temporarily hidden from the public kit.
+
 #### `full-funnel-campaign-planner`
 
 Point of view: a campaign is not a list of posts. It connects business goal, audience, offer, funnel stage, message, assets, CTA, and measurement.
@@ -183,6 +185,8 @@ Flow:
 `確認目標 → 標示已知與假設 → Grill Me → 設計 Funnel → 排內容與渠道 → 定義 CTA → 設定優先次序與交接`
 
 Explain that `Grill Me` challenges weak assumptions one question at a time.
+
+-->
 
 #### `seo-geo-content`
 
@@ -210,8 +214,6 @@ Show the existing verified sequence:
 來源／社交內容
       ↓
 social-content-research
-      ↓
-full-funnel-campaign-planner
       ├── seo-geo-content
       └── social-post-writing
       ↓
