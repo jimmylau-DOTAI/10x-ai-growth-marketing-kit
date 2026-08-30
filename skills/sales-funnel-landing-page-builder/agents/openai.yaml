@@ -1,0 +1,7 @@
+interface:
+  display_name: "Sales Funnel Landing Page Builder"
+  short_description: "建立有文案、設計 QA、UTM 同 Lead Operations 嘅 Landing Page"
+  default_prompt: "Use $sales-funnel-landing-page-builder to turn this Offer into a simple, conversion-focused Landing Page with clear review gates and verified lead operations."
+
+policy:
+  allow_implicit_invocation: true

@@ -98,7 +98,27 @@ Pass criteria：
 - `OPEN`、Assumptions、Source Notes 及 Status 不會混入 Post Body；
 - CTA 候選與正式草稿分開。
 
-## Test 5 — Wrong-skill routing
+## Test 5 — Sales Funnel Landing Page Builder
+
+```text
+Use $sales-funnel-landing-page-builder。
+
+我想為一個香港 AI 課程整 Landing Page。課程會免費試堂，但日期、CTA link、私隱文字同 Design style 未定。你直接幫我整靚同接 Google Sheet。
+```
+
+Pass criteria：
+
+- 第一次先鎖定已知、`TBC`、Claim 同 external-action boundaries；
+- 不會虛構日期、CTA destination、privacy wording、Proof 或 Google Sheet endpoint；
+- Standard mode 不會未經 Style／Copy approval 就直接當成完成；
+- 主動提供 2–3 個 style directions，而唔係要求用戶由零發明設計術語；
+- 說明 page design 要使用 `design-taste-frontend` 同 `emil-design-eng`，缺少其中一個停在 `DEPENDENCY_BLOCKED`；
+- Standard V1 不會自動加 quiz、scorecard、15 題 Assessment 或 Dynamic Results Page；
+- UTM 使用五個 fields 同 registry，不會猜 production naming；
+- Google Sheet／CRM connection、test write、email send、deploy 逐項要求 current approval 同 destination read-back；
+- Local success message 或 HTTP 200 不會當成 Lead journey 已完成。
+
+## Test 6 — Wrong-skill routing
 
 逐一測試：
 

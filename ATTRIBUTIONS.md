@@ -37,6 +37,12 @@
 
 公開 Skill 已移除內部路徑、客戶資料、Credentials、私人案例、Agent 名稱及公司專用 Publishing 流程。
 
+## Landing Page design dependencies
+
+- `design-taste-frontend`：源自 [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill)；用作獨立 Design Read、anti-slop、responsive composition 同 visual pre-flight。此 Repository 只記錄 dependency contract，沒有複製上游 Skill。
+- `emil-design-eng`：源自 [emilkowalski/skills](https://github.com/emilkowalski/skills)；用作 interaction purpose、motion、state、reduced-motion 同 UI engineering review。此 Repository 只記錄 dependency contract，沒有複製上游 Skill。
+- 兩個依賴需要由使用者按各自 Repository 同 License 另行安裝；不可假設隨本 Kit 一併提供。
+
 ## Public release reminder
 
 目前係 Team Test Package，未選定公開分發 License。公開前需要：

@@ -76,15 +76,15 @@ AI 會確認受眾、Voice、Post 目的及唯一重點，再建立共用 Social
 
 ---
 
-## 6. Landing Page Conversion Copy／轉化頁文案
+## 6. Sales Funnel Landing Page Builder／銷售漏斗頁面
 
 `約 45–90 分鐘`
 
-👤 **你只需要**：提供 Offer、目標客戶、Proof、價格及主要 CTA。
+👤 **你只需要**：提供 Offer、目標客戶、Proof、價格、主要 CTA、Design MD／reference，以及表格同資料用途。
 
-AI 會將 Offer 整理成完整 Landing Page，解釋價值、處理疑慮、建立信任，並引導訪客完成一個清楚行動。
+AI 會先鎖定 Brief，再逐步確認 Style 同 Copy，建立簡單直接嘅 Landing Page。Tracking 或 Lead Operations 在範圍內時，亦會處理 UTM、表格 destination、CRM／Google Sheet、email 同驗證 receipt。
 
-`理解 Offer` → `確認受眾` → `建立頁面結構` → `撰寫文案` → `加入 Proof 及 FAQ` → `CTA／Conversion QA`
+`Brief` → `Style Review` → `Copy Review` → `Build` → `UTM／Lead Operations` → `Desktop／Mobile QA` → `Human Review`
 
 ---
 
@@ -147,7 +147,7 @@ Social Content Research
         ↓
 Full Funnel Campaign Planner
         ├── SEO + GEO Content
-        ├── Landing Page Conversion Copy
+        ├── Sales Funnel Landing Page Builder
         ├── Proposal Deck Builder
         └── Social Post Writing
                 ├── Instagram Post
@@ -161,7 +161,7 @@ Full Funnel Campaign Planner
 - `Instagram Post` 負責 Caption、4:5 單張圖、中文排版及品牌 QA。
 - `LinkedIn Post Writing` 負責 Founder／Company 專業敘事。
 - `Threads Post Writing` 負責短觀點、對話節奏及 Thread 結構。
-- `Landing Page Conversion Copy` 負責完整 Offer、Proof、異議處理及轉化。
+- `Sales Funnel Landing Page Builder` 負責一個 Offer 嘅頁面文案、設計、Build、UTM、短表格及可選 Lead Operations；進階 Assessment 另開 Skill。
 - `Proposal Deck Builder` 負責客戶提案 Storyline、逐頁內容及可編輯 PPTX。
 
 ## 共通安全界線

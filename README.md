@@ -16,13 +16,13 @@
 
 所以我整咗呢套 **10x AI Growth Marketing Kit**。
 
-目前先由四個可以安裝、閱讀、測試同修改嘅 AI Marketing Skills 開始，將內容研究、Full Funnel 策劃、SEO／GEO 內容同社交文案，串成一條有來源、有判斷、有交接、有 Human Review 嘅工作流。
+目前先由五個可以安裝、閱讀、測試同修改嘅 AI Marketing Skills 開始，將內容研究、Full Funnel 策劃、SEO／GEO 內容、社交文案同 Sales Funnel Landing Page，串成一條有來源、有判斷、有交接、有 Human Review 嘅工作流。
 
-四個 Skills 只係起點。我哋會按照真實 Marketing 工作持續測試、改善同加入更多 Skills，令呢個 Kit 同每一個想用 AI 成長嘅人一齊成長。
+五個 Skills 只係起點。我哋會按照真實 Marketing 工作持續測試、改善同加入更多 Skills，令呢個 Kit 同每一個想用 AI 成長嘅人一齊成長。
 
 > **目前版本：** `v0.1-team-test`
 >
-> **目前可用：** 4 個完整 Skills
+> **目前可用：** 5 個完整 Skills
 >
 > **發展方向：** [10-Skill Roadmap](10-SKILL-INTRO-AND-FLOW.md)
 >
@@ -38,8 +38,9 @@
 | [Full Funnel Campaign Planner](skills/full-funnel-campaign-planner/) | 將 Marketing Idea 變成可執行 Campaign | Offer、受眾、目標及現況 | Funnel、90 日優先次序、Handoffs |
 | [SEO + GEO Blog Writing](skills/seo-geo-content/) | 將 Source 變成有觀點、有搜尋價值、適合 AI Search 理解嘅 Blog | Source、搜尋問題、客群、Company Brain、CTA | Source Guide、標題、文章、Meta、Links、HTML Review、QA |
 | [Social Post Writing](skills/social-post-writing/) | 將可靠觀點變成平台原生內容 | Idea、Audience、Voice、Platform、CTA | Threads、LinkedIn、Facebook、IG Drafts |
+| [Sales Funnel Landing Page Builder](skills/sales-funnel-landing-page-builder/) | 將一個 Offer 變成簡單直接、可驗收嘅 Lead Funnel | Offer、Audience、Proof、CTA、Design reference、form／data rules | Brief、Style、Copy、Page、UTM、Design／Operations receipts |
 
-四個 Skills 可以獨立使用；亦可以由 Research 開始，一路交接到 Strategy 同 Production。下面會逐個解釋我點解咁寫、每個 Skill 點樣運作，同埋點樣驗收。
+五個 Skills 可以獨立使用；亦可以由 Research 開始，一路交接到 Strategy、Production 同 Lead Operations。下面會逐個解釋我點解咁寫、每個 Skill 點樣運作，同埋點樣驗收。
 
 ---
 
@@ -152,7 +153,7 @@ AI 可以研究、整理、挑戰、建議同起 Draft；事實、品牌立場�
 
 ---
 
-## 目前四個 Skills
+## 目前五個 Skills
 
 ### 1. Social Content Research／社交內容研究
 
@@ -358,7 +359,48 @@ Founder、Company 同 Neutral Expert Voice 亦會分開處理。AI 不可以為�
 
 ---
 
-## 四個 Skills 點樣一齊工作？
+### 5. Sales Funnel Landing Page Builder／銷售漏斗頁面
+
+`預計 45–120 分鐘；Operations 視乎連接範圍`
+
+👤 **你只需要提供：** Offer、目標客戶、Proof、主要 CTA、Design MD／reference，以及表格同資料用途。
+
+#### 點解我會寫呢個 Skill？
+
+Landing Page 最常見問題唔係「唔夠靚」，而係 AI 太快揀咗一種 generic style、未鎖定 Offer 同 CTA 就開始砌頁；表格睇似成功，亦未必真係寫入 Google Sheet、發到確認信或保留 UTM。
+
+呢個 Skill 將 Copy、Design、Build 同 Lead Operations 分開驗收。Standard V1 鎖定一個 Offer、一個 CTA、一個短表格同一個 next step；Quiz、scorecard 同動態 Assessment Results 留俾另一個 Advanced Skill。
+
+#### 工作流程
+
+```text
+Offer Brief
+→ Style Review
+→ Copy Review
+→ Build
+→ UTM Tracking
+→ Lead Operations
+→ Desktop／Mobile QA
+→ Human Review／Controlled Release
+```
+
+頁面視覺或 interaction 有修改時，必須使用 `design-taste-frontend` 同 `emil-design-eng`，並建立 portable design receipt。CRM／email／reminder 在範圍內時，另外使用 operations receipt 同 destination read-back；Local preview 或 HTTP success 不會當成完整 Lead journey。
+
+#### 主要輸出
+
+- Landing Page Brief；
+- Style direction／reference mapping；
+- Section-by-section Copy Deck；
+- Page source／CMS handoff；
+- `utm-registry.csv`；
+- Design receipt、Operations receipt、Desktop／Mobile evidence；
+- Release status 同下一個 Human approval。
+
+➡️ [打開 Sales Funnel Landing Page Builder Skill](skills/sales-funnel-landing-page-builder/)
+
+---
+
+## 五個 Skills 點樣一齊工作？
 
 ```text
 來源／社交內容
@@ -367,6 +409,7 @@ social-content-research
       ↓
 full-funnel-campaign-planner
       ├── seo-geo-content
+      ├── sales-funnel-landing-page-builder
       └── social-post-writing
       ↓
 Human Review
@@ -383,8 +426,9 @@ Human Review
 1. 用 `social-content-research` 研究市場上相關影片、貼文同客戶討論，分開證據、觀點同可發展角度；
 2. 用 `full-funnel-campaign-planner` 確認主要受眾、Offer、核心訊息、CTA、渠道同轉化路徑；
 3. 將需要建立搜尋信任嘅題目交俾 `seo-geo-content`；
-4. 將 Campaign 觀點同活動訊息交俾 `social-post-writing`，分別製作平台原生 Draft；
-5. 由負責人核實 Claims、品牌語氣、活動資料同 CTA，再決定發布。
+4. 將已確認 Offer、Proof 同 CTA 交俾 `sales-funnel-landing-page-builder`，完成文案、設計、UTM 同 Lead journey；
+5. 將 Campaign 觀點同活動訊息交俾 `social-post-writing`，分別製作平台原生 Draft；
+6. 由負責人核實 Claims、品牌語氣、活動資料、CTA 同 data behaviour，再決定發布。
 
 真正嘅價值唔係「一次過生成好多 Content」，而係每一步都知道資料從邊度嚟、點解咁決定、下一步交俾邊個。
 
@@ -566,7 +610,8 @@ CTA 未定。
     ├── social-content-research/
     ├── full-funnel-campaign-planner/
     ├── seo-geo-content/
-    └── social-post-writing/
+    ├── social-post-writing/
+    └── sales-funnel-landing-page-builder/
 ```
 
 每個 Skill 只保留真正執行工作需要嘅 Files：
@@ -574,8 +619,9 @@ CTA 未定。
 - `SKILL.md`：Trigger、Workflow、Output Contract 同硬界線；
 - `references/`：需要時先讀取嘅詳細框架；
 - `assets/`：可以直接使用嘅 Brief、Checklist 或 Output Template。
+- `scripts/`：只在 deterministic validation 或高風險 operations 明顯受益時使用。
 
-第一版刻意冇加入自動 Scraping、Database、API Publishing 或大量不必要 Scripts。Folder 多唔代表 Skill 好；每個 File 都應該有清楚責任。
+第一版刻意冇加入自動 Scraping、Database、API Publishing 或大量不必要 Scripts。Landing Page Skill 只加入 receipt validators 同受控 Apps Script endpoint helper；Folder 多唔代表 Skill 好，每個 File 都應該有清楚責任。
 
 ---
 
@@ -585,7 +631,7 @@ CTA 未定。
 
 目前嘅 10-Skill Roadmap 係第一個發展階段。之後會繼續按照真實工作需要，加入更多有清楚用途、經過測試同可以驗收嘅 Skills，而唔係為咗數量增加 Folder。
 
-目前完成四個 Skills，其餘仍然係發展方向。
+目前完成五個 Skills，其餘仍然係發展方向。
 
 | # | Skill | 狀態 |
 | --- | --- | --- |
@@ -594,7 +640,7 @@ CTA 未定。
 | 3 | Full Funnel Campaign Planner | **Implemented** |
 | 4 | SEO + GEO Content | **Implemented** |
 | 5 | Social Post Writing | **Implemented** |
-| 6 | Landing Page Conversion Copy | Roadmap |
+| 6 | Sales Funnel Landing Page Builder | **Implemented** |
 | 7 | Proposal Deck Builder | Roadmap |
 | 8 | Instagram Post | Roadmap |
 | 9 | LinkedIn Post Writing | Roadmap |
