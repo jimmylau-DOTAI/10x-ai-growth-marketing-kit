@@ -36,7 +36,7 @@
 | --- | --- | --- | --- |
 | [Social Content Research](skills/social-content-research/) | 將社交內容變成可驗證研究 | 連結、影片、截圖或逐字稿 | Evidence、內容分析、原創角度 |
 | [Full Funnel Campaign Planner](skills/full-funnel-campaign-planner/) | 將 Marketing Idea 變成可執行 Campaign | Offer、受眾、目標及現況 | Funnel、90 日優先次序、Handoffs |
-| [SEO + GEO Blog — Student Edition](skills/seo-geo-content/) | 將 Source 分階段變成公開 source-blind SEO／GEO Blog | Source、搜尋問題、客群、Company Brain、CTA | Source Guide、標題、文章、HTML Review、QA |
+| [SEO + GEO Blog Writing](skills/seo-geo-content/) | 將 Source 變成有觀點、有搜尋價值、適合 AI Search 理解嘅 Blog | Source、搜尋問題、客群、Company Brain、CTA | Source Guide、標題、文章、Meta、Links、HTML Review、QA |
 | [Social Post Writing](skills/social-post-writing/) | 將可靠觀點變成平台原生內容 | Idea、Audience、Voice、Platform、CTA | Threads、LinkedIn、Facebook、IG Drafts |
 
 四個 Skills 可以獨立使用；亦可以由 Research 開始，一路交接到 Strategy 同 Production。下面會逐個解釋我點解咁寫、每個 Skill 點樣運作，同埋點樣驗收。
@@ -254,7 +254,7 @@ Discover → Engage／Capture → Nurture → Convert → Retain → Refer
 
 ---
 
-### 3. SEO + GEO Blog — Student Edition／搜尋及 AI 引用內容
+### 3. SEO + GEO Blog Writing／搜尋及 AI 引用內容
 
 `預計 45–90 分鐘`
 
@@ -266,10 +266,11 @@ SEO／GEO 唔應該由「幫我加多啲 Keywords」開始。
 
 應該先理解搜尋者真正想了解、比較、解決定購買甚麼，再判斷公司有冇足夠資料同資格回答。
 
-呢個學生版 Skill 會將重要 Claim 分成：
+呢個 Skill 會將重要 Claim 分成：
 
 - `VERIFIED`：已有可靠來源核實；
 - `PROVIDED`：由用戶提供但未獨立核實；
+- `COMPANY_FRAMEWORK`：由 Company Brain 支持嘅公司方法或 decision rule；
 - `INFERENCE`：根據證據作出嘅判斷；
 - `SOURCE_NEEDED`：未補來源前不可當成公開事實。
 
@@ -286,11 +287,16 @@ SEO 同 GEO 共用同一個底層：內容要準確、具體、有來源、結�
 
 如有公司資料，AI 必須先讀 Company profile 同 Current Offer；只有公司名並不足夠。CTA、站內連結同直接目的地要逐條確認，欠資料時使用 `CTA_TBC` 或 `LINK_TBC`。Source 圖片授權未確認時，只可放入本機 HTML 作 `INTERNAL_REVIEW_ONLY`，不當成已批准發布資產。
 
+寫作層會使用 DotAI-derived practical-operator style：先講讀者真正遇到嘅工作阻力，再將技術翻譯成 input、output、時間、成本、風險、審批同下一步。每個重要例子要有具體 deliverable 及 human boundary；長文會建立可獨立理解嘅 Owned Answer Units，而唔係用 generic advice 加幾次品牌名。若 Company Brain 已提供獲批准 Brand Voice，會以該 Voice 為準。
+
+平台輸出亦唔只係正文：包括 H1、Meta title、Meta description、slug、Reader Link／CTA Ledger、internal-link plan、supported FAQ／Schema recommendation，以及需要時分開記錄 Discovery、Selection、Absorption、Attribution、Accuracy、Stability 同 Action 嘅 GEO monitoring plan。
+
 #### 主要輸出
 
 - Source Guide 及 Claim Notes；
 - SEO Title and Angle；
 - Article、Meta、CTA 及 Reader Link Ledger；
+- Owned Answer Units、supported FAQ／Schema 及 internal-link plan；
 - 本機通用 HTML Review（按要求）；
 - Phase Receipt、QA Status and Open Items。
 
@@ -388,7 +394,7 @@ Human Review
 
 呢個 Repository 目前公開可見，仍然係 `v0.1-team-test`。你可以直接 Clone、安裝同測試；公開可見不等於已經附帶自由重新分發嘅 License。
 
-### 只安裝 SEO + GEO Student Skill（建議）
+### 只安裝 SEO + GEO Blog Writing Skill（建議）
 
 唔使 Clone 成個 Repository。Codex 用：
 

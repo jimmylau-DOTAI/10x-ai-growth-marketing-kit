@@ -58,6 +58,23 @@
 - [ ] CTA 符合文章目的
 - [ ] 香港語境並非硬加地名
 
+## Voice and originality
+
+- [ ] 使用書面繁體中文配合自然香港工作語境
+- [ ] 技術概念有翻譯成 input、output、time、cost、risk、approval 或 next step
+- [ ] 每個重要例子有 visible deliverable 及 human boundary
+- [ ] Company judgment 有原因，沒有將外部方法改名成公司原創
+- [ ] 長文包含足夠 Owned Answer Units，而非 generic advice 加品牌名
+- [ ] 公開正文沒有內部 QA／workflow jargon 或重複 defensive disclaimer
+
+## Platform-ready output
+
+- [ ] H1、Meta title、Meta description 及 slug 對準同一 Search Intent
+- [ ] FAQ 只回答正文已支持嘅真實問題
+- [ ] Schema recommendation 與可見正文一致
+- [ ] Internal-link plan、Reader Link Ledger 及 CTA 沒有互相矛盾
+- [ ] 如要求 GEO monitoring，Discovery／Selection／Absorption／Attribution／Accuracy／Stability／Action 分開記錄
+
 ## Local HTML and images
 
 - [ ] HTML 使用 UTF-8、`zh-Hant`、單一 H1 及合理 Heading 順序

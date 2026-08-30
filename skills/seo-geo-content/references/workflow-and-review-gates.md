@@ -1,4 +1,4 @@
-# Student Workflow and Review Gates
+# Workflow and Review Gates
 
 ## 1. Source Guide
 
@@ -13,11 +13,12 @@
 ## Verified facts and scope
 ## Useful examples or mechanisms
 ## Limits, risks, and unknowns
-## Company / student interpretation
 ## Search opportunities
 ## Internal provenance
 ## Claim status
 ```
+
+Source Guide 保持中性，不加入 Company judgment、Offer、CTA 或公開文章 polish。
 
 Claim status 使用：
 
@@ -38,12 +39,13 @@ Claim status 使用：
 - Search Intent；
 - Audience and location；
 - Content Type；
-- 一個建議標題；
-- 兩至四個備選標題；
+- 十個真正不同嘅標題方向：Search-direct、Work friction、Beginner question、Process／outcome、Company point of view 各兩個；
+- 每個標題記錄 angle、primary search phrase、reader promise 及 overpromise／jargon risk；
+- 推薦 Top 3 及每個推薦原因；
 - 核心答案及獨特觀點；
 - 暫定 CTA／`CTA_TBC`。
 
-標題要符合讀者工作，不可為追求點擊而超出證據。
+標題要符合讀者工作，不可為追求點擊而超出證據。不要用十個近義改寫充當探索；`最新`、年份、數字、`完整`、`實測` 或結果承諾只有在內容可以完全兌現時先使用。
 
 結束狀態：`SEO_TITLE_REVIEW_STOP`。
 
@@ -75,6 +77,8 @@ Claim status 使用：
 - Internal Link Ledger；
 - Claim Notes；
 - QA Status and Open Items。
+
+文章階段可使用 `COMPANY_FRAMEWORK` 標示由 Company Brain 支持、確實屬於該公司嘅命名方法或 decision rule。不可將外部方法重新命名成公司原創；未有 ownership evidence 時只可使用 `INFERENCE` 或中性描述。
 
 公開正文保持 source-blind；內部 Claim Notes 保留 provenance。
 

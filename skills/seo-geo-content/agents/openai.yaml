@@ -1,4 +1,4 @@
 interface:
-  display_name: "SEO + GEO Blog — Student Edition"
-  short_description: "將 Source 分階段變成 source-blind SEO/GEO Blog"
-  default_prompt: "Use $seo-geo-content to turn this source into an SEO/GEO blog, starting with the Source Guide review gate."
+  display_name: "SEO + GEO Blog Writing"
+  short_description: "將 Source 變成可搜尋、可引用、可審批嘅 SEO/GEO Blog"
+  default_prompt: "Use $seo-geo-content to turn this source into a polished SEO/GEO blog with the approved company voice, CTA, and platform-ready outputs."

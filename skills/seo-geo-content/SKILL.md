@@ -1,9 +1,9 @@
 ---
 name: seo-geo-content
-description: Use when a student wants to turn supplied source material into a source-blind SEO/GEO blog, review an article, or create a local HTML preview with explicit Human Review gates, Company Brain, CTA, link, claim, and image controls.
+description: Use when a user wants to turn supplied source material into a high-quality SEO/GEO blog, improve an article for search and AI answer engines, or create a local HTML review with Company Brain, CTA, link, claim, image, and Human Review controls.
 ---
 
-# SEO + GEO Blog — Student Edition
+# SEO + GEO Blog Writing
 
 ## Overview
 
@@ -23,7 +23,7 @@ description: Use when a student wants to turn supplied source material into a so
 
 ## Phase router
 
-按 [student-workflow-and-gates.md](references/student-workflow-and-gates.md) 執行：
+按 [workflow-and-review-gates.md](references/workflow-and-review-gates.md) 執行：
 
 1. 原始 Source 尚未整理：只建立 Source Guide，結束為 `SOURCE_GUIDE_REVIEW_STOP`。
 2. Source Guide 已批准：只提出標題及搜尋角度，結束為 `SEO_TITLE_REVIEW_STOP`。
@@ -70,7 +70,8 @@ Source provenance 連結只留在內部記錄。每條公開連結要有清楚 a
 ## References and templates
 
 - 用 [seo-geo-framework.md](references/seo-geo-framework.md) 選 Search Intent、Content Type 及答案結構。
-- 用 [student-workflow-and-gates.md](references/student-workflow-and-gates.md) 執行每個 Review Gate。
+- 用 [workflow-and-review-gates.md](references/workflow-and-review-gates.md) 執行每個 Review Gate。
+- 文章階段必須讀 [writing-style-and-platform-rules.md](references/writing-style-and-platform-rules.md)，用嚟校準 DotAI-derived 寫作風格、Owned Answer Units、SEO／GEO 輸出及 HTML 規格；如 Company Brain 有已批准 Brand Voice，以該 Voice 為準。
 - 用 [content-quality-check.md](references/content-quality-check.md) 做 QA。
 - 用 [article-brief.md](assets/article-brief.md) 及 [article-output.md](assets/article-output.md) 建立可交接產物。
 

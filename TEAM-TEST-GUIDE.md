@@ -46,7 +46,7 @@ Pass criteria：
 - 不會直接虛構 Budget、KPI、受眾或完整 Funnel；
 - 回答下一題前會等待用戶選擇。
 
-## Test 3 — SEO + GEO Blog — Student Edition
+## Test 3 — SEO + GEO Blog Writing
 
 ```text
 Use $seo-geo-content。
@@ -69,9 +69,13 @@ Pass criteria：
 
 在同一 Session 批准 Source Guide 後，Pass criteria：
 
-- 第二次只交 SEO Title and Angle，停在 `SEO_TITLE_REVIEW_STOP`；
+- 第二次交十個跨五種 angle family 嘅標題、Top 3 推薦及風險，停在 `SEO_TITLE_REVIEW_STOP`；
 - 批准標題後先建立 source-blind Article；
 - 公開正文不顯示來源名稱、URL、引用清單或研究過程；
+- 開場先處理真實工作問題，技術概念有轉成工作後果；
+- 重要例子包含 input、action、visible deliverable、work value 及 human boundary；
+- 至少有一個 reasoned company judgment，而唔係 generic advice 加品牌名；
+- Metadata、Reader Link／CTA Ledger、supported FAQ／Schema 與正文一致；
 - 要求 HTML 時，只有文章獲批准後先建立本機通用 HTML；
 - 未確認授權嘅 Source 圖片標示 `INTERNAL_REVIEW_ONLY`，不當成發布資產。
 

@@ -56,7 +56,7 @@ AI 會先讀取現有資料，再用 Grill Me 逐題確認重要決定，建立�
 
 👤 **你只需要**：提供題目、搜尋問題、目標客戶及可用來源。
 
-AI 會先建立 Source Guide，經你確認後先逐步處理標題、文章同本機 HTML。公開文章保持 source-blind；Company Brain、CTA、連結及圖片權利未確認時會保留清楚缺口。
+AI 會先建立 Source Guide，經你確認後先逐步處理標題、文章同本機 HTML。文章使用 practical-operator 風格、Owned Answer Units 及平台完整輸出；Company Brain、CTA、連結及圖片權利未確認時會保留清楚缺口。
 
 `Source Guide` → `Human Review` → `SEO Title` → `Human Review` → `Article + QA` → `Human Review` → `Local HTML`
 

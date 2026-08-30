@@ -26,6 +26,12 @@
 
 ## [Next step]
 
+## Owned answer unit ledger
+
+| Unit | Reader question | Body location | Company judgment | Visible output | Boundary | Claim label |
+| --- | --- | --- | --- | --- | --- | --- |
+|  |  |  |  |  |  | VERIFIED / COMPANY_FRAMEWORK / INFERENCE / SOURCE_NEEDED |
+
 ## SEO fields
 
 - Meta title:
@@ -34,6 +40,8 @@
 - Primary query:
 - Related questions:
 - Suggested internal links:
+- Supported FAQ:
+- Schema recommendation: Article / FAQPage / NONE
 
 ## Reader link ledger
 
@@ -51,6 +59,14 @@ Keep source names and URLs here. Do not include this section in the public artic
 | --- | --- | --- | --- | --- |
 |  |  |  | VERIFIED / TBC | INCLUDE / REVIEW_ONLY / EXCLUDE |
 
+## Optional GEO monitoring plan
+
+- Fixed prompts:
+- Language / region / interface:
+- Baseline date:
+- Repeat checkpoints:
+- Measure separately: Discovery / Selection / Absorption / Attribution / Accuracy / Stability / Action
+
 ## Open items
 
 - [ ] Company input
@@ -59,6 +75,8 @@ Keep source names and URLs here. Do not include this section in the public artic
 - [ ] CTA confirmation
 - [ ] Reader link verification
 - [ ] Image rights and placement
+- [ ] Owned answer units and originality
+- [ ] FAQ / Schema support
 
 ## Review result
 
