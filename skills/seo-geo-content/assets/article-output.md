@@ -108,6 +108,29 @@ Use [geo-readiness-scorecard.md](../references/geo-readiness-scorecard.md). Link
 - Reviewed at:
 - Remaining risks:
 
+## Optional Blog publish handoff
+
+Use only after Article Human Review when handing off to `landing-page-blog-deployer`.
+
+- File: `blog-publish-handoff.json`
+- Schema version: `1.0`
+- Handoff type: `blog-publish`
+- Approval status: APPROVED_FOR_ASSEMBLY / REVIEW_REQUIRED / BLOCKED
+- Source artifact:
+- Content source:
+- Slug:
+- Title:
+- Meta title:
+- Meta description:
+- Canonical path: `/blog/<slug>`
+- Language:
+- Internal links:
+- CTA label／target／status:
+- Article Schema:
+- FAQ Schema／visible-content match:
+- Image rights status:
+- Open items:
+
 ## Structural validation receipt
 
 - Validator command:
@@ -123,7 +146,7 @@ Use [geo-readiness-scorecard.md](../references/geo-readiness-scorecard.md). Link
 ## Phase receipt
 
 - Current phase:
-- Status: SOURCE_GUIDE_REVIEW_STOP / SEO_TITLE_REVIEW_STOP / BLOG_REVIEW_STOP / HTML_REVIEW_STOP
+- Status: SOURCE_GUIDE_REVIEW_STOP / SEO_TITLE_REVIEW_STOP / BLOG_REVIEW_STOP / HTML_REVIEW_STOP / BLOG_HANDOFF_READY
 - Confirmed:
 - TBC / blocked items:
 - Next approval needed:

@@ -1,6 +1,6 @@
 ---
 name: sales-funnel-landing-page-builder
-description: Use when a user wants to plan, write, build, revise or verify a conversion-focused single-offer Landing Page with one lead form, UTM tracking, design review and optional CRM or email follow-up. Not for multi-page websites, quizzes, scorecards or advanced assessment funnels.
+description: Use when a user wants guided planning, writing, building, revising or verification of a conversion-focused single-offer Landing Page with one lead form, UTM tracking, design review, optional CRM or email follow-up, and an approved handoff to a wider landing-page-plus-blog site. Not for multi-page assembly, quizzes, scorecards or advanced assessment funnels.
 ---
 
 # Sales Funnel Landing Page Builder
@@ -28,9 +28,24 @@ Standard V1 只處理 single-offer direct lead capture。Quiz、scorecard、多�
 | Existing page needs revision | Workflow + requested reference only | Scoped revision and regression QA | 保持原有 release status |
 | Form／CRM／email／reminder work | [funnel-operations.md](references/funnel-operations.md) | Operations contract and receipt | `OPS_QA_PASSED` |
 | Completed page needs final QA | [quality-check.md](references/quality-check.md) | QA result and open items | `QA_REVIEW_STOP` |
+| Approved page needs Blog／site assembly | Workflow handoff section + [landing-page-output.md](assets/landing-page-output.md) | `landing-site-handoff.json` | `LANDING_HANDOFF_READY` |
 | Approved production release | Workflow release section + relevant QA reference | Destination read-back | `PUBLIC_RELEASE_READY` only when proven |
 
 不要因為用戶提供咗 reference 或 Design MD，就跳過 Offer、copy、CTA、資料用途及 destination 確認。
+
+## Guided student contract
+
+新學生只需要啟動一次 Skill，之後用自然短答逐步完成：
+
+1. 先讀 current project／Company context／已有 Brief、Style、Copy、page 同 receipts，預填已知答案；
+2. 顯示 `已完成／仍欠／而家處理／下一個 review gate`；
+3. 一次只問一條會實質改變 Audience、Offer、CTA、Style、copy、資料處理或 release 嘅未回答問題；
+4. 保存答案到 current production pack 或 project decision file，再完成因此解鎖嘅安全工作；
+5. 接受「Brief 確認」、「揀 A」、「Copy 批准」等短答，只將佢視為目前可見 gate 嘅批准；
+6. 中斷後由 artifacts 同 receipt 重建進度，由最早未通過 gate 繼續，不要求由頭回答；
+7. 出錯時先講保留咗乜、邊一步失敗同建議修復；只有多個選擇會改變結果時先問一題。
+
+不要叫學生逐段複製 prompts、自己選 framework、重述 repo 已經提供嘅 technical context，或用 Git／Vercel 知識作為開始條件。
 
 ## Intake
 
@@ -143,6 +158,19 @@ Validator exit code `0` 只證明 receipt 結構同指定 evidence 完整，不�
 
 Deploy page、deploy endpoint、install trigger、write CRM、send email、connect analytics 及 publish tracking link 都係獨立 external mutation。逐項取得 current-turn approval；完成後由真實 destination read back。不得用本機畫面、success message 或單一 HTTP response 代替 destination proof。
 
+## Landing site handoff
+
+如果用戶要將已批准 Landing Page 同 Blog 組合成一個 multi-route website，本 Skill 停止擴張 scope，建立 `landing-site-handoff.json` 交俾 `landing-page-blog-deployer`。Handoff contract 見 [landing-page-output.md](assets/landing-page-output.md)，最少包括：
+
+- source artifact、approval status 同 `/` route；
+- Primary CTA label、intent、target 同 verification status；
+- form anchor、fields、consent、success action 同 endpoint status；
+- 五個 UTM fields、first-touch requirement 同 registry path；
+- design／operations／mobile QA evidence；
+- open items。
+
+只有所有公開必需項目已確認、`open_items` 為空，而且 approval status 係 `APPROVED_FOR_ASSEMBLY`，先使用 `LANDING_HANDOFF_READY`。Handoff 不批准 deploy、CRM write、email send、analytics connection 或 domain change。
+
 ## Status contract
 
 - `BRIEF_REVIEW_STOP`：Brief 待確認；
@@ -154,6 +182,7 @@ Deploy page、deploy endpoint、install trigger、write CRM、send email、conne
 - `OPS_QA_PASSED`：endpoint、schema、scoring、automation logic 通過，不代表 production journey；
 - `PRODUCTION_SMOKE_VERIFIED`：一次獲批准 owned-contact flow 已有 CRM／Sent-mail read-back；
 - `QA_REVIEW_STOP`：已完成所述 QA，仍待 Human Review；
+- `LANDING_HANDOFF_READY`：Landing Page assembly input 已批准並產生可驗證 handoff；
 - `PUBLIC_RELEASE_READY`：current claims、CTA、destination、consent、data behaviour、tracking 及 public read-back 全部通過。
 
 不可由意圖、畫面外觀、named Skill、preview URL 或 receipt 自動升級狀態。

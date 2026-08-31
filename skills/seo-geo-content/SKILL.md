@@ -1,6 +1,6 @@
 ---
 name: seo-geo-content
-description: Use when a user wants to turn supplied source material into an original SEO/GEO blog, improve an article with answer-first H2/H3 structure, company authority or evidence-backed public data links, or create a local HTML review with Company Brain, CTA, link, claim, image, and Human Review controls.
+description: Use when a user wants guided creation of an original SEO/GEO blog from supplied source material, stronger answer-first H2/H3 structure, company authority or evidence-backed public data links, a local HTML review, or an approved Blog handoff for a separate website deployment workflow. Does not publish or deploy.
 ---
 
 # SEO + GEO Blog Writing
@@ -22,8 +22,23 @@ description: Use when a user wants to turn supplied source material into an orig
 | Approved Guide and title | 上述兩份 + [writing-style-and-platform-rules.md](references/writing-style-and-platform-rules.md)；如要求強答案層次／公司權威／公開數據，再讀 [answer-authority-and-evidence.md](references/answer-authority-and-evidence.md) + output templates | Article production pack | `BLOG_REVIEW_STOP` |
 | Completed article draft | [content-quality-check.md](references/content-quality-check.md) | QA result and open items | 保持 `BLOG_REVIEW_STOP` |
 | Approved article with HTML request | Workflow + writing-style reference 嘅 Local HTML section | Local generic HTML | `HTML_REVIEW_STOP` |
+| Approved article needs website assembly | Workflow handoff section + [article-output.md](assets/article-output.md) | `blog-publish-handoff.json` | `BLOG_HANDOFF_READY` |
 
 只讀目前階段需要嘅檔案。[article-brief.md](assets/article-brief.md) 用於整理 approved brief；[article-output.md](assets/article-output.md) 用於組裝文章 production pack。
+
+## Guided student contract
+
+新學生只需要啟動一次 Skill：
+
+1. 先讀 current Source、Company context、已有 Guide／Title／Draft／HTML 同 receipt，預填已知資料；
+2. 顯示 `已完成／仍欠／而家處理／下一個 review gate`；
+3. 一次只問一條會實質改變 search angle、Claim、公司觀點、CTA、links、圖片權利或 approval 嘅問題；
+4. 保存回答，再完成因此解鎖嘅安全工作；
+5. 接受「Guide 確認」、「揀標題 2」、「Blog 批准」等短答，只批准目前可見 gate；
+6. 中斷後由 artifacts 重建進度，從最早未通過 gate 繼續；
+7. 出錯時保留已批准內容，先修復失敗 gate，唔要求學生由頭寫過。
+
+不要要求學生逐段複製 technical prompts。可由 Source 或 project 發現嘅答案直接讀取，只有真正未決定事項先問。
 
 ## Intake
 
@@ -140,6 +155,22 @@ CTA 必須對應已確認 Offer、適合本文讀者及真實目的地；否則�
 
 停在 `HTML_REVIEW_STOP`。Google Doc、CMS upload、publish、deploy 或 send 需要用戶在當前對話另行批准指定目標；完成後必須 read back 真實目的地。
 
+## Phase 5: Blog publish handoff
+
+文章經 Human Review 批准後，可以建立 `blog-publish-handoff.json` 交俾 `landing-page-blog-deployer`。HTML 唔係必要條件；可以交 Markdown、MDX、JSON 或現有 CMS-safe source，但必須指向真實 artifact。
+
+Handoff contract 見 [article-output.md](assets/article-output.md)，最少包括：
+
+- source artifact、content source、approval status；
+- slug、title、meta title、meta description、language；
+- canonical path；
+- verified internal links；
+- CTA label、target、status；
+- Article／FAQ schema recommendation 同 visible-content match；
+- image rights status 同 open items。
+
+只有文章、metadata、CTA、公開 links、rights 同 Schema support 已確認，而且 `open_items` 為空，先使用 `APPROVED_FOR_ASSEMBLY` 同 `BLOG_HANDOFF_READY`。呢份 handoff 不批准 CMS upload、Preview、Production deploy、tracking、CRM、email 或 domain action。
+
 ## Completion receipt
 
 每個階段最後列出：
@@ -150,4 +181,4 @@ CTA 必須對應已確認 Offer、適合本文讀者及真實目的地；否則�
 - `TBC / blocked items`；
 - `Next approval needed`。
 
-任何 Review Stop、`READY_FOR_REVIEW` 或本機 HTML 都不等於已發布。
+Phase receipt status 加入 `BLOG_HANDOFF_READY`。任何 Review Stop、`READY_FOR_REVIEW`、本機 HTML 或 handoff 都不等於已發布。

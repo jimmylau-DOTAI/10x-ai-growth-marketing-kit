@@ -73,6 +73,24 @@
 - Design receipt:
 - Operations receipt:
 
+## Optional landing site handoff
+
+Use when an approved page will be assembled with a Blog by `landing-page-blog-deployer`.
+
+- File: `landing-site-handoff.json`
+- Schema version: `1.0`
+- Handoff type: `landing-site`
+- Approval status: APPROVED_FOR_ASSEMBLY / REVIEW_REQUIRED / BLOCKED
+- Source artifact:
+- Route: `/`
+- Primary CTA label／intent／target／status:
+- Form anchor／fields／consent／success action／endpoint status:
+- UTM fields: utm_source / utm_medium / utm_campaign / utm_content / utm_term
+- First-touch required:
+- UTM registry path:
+- Design／operations／mobile QA evidence:
+- Open items:
+
 ## QA and release
 
 - Desktop evidence:

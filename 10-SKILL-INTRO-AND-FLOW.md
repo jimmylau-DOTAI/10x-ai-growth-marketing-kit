@@ -92,7 +92,19 @@ AI 會先鎖定 Brief，再逐步確認 Style 同 Copy，建立簡單直接嘅 L
 
 ---
 
-## 6. Proposal Deck Builder／客戶提案簡報
+## 6. Landing Page + Blog Deployer／網站組合及部署
+
+`約 30–90 分鐘`
+
+👤 **你只需要**：提供已批准 Landing／Blog artifacts 同現有 website project；AI 會自行讀取可發現資料，再一次只問一條必要問題。
+
+AI 會保存現有進度，修復 handoff 缺口，組合 Landing Page、Blog index 同 article routes，再驗證 CTA、UTM、Form 同手機固定 CTA。先完成 Local QA 同 Vercel Preview，經 Human Review 及當次 Production approval 後先正式部署並 read back。
+
+`Resume／Inspect` → `Repair inputs` → `Assemble` → `Local QA` → `Preview` → `Human Review` → `Production Deploy` → `Live Read-back`
+
+---
+
+## 7. Proposal Deck Builder／客戶提案簡報
 
 `約 60–120 分鐘`
 
@@ -104,7 +116,7 @@ AI 會將散亂資料整理成有說服力嘅 Proposal Storyline，再製作逐�
 
 ---
 
-## 7. Instagram Post／IG 單張圖文
+## 8. Instagram Post／IG 單張圖文
 
 `約 20–45 分鐘`
 
@@ -118,7 +130,7 @@ AI 會將一個重點變成完整 Instagram Post，包括 Hook、Caption、4:5 �
 
 ---
 
-## 8. LinkedIn Post Writing／LinkedIn 專業內容
+## 9. LinkedIn Post Writing／LinkedIn 專業內容
 
 `約 10–25 分鐘`
 
@@ -130,7 +142,7 @@ AI 會將內容改寫成適合 LinkedIn 嘅專業敘事，加入商業 Context�
 
 ---
 
-## 9. HK Threads Writer／香港 Threads 內容
+## 10. HK Threads Writer／香港 Threads 內容
 
 `約 5–15 分鐘`
 
@@ -142,14 +154,16 @@ AI 會先保護 Source、身份同 Claim boundary，再按證據選擇 Hot Take�
 
 ---
 
-## 九個 Skills 嘅整體 Flow
+## 十個 Skills 嘅整體 Flow
 
 ```text
 Company Brain Setup
         ↓
 Social Content Research
-        ├── SEO + GEO Content
-        ├── Sales Funnel Landing Page Builder
+        ├── SEO + GEO Content ───────────────┐
+        ├── Sales Funnel Landing Page Builder ─┤
+        │                                      ↓
+        │                          Landing Page + Blog Deployer
         ├── Proposal Deck Builder
         └── Social Post Writing
                 ├── Instagram Post
@@ -163,7 +177,9 @@ Social Content Research
 - `Instagram Post` 負責 Caption、4:5 單張圖、中文排版及品牌 QA。
 - `LinkedIn Post Writing` 負責 Founder／Company 專業敘事。
 - `HK Threads Writer` 負責香港廣東話 Threads、Hook payoff、手機節奏、三種交付模式及逐段 500 字 Gate。
-- `Sales Funnel Landing Page Builder` 負責一個 Offer 嘅頁面文案、設計、Build、UTM、短表格及可選 Lead Operations；進階 Assessment 另開 Skill。
+- `SEO + GEO Content` 負責文章研究、寫作、QA 同 approved Blog handoff；不負責 deploy。
+- `Sales Funnel Landing Page Builder` 負責一個 Offer 嘅頁面文案、設計、Build、UTM、短表格、可選 Lead Operations 同 approved Landing handoff；進階 Assessment 另開 Skill。
+- `Landing Page + Blog Deployer` 負責讀取兩份 approved handoff、續做／修復、multi-route assembly、Vercel Preview／Production gate 同 live read-back；不重新寫 Offer 或 Blog。
 - `Proposal Deck Builder` 負責客戶提案 Storyline、逐頁內容及可編輯 PPTX。
 
 ## 共通安全界線

@@ -1,5 +1,11 @@
 # Workflow and Review Gates
 
+## Guided interview loop
+
+Standard student experience係一次啟動後逐步完成。先從 current artifacts 預填，顯示進度，只問最早一個會改變內容或 gate 嘅未回答問題。保存答案、完成安全工作、更新 receipt，然後自動前進。
+
+短答只批准目前顯示嘅 Guide、Title、Article 或 HTML gate。Resume 時以 artifacts 同 receipts 為準，保留已批准內容，只重做缺證據或失敗階段。
+
 ## 1. Source Guide
 
 目的係理解 Source，而唔係即時寫 Blog。
@@ -129,3 +135,9 @@ HTML 最少要求：
 ## 5. Boundary after HTML
 
 Google Doc、CMS upload、publish、deploy 或 send 屬於另一個交付階段。只有用戶在當前對話明確批准目標及動作後，先可以使用相應工具；完成後要 read back 真實目的地。
+
+## 6. Blog publish handoff
+
+文章經 Human Review 批准後，可產生 `blog-publish-handoff.json`。Handoff 指向真實 article source，列出 slug、metadata、canonical、internal links、CTA、Schema、image rights 同 open items。
+
+`APPROVED_FOR_ASSEMBLY` 只代表內容可以交俾 `landing-page-blog-deployer` 進行網站組合。佢唔等於 CMS upload、Preview、Production、tracking 或其他外部 mutation 已批准。

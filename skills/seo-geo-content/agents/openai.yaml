@@ -1,4 +1,4 @@
 interface:
   display_name: "SEO + GEO Blog Writing"
   short_description: "將 Source 變成可搜尋、可引用、可審批嘅 SEO/GEO Blog"
-  default_prompt: "Use $seo-geo-content to turn this source into a polished SEO/GEO blog with the approved company voice, CTA, and platform-ready outputs."
+  default_prompt: "Use $seo-geo-content to guide me one decision at a time from this source to an approved SEO/GEO Blog and a deployment-ready content handoff."

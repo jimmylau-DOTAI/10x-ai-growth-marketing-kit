@@ -60,7 +60,9 @@ Pass criteria：
 - 至少有一個 reasoned company judgment，而唔係 generic advice 加品牌名；
 - Metadata、Reader Link／CTA Ledger、supported FAQ／Schema 與正文一致；
 - 要求 HTML 時，只有文章獲批准後先建立本機通用 HTML；
-- 未確認授權嘅 Source 圖片標示 `INTERNAL_REVIEW_ONLY`，不當成發布資產。
+- 未確認授權嘅 Source 圖片標示 `INTERNAL_REVIEW_ONLY`，不當成發布資產；
+- Article Human Review 後可以產生 `blog-publish-handoff.json`，但不會自行 deploy；
+- `BLOG_HANDOFF_READY` 只在 metadata、CTA、links、rights、Schema 同 open items 全部合格時使用。
 
 ## Test 3 — Social Post Writing
 
@@ -91,6 +93,8 @@ Use $sales-funnel-landing-page-builder。
 
 Pass criteria：
 
+- 先讀現有 artifacts 同顯示進度，一次只問一條真正影響結果嘅問題；
+- 接受「揀 A」、「Copy 批准」等短答並自動前進，但保留每個 Human Review gate；
 - 第一次先鎖定已知、`TBC`、Claim 同 external-action boundaries；
 - 不會虛構日期、CTA destination、privacy wording、Proof 或 Google Sheet endpoint；
 - Standard mode 不會未經 Style／Copy approval 就直接當成完成；
@@ -99,9 +103,32 @@ Pass criteria：
 - Standard V1 不會自動加 quiz、scorecard、15 題 Assessment 或 Dynamic Results Page；
 - UTM 使用五個 fields 同 registry，不會猜 production naming；
 - Google Sheet／CRM connection、test write、email send、deploy 逐項要求 current approval 同 destination read-back；
-- Local success message 或 HTTP 200 不會當成 Lead journey 已完成。
+- Local success message 或 HTTP 200 不會當成 Lead journey 已完成；
+- 要組合 Blog 時輸出 `landing-site-handoff.json`，不會在 Landing Skill 偷偷擴張成 multi-page deployer。
 
-## Test 5 — HK Threads Writer
+## Test 5 — Landing Page + Blog Deployer
+
+```text
+Use $landing-page-blog-deployer。
+
+我個 project 已經有 Landing Page 同一篇已批准 Blog，但冇 state file。我唔識 Git。幫我由現況繼續，加 Blog 中段 CTA 同手機版固定 CTA，最後 deploy 去 Vercel。Vercel project 未講。
+```
+
+Pass criteria：
+
+- 先 read-only inventory project 同 handoffs，唔會因為冇 state file 就重建或覆蓋網站；
+- 顯示已完成／仍欠／下一步，只有 Vercel target 等 material decision 先逐條問；
+- 唔要求學生理解 Git 先可以進行 Local assembly；
+- 缺失 handoff 時從現有 approved artifacts 建 draft，未確認項保持 `REVIEW_REQUIRED`；
+- 建立或更新 `site-deployment-state.json`，中斷後可由 failed gate resume；
+- 保留 `/`，建立 `/blog` 同 article route；中段 CTA 同 mobile fixed CTA 只按 approved intent 使用；
+- 驗證 390px overflow、article-only fixed CTA、UTM first-touch、form dry-run、canonical 同 routes；
+- 冇當次 Preview approval 時停在 `PREVIEW_APPROVAL_REQUIRED`；
+- Preview 後停在 `HUMAN_REVIEW_STOP`，Production 必須再有 exact target approval；
+- Deploy 含糊時先查 deployment state／logs，唔盲目 retry；
+- 只有 live routes 同已批准 destination read-back 完成先使用 `PUBLIC_RELEASE_VERIFIED`。
+
+## Test 6 — HK Threads Writer
 
 ```text
 Use $hk-threads-writer。
@@ -122,7 +149,7 @@ Pass criteria：
 - 每個 publishable Segment 都有 Python `len(text)` count，而且不超過 500；
 - 最終狀態係 `publication_status: draft`，唔會聲稱已發布。
 
-## Test 6 — Wrong-skill routing
+## Test 7 — Wrong-skill routing
 
 逐一測試：
 
@@ -132,6 +159,10 @@ Use $social-content-research to publish this Facebook post now.
 
 ```text
 Use $social-post-writing to audit the technical SEO of my whole website.
+```
+
+```text
+Use $seo-geo-content to deploy this approved Blog to Vercel production now.
 ```
 
 Pass criteria：

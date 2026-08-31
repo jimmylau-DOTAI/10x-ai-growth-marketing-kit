@@ -1,5 +1,11 @@
 # Workflow and Review Gates
 
+## Guided interview loop
+
+Standard student experience係一次啟動後連續完成，唔係一疊 copyable prompts。先從 current artifacts 預填，再顯示進度；只問最早一個會改變結果嘅問題。保存回答、完成安全工作、更新 receipt，然後自動前進到下一個 gate。
+
+短答只批准目前顯示嘅決定。每個 Human Review stop 保持獨立；Resume 時以 artifacts／receipts 證據為準，state 聲稱完成但冇證據就只降級相關 gate，唔推倒其他已通過階段。
+
 ## 1. Modes
 
 ### Standard
@@ -97,3 +103,9 @@ Receipt validator 通過後仍要做 rendered browser QA。Visual review、DOM�
 9. 記錄 recipient inbox placement、open、button click 或 group membership 等未證明項目。
 
 HTTP success、success screen、redirect、同一 request 寫入嘅 timestamp 都唔可以單獨證明完整 journey。
+
+## 7. Landing plus Blog handoff
+
+當要求變成 `/`、`/blog` 同 article routes 嘅同一網站，Landing Skill 完成 `landing-site-handoff.json` 後交俾 `landing-page-blog-deployer`，唔在本 Skill 重建 Blog／site deployment 功能。
+
+Handoff 必須指向已批准 artifacts，列出 CTA、form、UTM、QA evidence 同 open items。`APPROVED_FOR_ASSEMBLY` 只代表可以進入 assembly，唔代表 Preview、Production、CRM、email、analytics 或 domain action 已批准。
