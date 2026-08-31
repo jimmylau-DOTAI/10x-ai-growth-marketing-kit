@@ -19,13 +19,26 @@
 - Company Brain status: PROVIDED / NOT PROVIDED / SYNTHETIC_BRAND
 - Offer status: VERIFIED / TBC / NOT APPLICABLE
 - CTA: VERIFIED / CTA_TBC / NOT APPLICABLE
-- Public source disclosure: NO / REQUIRED
+- Answer profile: standard / authority_evidence_longform
+- Authority density: owned_units / per_subsection
+- Public evidence mode: source_blind / reader_evidence
+- Opening brand-free visible characters: 0 / 100
+- H2 answer target characters: 0 / 150
+- H3 explanation target characters: 0 / 150
 
 ## Source and claim map
 
 | Claim / section | Status | Source | Notes |
 | --- | --- | --- | --- |
 |  | VERIFIED / PROVIDED / INFERENCE / SOURCE_NEEDED |  |  |
+
+## Public evidence atoms
+
+Complete only when `public_evidence_mode: reader_evidence`.
+
+| Public claim | Status | Organization / year | Geography | Sample / population | Metric denominator | Direct source | Limitation | Company interpretation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | VERIFIED / PROVIDED / INFERENCE / SOURCE_NEEDED |  |  |  |  |  |  |  |
 
 ## Structure
 
@@ -37,7 +50,7 @@
 
 | Anchor | Destination | Link class | Purpose | Status |
 | --- | --- | --- | --- | --- |
-|  |  | authority / internal / CTA / provenance |  | VERIFIED / LINK_TBC / INTERNAL_ONLY |
+|  |  | authority / evidence / internal / CTA / provenance |  | VERIFIED / LINK_TBC / INTERNAL_ONLY |
 
 ## Images
 

@@ -8,9 +8,20 @@
 - Core answer:
 - Company Brain / Offer status:
 - CTA status:
+- Answer profile:
+- Authority density:
+- Public evidence mode:
 - Status:
 
 ## Source and claim notes
+
+## Evidence atom ledger
+
+Complete when public evidence is requested.
+
+| Public claim | Status | Organization / year | Geography | Sample / population | Metric denominator | Direct source | Limitation | Company interpretation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | VERIFIED / PROVIDED / INFERENCE / SOURCE_NEEDED |  |  |  |  |  |  |  |
 
 ## Outline
 
@@ -47,7 +58,7 @@
 
 | Anchor | Destination | Link class | Purpose | Status |
 | --- | --- | --- | --- | --- |
-|  |  | authority / internal / CTA |  | VERIFIED / LINK_TBC |
+|  |  | authority / evidence / internal / CTA |  | VERIFIED / LINK_TBC |
 
 ## Internal provenance
 
@@ -67,6 +78,15 @@ Keep source names and URLs here. Do not include this section in the public artic
 - Repeat checkpoints:
 - Measure separately: Discovery / Selection / Absorption / Attribution / Accuracy / Stability / Action
 
+## Optional GEO readiness score
+
+Use [geo-readiness-scorecard.md](../references/geo-readiness-scorecard.md). Link、data、FAQ and brand-name counts do not earn points by themselves.
+
+- Score:
+- Status: DRAFT / GEO_REVIEW_READY / BLOCKED
+- Evidence pointers:
+- Deductions / open items:
+
 ## Open items
 
 - [ ] Company input
@@ -76,6 +96,9 @@ Keep source names and URLs here. Do not include this section in the public artic
 - [ ] Reader link verification
 - [ ] Image rights and placement
 - [ ] Owned answer units and originality
+- [ ] Answer profile and rendered opening
+- [ ] H2 / H3 answer depth
+- [ ] Evidence atoms and market wording
 - [ ] FAQ / Schema support
 
 ## Review result
@@ -84,6 +107,18 @@ Keep source names and URLs here. Do not include this section in the public artic
 - Reviewer:
 - Reviewed at:
 - Remaining risks:
+
+## Structural validation receipt
+
+- Validator command:
+- Opening result:
+- Body H1 count:
+- H2 preamble result:
+- H3 prose result:
+- Authority density result:
+- FAQ mirror result:
+- Internal / external links:
+- Images:
 
 ## Phase receipt
 

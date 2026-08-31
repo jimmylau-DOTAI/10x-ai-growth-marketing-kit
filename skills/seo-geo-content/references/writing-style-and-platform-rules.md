@@ -48,6 +48,8 @@ Do not force every topic into the same template. Select the movement that matche
 - Explain the concept and work consequence before using bullets or a table.
 - Keep paragraphs self-contained enough to be understood when extracted, but do not turn the whole article into mechanical FAQ blocks.
 
+When the brief selects `authority_evidence_longform`, read [answer-authority-and-evidence.md](answer-authority-and-evidence.md) and apply its rendered first-100-character、H2 answer-block、H3 explanation、authority-density and public-evidence contracts. The approximately 150-character targets are long-form review aids, not padding instructions.
+
 For practical examples, use:
 
 ```text
@@ -85,12 +87,16 @@ An article around 1,500 Chinese characters or more normally needs 3–5 strong u
 
 Record each unit internally with its reader question、body location、visible output、boundary and claim label. Do not rename an external mechanism as a company invention; if the draft still contains only generic advice, report an originality gap.
 
-## Public-copy discipline
+`owned_units` is the default authority density. Use `per_subsection` only when the user／approved brief explicitly asks for a distinct company interpretation in every non-FAQ H3. A repeated brand name or a generic sentence such as「公司認為以上很重要」does not satisfy that mode.
 
-- Keep Source names、URLs、citations、claim labels and research notes outside the public body unless a mandatory disclosure is approved.
+## Public-copy evidence discipline
+
+- In `source_blind`, keep Source names、URLs、citations、claim labels and research notes outside the public body.
+- In `reader_evidence`, publish only the verified statistic／claim、scope／limitation and direct primary-source link approved by the brief. Internal claim labels、research notes and coverage maps remain private.
 - Do not narrate internal workflow language such as `source-backed`、`claim boundary`、`artifact`、`可驗收` or `review gate` unless it is genuinely useful to the reader.
 - Keep a caveat only when it changes permission、safety、rights、availability、cost、confidence or the next decision.
 - Separate fact、company judgment and recommendation through clear prose rather than repeating defensive disclaimers.
+- Do not call a work scenario a market observation. Market language requires evidence with a matching geography、sample and scope.
 
 ## SEO output rules
 
@@ -150,9 +156,13 @@ Publication proves only that the page exists. It does not prove any later layer.
 Before `BLOG_REVIEW_STOP`, confirm:
 
 - the opening answers the search job before promoting the company;
+- the rendered first 100 visible body characters follow the selected profile and brand boundary;
 - every H2／H3 contains explanatory prose, not headings plus lists only;
+- selected H2／H3 answer targets are met without padding complete short answers;
 - examples show input、action、deliverable、value and human boundary;
 - company judgments have reasons and are not disguised external claims;
+- `per_subsection` authority adds distinct value instead of repeated brand padding;
 - the article contains enough original answer units to justify publication;
+- every public statistic in `reader_evidence` retains year、geography、sample／denominator、scope、limitation and a direct verified source;
 - Metadata、links、CTA、FAQ／Schema and image decisions match the visible article;
 - public prose is natural and does not expose internal QA language.

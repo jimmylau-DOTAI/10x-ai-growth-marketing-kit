@@ -23,6 +23,9 @@ Reader decision or next action:
 Related questions:
 Content type:
 Why this type fits:
+Answer profile: standard | authority_evidence_longform
+Authority density: owned_units | per_subsection
+Public evidence mode: source_blind | reader_evidence
 ```
 
 ## Extractable answer pattern
@@ -44,9 +47,13 @@ Why this type fits:
 - 清楚區分來源所講、作者判斷及建議；
 - 使用第一手來源解釋產品或政策；
 - 使用獨立研究支持市場或行為 Claim；
-- 公開文章保持 source-blind，除非法律、合規或用戶明確要求披露；
+- 公開文章預設 `source_blind`；用戶／approved brief 明確要求公開數據、citation、原始來源連結或目的地要求時，使用 `reader_evidence`；
 - 不聲稱任何格式「保證被 AI 引用」。
+
+在 `reader_evidence` mode，每項 public data claim 都要有年份、地區、樣本／母體、真正分母、適用範圍、限制及直接 primary-source link。研究發現、公司判斷及 recommendation 分開處理；一個數字唔會自動證明公司方法、offer outcome 或全市場結論。
 
 ## Localisation
 
 香港內容應按真實讀者需要選擇書面中文、自然廣東話或混合語氣。不要只將海外術語換成繁體字；檢查本地流程、價格、法規、工具可用性及商業情境。
+
+有本地市場 evidence 先可以寫本地市場結論。冇 evidence 時，將內容寫成 bounded local work scenario，唔好用「市場顯示」「我哋觀察到」製造研究權威。

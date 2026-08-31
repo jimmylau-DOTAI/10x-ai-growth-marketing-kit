@@ -78,16 +78,18 @@ Claim status 使用：
 - Claim Notes；
 - QA Status and Open Items。
 
+如 brief 選擇 `authority_evidence_longform`，article output 亦要記錄 `authority_density`、`public_evidence_mode`、rendered opening QA、H2／H3 answer-depth QA，同埋 public data 使用嘅 Evidence Atom Ledger。
+
 文章階段可使用 `COMPANY_FRAMEWORK` 標示由 Company Brain 支持、確實屬於該公司嘅命名方法或 decision rule。不可將外部方法重新命名成公司原創；未有 ownership evidence 時只可使用 `INFERENCE` 或中性描述。
 
-公開正文保持 source-blind；內部 Claim Notes 保留 provenance。
+公開正文預設 `source_blind`；用戶／approved brief 明確要求公開 data／citation links 或目的地要求時，先使用 `reader_evidence`。兩個 mode 都要喺內部 Claim Notes 保留完整 provenance。
 
 ### Reader link ledger
 
 ```markdown
 | Anchor | Destination | Link class | Purpose | Status |
 | --- | --- | --- | --- | --- |
-|  |  | authority / internal / CTA |  | VERIFIED / LINK_TBC |
+|  |  | authority / evidence / internal / CTA |  | VERIFIED / LINK_TBC |
 ```
 
 每條連結要幫助理解或完成下一步。不可將 provenance URL 偽裝成 reader link，亦不可加入未核實、轉址不明或虛構連結。

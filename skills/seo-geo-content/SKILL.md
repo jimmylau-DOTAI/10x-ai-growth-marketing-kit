@@ -1,6 +1,6 @@
 ---
 name: seo-geo-content
-description: Use when a user wants to turn supplied source material into an original SEO/GEO blog, improve an article for search and AI answer engines, or create a local HTML review with Company Brain, CTA, link, claim, image, and Human Review controls.
+description: Use when a user wants to turn supplied source material into an original SEO/GEO blog, improve an article with answer-first H2/H3 structure, company authority or evidence-backed public data links, or create a local HTML review with Company Brain, CTA, link, claim, image, and Human Review controls.
 ---
 
 # SEO + GEO Blog Writing
@@ -19,7 +19,7 @@ description: Use when a user wants to turn supplied source material into an orig
 | --- | --- | --- | --- |
 | New raw Source | [workflow-and-review-gates.md](references/workflow-and-review-gates.md) | Source Guide | `SOURCE_GUIDE_REVIEW_STOP` |
 | Approved Source Guide | 上述 workflow + [seo-geo-framework.md](references/seo-geo-framework.md) | Search angle and titles | `SEO_TITLE_REVIEW_STOP` |
-| Approved Guide and title | 上述兩份 + [writing-style-and-platform-rules.md](references/writing-style-and-platform-rules.md) + output templates | Article production pack | `BLOG_REVIEW_STOP` |
+| Approved Guide and title | 上述兩份 + [writing-style-and-platform-rules.md](references/writing-style-and-platform-rules.md)；如要求強答案層次／公司權威／公開數據，再讀 [answer-authority-and-evidence.md](references/answer-authority-and-evidence.md) + output templates | Article production pack | `BLOG_REVIEW_STOP` |
 | Completed article draft | [content-quality-check.md](references/content-quality-check.md) | QA result and open items | 保持 `BLOG_REVIEW_STOP` |
 | Approved article with HTML request | Workflow + writing-style reference 嘅 Local HTML section | Local generic HTML | `HTML_REVIEW_STOP` |
 
@@ -33,13 +33,14 @@ description: Use when a user wants to turn supplied source material into an orig
 - Audience、地區、語言及主要搜尋問題；
 - 公司／品牌、Current Offer、CTA 及可用連結；
 - 文章用途、期望格式及目前已批准階段。
+- 是否要求首 100 個可見字 direct answer、約 150 字 H2／H3 解說、逐小節公司判斷或公開 data／citation links。
 
 資料不足但不影響目前階段時，使用 `TBC`、`LINK_TBC`、`CTA_TBC` 或 `SOURCE_NEEDED`。缺少會改變文章方向、事實邊界或 CTA 嘅資料時，先交目前可以確認嘅部分及列出 blocker，不要用假資料填空。
 
 ## Core working rules
 
 - Public copy 必須係原創 synthesis；不可貼上、翻譯、輕度改寫、模仿 Source 結構，或將外部方法重新命名成公司原創。
-- 除非法律、合規或用戶明確要求，公開文章不可出現 Source 名稱、URL、citation、研究筆記或「參考咗某篇文章」等來源痕跡。
+- Public evidence 預設 `source_blind`。只有用戶／approved brief 明確要求公開數據、citation、原始來源連結或目的地規則要求時，先使用 `reader_evidence`；兩個 mode 都禁止複製 Source 結構或公開內部研究過程。
 - Provenance 必須保留在內部 Source Guide、Claim Notes、Link Ledger 或 Review Receipt，不能因公開文章 source-blind 而刪走。
 - 不可虛構公司能力、案例、價格、成果、第一手經歷、圖片授權、連結、日期、數字或法規。
 - 不可保證排名、AI citation、traffic 或 conversion。
@@ -90,6 +91,7 @@ Claim 使用 `VERIFIED`、`PROVIDED`、`INFERENCE` 或 `SOURCE_NEEDED`。如果�
 - H1 及開首先直接回答 Primary Query，再補背景；不要先講公司或研究過程。
 - 每個 H2 回答一個主要讀者問題；H3 用於步驟、功能、比較、限制或情境。
 - 重要問題先用一至三句直接答案，再提供準則、步驟、例子、限制及下一步。
+- 如 brief 選擇 `authority_evidence_longform`，按 answer-authority reference 執行 rendered first-100、H2／H3 answer depth、authority density 及 reader-evidence contract；數字 target 唔可硬套到 FAQ、短 news 或完整短答案。
 - 清楚寫出 Entity、日期、地區、適用範圍及 Fact／Judgment／Recommendation 邊界。
 - FAQ 只回答正文已有足夠支持嘅真實問題；Schema 建議必須對應可見內容。
 - 不要為 SEO 堆砌關鍵字、重複摘要、空泛小標題或無用途連結。
@@ -104,20 +106,26 @@ Claim 使用 `VERIFIED`、`PROVIDED`、`INFERENCE` 或 `SOURCE_NEEDED`。如果�
 
 公司名稱只用於真實擁有嘅判斷、方法、證據、限制或下一步。重複品牌名不會增加權威；第一身實測只有在真實 artifact 或 receipt 存在時先可使用。
 
+`owned_units` 係預設 authority density。只有用戶／approved brief 明確要求，先使用 `per_subsection`；每個非 FAQ H3 必須增加一個不同而有理由嘅公司判斷，唔可以只重複品牌名。
+
 ### Complete the production pack
 
 交付內容包括：
 
 - H1、Meta title、Meta description and slug；
 - Primary Query、Search Intent and related questions；
+- Answer profile、authority density and public evidence mode；
 - Article body and Owned Answer Unit ledger；
+- Evidence atom ledger when public data is requested；
 - supported FAQ and Schema recommendation；
 - Internal-link plan、Reader Link／CTA Ledger；
 - Claim Notes、image manifest、QA Status and Open Items。
 
-Public links 只限已確認嘅第一方 authority／action page、真正相關站內內容或 CTA direct destination。每條連結要有描述性 anchor 及幫助讀者理解或行動；欠缺真實目標時使用 `LINK_TBC`，不可製造 `href`，亦不可將 provenance URL 偽裝成 reader link。
+Public links 只限已確認嘅第一方 authority／action page、`reader_evidence` 中直接支持相鄰 public claim 嘅 primary evidence、真正相關站內內容或 CTA direct destination。每條連結要有描述性 anchor 及幫助讀者理解或行動；欠缺真實目標時使用 `LINK_TBC`，不可製造 `href`，亦不可將內部 provenance URL 偽裝成 reader link。
 
 CTA 必須對應已確認 Offer、適合本文讀者及真實目的地；否則使用 `CTA_TBC`。完成初稿後讀完整 QA checklist，修正後停在 `BLOG_REVIEW_STOP`。
+
+如有 Python 3，可用 `scripts/validate_article_contract.py` 檢查 rendered opening、body H1、H2／H3 prose、authority density、FAQ mirror、links 同 images。Script 只驗結構，不能代替 evidence review、writing judgment 或 Human Review。
 
 ## Phase 4: Local HTML review
 
