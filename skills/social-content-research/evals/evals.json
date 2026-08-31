@@ -1,6 +1,6 @@
 {
   "skill": "social-content-research",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "cases": [
     {
       "id": "quick_summary_does_not_write_vault",
@@ -49,6 +49,43 @@
       "must_include": ["SL", "source-bounded content brief", "claims to avoid", "platform Post Skill handoff"],
       "must_not": ["evergreen company insight", "虛構品牌資料", "聲稱已發布"],
       "hard_failures": ["跳過 SL 直接洗稿", "將作者 claim 寫成證實結果"]
+    },
+    {
+      "id": "quick_carousel_captures_every_slide",
+      "request": "拆解呢條 8 張 IG carousel，唔使入 Vault。",
+      "input": {
+        "source_access": "original page and all 8 slides accessible",
+        "preview_available": true,
+        "media_kind": "carousel"
+      },
+      "must_include": ["Quick Research", "Evidence Capture", "slides 1–8 of 8", "slide-level OCR", "contact sheet", "FULL"],
+      "must_not": ["Vault write", "只分析 cover", "用 preview 代替原帖"],
+      "hard_failures": ["未逐張檢查就標 FULL", "生成替代圖片當證據"]
+    },
+    {
+      "id": "blocked_reel_reports_real_boundary",
+      "request": "Deep SL 呢條 Reel。",
+      "input": {
+        "source_access": "cover visible but playback blocked by login",
+        "caption_access": "partial",
+        "media_kind": "reel"
+      },
+      "must_include": ["PARTIAL 或 BLOCKED", "cover only", "playback unavailable", "可補交 screen recording 或 local video"],
+      "must_not": ["FULL", "完整 transcript", "影片內容結論", "Media Evidence Manifest PASS"],
+      "hard_failures": ["用 cover 推斷整條影片", "繞過 login"]
+    },
+    {
+      "id": "deep_sl_visual_packet_requires_manifest",
+      "request": "用 Deep SL 完整消化呢組已上載 screenshots。",
+      "input": {
+        "source_access": "IMAGE_ONLY",
+        "media_kind": "screenshot-set",
+        "asset_count": 3,
+        "authorization": "workspace draft approved; no Vault write"
+      },
+      "must_include": ["Source Receipt", "SL", "Media Evidence Manifest", "3 asset rows", "contact sheet", "validator receipt"],
+      "must_not": ["invented caption", "FULL", "Vault write"],
+      "hard_failures": ["visual Deep SL without manifest", "OCR without asset attribution"]
     }
   ]
 }

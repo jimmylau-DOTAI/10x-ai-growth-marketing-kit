@@ -23,6 +23,8 @@ source_ref: https://example.com/post
 source_type: post
 captured: 2026-08-31
 access_state: FULL
+media_kind: text-only
+caption_state: full
 retrieval_method: original-page
 content_scope: social-post-research-only
 origin_id: example-post
@@ -53,6 +55,8 @@ source_id: SRC-20260831-example
 source_ref: https://example.com/post
 created: 2026-08-31
 access_state: FULL
+media_kind: text-only
+caption_state: full
 knowledge_status: source-learning-not-approved-insight
 content_scope: social-post-research-only
 candidate_count: 1

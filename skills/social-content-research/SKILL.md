@@ -22,8 +22,8 @@ Source → Source Receipt → SL → Source-bounded Post Brief
 
 只選完成今次任務所需嘅最小模式：
 
-1. **Quick Research**：用戶只要 Summary、Hook analysis、content teardown 或 angles。預設不寫 Vault。
-2. **Deep SL**：用戶講 SL、Save and Learn、完整消化、存入 Vault，或 Project AGENTS.md 已明確授權。
+1. **Quick Research**：用戶只要 Summary、Hook analysis、content teardown、angles、只貼 bare URL，或只講一般 `sl` 而未要求持久化。先做 actual-media quick triage，預設不寫 Vault。
+2. **Deep SL**：用戶明確講 `deep sl`、Save and Learn、完整消化、入／存 Vault，或 Project AGENTS.md 已明確授權建立持久化產物。
 3. **Three-day Insight Review**：用戶要求整理 Insights，或已授權排程而 TRIAGE-STATE 顯示到期。
 4. **Post Handoff**：用戶要出 Post。先建立或讀取相關 SL，再交一份 content brief 俾平台 Post Skill。
 
@@ -33,12 +33,12 @@ Source → Source Receipt → SL → Source-bounded Post Brief
 
 先標示 Access state：
 
-- FULL：正文及主要媒體已讀；
-- PARTIAL：只讀到部分正文、預覽或部分媒體；
-- IMAGE_ONLY：只有圖片或截圖；
-- BLOCKED：內容無法存取。
+- FULL：Caption／正文及所有重要媒體都實際檢查；Carousel 已逐張到最後一張，影片已實際播放並檢查可取得嘅文字／音訊證據；
+- PARTIAL：只讀到部分正文、部分 slides／frames，Caption 未展開，或影片／音訊未能完整檢查；
+- IMAGE_ONLY：只有圖片、截圖或可見媒體，沒有可靠 Caption／完整貼文文字；
+- BLOCKED：因登入、權限、地區、付費牆、平台或技術限制而無法開啟來源。
 
-URL 優先讀原頁。影片先讀官方字幕；無字幕才轉錄實際音訊。Carousel 要逐張讀。標題、縮圖、搜尋摘要唔等於完整內容。
+URL 優先讀原頁。影片先讀官方字幕；無字幕才轉錄實際音訊。Carousel 要逐張讀。URL 成功開啟、標題、縮圖、封面截圖、Metadata、OpenGraph 圖、搜尋摘要或 preview text 都唔足以證明 `FULL`。
 
 每項內容再分：
 
@@ -48,13 +48,29 @@ URL 優先讀原頁。影片先讀官方字幕；無字幕才轉錄實際音訊�
 
 不可繞過登入、付費牆或權限；不可將完整受版權保護文章或逐字稿複製入 Vault。
 
+## Evidence Capture Before Analysis
+
+社交 URL 或來源包含 Instagram、Carousel、Reel、Screenshot、Image、Video 時，分析前必須讀 [social-evidence-capture.md](references/social-evidence-capture.md) 並完成適用嘅擷取步驟。Evidence Capture 係所有 mode 共用嘅 phase，唔係會自動寫 Vault 嘅第五個 mode。
+
+最少要完成：
+
+1. 分類來源及訂出 capture plan；
+2. 用現有 browser／media／vision 工具直接檢查原始內容；
+3. 取得實際 Caption／正文，並逐張擷取所有可存取 Carousel slides，或檢查真實影片及代表 frames／字幕／音訊；
+4. 對每個 content asset 做 OCR 及 visual inventory，記錄 index、方法、可見文字、畫面角色及限制；
+5. 根據真正取得嘅證據決定 Access state；
+6. 兩個或以上 assets 時，用原始 captures 建立有 index 標籤嘅 contact sheet，並在 channel 支援時連同個別／總覽 media 交回用戶。
+
+Carousel 未到實際最後一張或有 slide 無法檢查，只可標 `PARTIAL`。Reel／Video 必須實際播放或檢查可播放嘅 media file；單一 cover image 唔可以支援影片內容分析。工具不可用或來源受阻時，誠實報告限制及可由用戶補充嘅 exported images、screen recording、screenshots 或 copied Caption；不可模擬、重畫或用 image model 重建證據。
+
 ## Quick Research
 
-1. 記錄 Source、Access state、實際讀到與缺少部分。
-2. 分開內容主張、可見證據及 AI Interpretation。
-3. 按需要讀 [analysis-checklist.md](references/analysis-checklist.md)。
-4. 輸出 Summary、Hook／結構、值得學嘅機制、風險及原創 angles。
-5. 若用戶只要 Summary，停止；不要擴張成 SL。
+1. 如適用，先完成 Evidence Capture；記錄 Source、Access state、實際讀到與缺少部分。
+2. 將 captures／contact sheet 及 media completion 交回用戶，但預設不寫 Vault。
+3. 分開內容主張、可見證據及 AI Interpretation。
+4. 按需要讀 [analysis-checklist.md](references/analysis-checklist.md)。
+5. 輸出 Summary、Hook／結構、值得學嘅機制、風險及原創 angles。
+6. 若用戶只要 Summary，停止；不要擴張成 SL。
 
 完整輸出可用 [research-output-template.md](assets/research-output-template.md)。
 
@@ -64,10 +80,11 @@ URL 優先讀原頁。影片先讀官方字幕；無字幕才轉錄實際音訊�
 
 1. 建立一份 Source Receipt；
 2. 將同一來源寫成一份完整 SL；
-3. 每個獨特觀點寫成 source-bounded Candidate Card；
-4. 執行 SL validator；
-5. 將 SL 狀態設為 queued-for-insight-review；
-6. 跑 due-check；如狀態未排程，將 next_review_due 設為今次日期後三日並停止。
+3. 如來源有實際 visual／video evidence，建立與 Source Receipt 及 SL 配對嘅 Media Evidence Manifest；
+4. 每個獨特觀點寫成 source-bounded Candidate Card；
+5. 執行 SL packet validator；有 media manifest 時一併驗證；
+6. 將 SL 狀態設為 queued-for-insight-review；
+7. 跑 due-check；如狀態未排程，將 next_review_due 設為今次日期後三日並停止。
 
 一份 SL 必須令未讀原 Source 嘅人明白：
 
@@ -142,6 +159,10 @@ Content brief 最少包括：
 ## Quality gate
 
 - Access state 與實際證據一致；
+- Caption／preview／thumbnail／cover 沒有被當成完整 media evidence；
+- Carousel 每張可存取 slide 都有記錄，否則已標 `PARTIAL`；
+- Reel／Video 有實際 playback、frame 或 media-file evidence，否則沒有標 `FULL`；
+- 每個 capture 有 slide／frame-level OCR、visual note 及 limitation；多個 assets 有 contact sheet 或清楚解釋 channel／tool 限制；
 - Observed、Inferred、Not proven 已分開；
 - 沒有補寫睇唔到嘅 Caption、畫面、數字或成效；
 - SL 有完整方法／論點，而唔係幾句摘要；
@@ -157,6 +178,9 @@ Content brief 最少包括：
 
 - Mode；
 - Source 及 Access state；
+- Media captured，例如 `slides 1–8 of 8` 或 `6 representative frames`；
+- Caption state 及 OCR／visual evidence state；
+- Contact sheet／media attachment 或實際路徑；
 - 實際產物／路徑；
 - Candidate 數量或 review 結果；
 - Validator 狀態；

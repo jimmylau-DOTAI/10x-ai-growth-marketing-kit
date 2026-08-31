@@ -13,6 +13,22 @@
 - Read:
 - Missing:
 
+## Media evidence receipt
+
+- Media kind: carousel / reel / image-post / video-post / screenshot-set / local-video / text-only
+- Media completion: captured X of Y / unknown / not applicable
+- Caption state: full / partial / unavailable
+- Actual media inspected:
+- Contact sheet / attachments:
+- Missing or blocked:
+
+### Per-asset OCR and visual notes
+
+| Asset | Observed text / OCR | Visual role | Confidence / limitation |
+| --- | --- | --- | --- |
+
+Text-only source 要明確填 `not applicable`，不要為咗填表而製造 media detail。
+
 ## Evidence inventory
 
 ### Observed

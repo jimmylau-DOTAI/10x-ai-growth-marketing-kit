@@ -4,14 +4,15 @@
 
 SL 唔係將 Source 縮短。目標係保留完整方法、證據邊界及可用觀點，令另一個 Agent 無需重讀原 Source 都可理解內容。
 
-## File pair
+## SL packet
 
-每個來源建立一對檔案：
+每個來源建立一對核心檔案；有實際 visual／video evidence 時再加一份 manifest：
 
 - 01-Sources/SRC-YYYYMMDD-topic.md
+- 01-Sources/SRC-YYYYMMDD-topic-media.md（visual／video source 必須；`BLOCKED` 可省略）
 - 02-SL/SL-YYYYMMDD-topic.md
 
-topic 使用短小 kebab-case。Source ID 及 SL source_id 必須一致。
+topic 使用短小 kebab-case。Source Receipt、Media Evidence Manifest 及 SL 嘅 `source_id`、`source_ref` 必須一致。Manifest 使用 [media-evidence-manifest-template.md](../assets/media-evidence-manifest-template.md)。
 
 ## Source Receipt schema
 
@@ -24,6 +25,8 @@ source_ref: https://example.com/or-local-reference
 source_type: post
 captured: YYYY-MM-DD
 access_state: FULL
+media_kind: carousel
+caption_state: full
 retrieval_method: original-page
 content_scope: social-post-research-only
 origin_id: creator-or-publication-plus-item-id
@@ -33,9 +36,10 @@ origin_id: creator-or-publication-plus-item-id
 必須包含：
 
 1. Access receipt：讀到、讀唔到及擷取方法；
-2. Evidence inventory：Observed 嘅主張、例子、數字、畫面或 CTA；
-3. Limitations：過時風險、缺少內容、未能核實事項；
-4. SL route：對應 SL 檔案。
+2. Media completion：實際擷取數量、預期數量、Caption 狀態及 manifest route；text-only 填 `not applicable`；
+3. Evidence inventory：Observed 嘅主張、例子、數字、畫面或 CTA；
+4. Limitations：過時風險、缺少內容、未能核實事項；`PARTIAL`、`IMAGE_ONLY`、`BLOCKED` 必須寫具體原因；
+5. SL route：對應 SL 檔案。
 
 只保存研究需要嘅短引文或準確 paraphrase。不要複製完整文章或逐字稿。
 
@@ -49,6 +53,8 @@ source_id: SRC-YYYYMMDD-topic
 source_ref: https://example.com/or-local-reference
 created: YYYY-MM-DD
 access_state: FULL
+media_kind: carousel
+caption_state: full
 knowledge_status: source-learning-not-approved-insight
 content_scope: social-post-research-only
 candidate_count: 0
@@ -124,3 +130,11 @@ SL 合格條件：
 - 每張 Candidate 都可追溯到 Source Receipt；
 - 冇將作者聲稱誤寫成已證實結果；
 - 冇加入公司未提供嘅立場或商業資料。
+
+有 visual／video source 時，validator 要連 manifest 一齊跑：
+
+~~~bash
+python scripts/validate_sl_packet.py --source path/to/source.md --sl path/to/sl.md --media-manifest path/to/source-media.md
+~~~
+
+Text-only 或有具體 block reason 嘅 `BLOCKED` source 可省略 `--media-manifest`。Validator 只驗證 receipt、配對關係及 asset inventory；唔會以 raw binary 是否存在代替 runtime media inspection。
