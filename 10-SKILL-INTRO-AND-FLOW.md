@@ -26,6 +26,18 @@ AI 會整理公司定位、目標客戶、產品服務、品牌語氣及可使�
 
 ---
 
+## 1A. Save to Vault／Chatroom 變 Business Memory
+
+`約 5–20 分鐘`
+
+👤 **你只需要**：在現有 Company Vault root 開住今次 chatroom，再講「save to vault／記低落 Vault」。
+
+AI 會去重同解決新舊決定衝突，分開 Fact、Owner Decision、Observation、Interpretation、TBC 同 `NO_SAVE`，然後只寫入最細嘅正確 Vault 位置。公司 knowledge、Project record、Learning signal 同 rule candidate 各自保留 source、owner、privacy、Human Review 同 evidence gate。
+
+`讀 Vault rules` → `消化 chatroom` → `Privacy gate` → `Route plan` → `最小必要寫入` → `Read-back／receipt`
+
+---
+
 ## 2. Social Content Research／社交內容研究
 
 `約 10–30 分鐘`
@@ -158,6 +170,8 @@ AI 會先保護 Source、身份同 Claim boundary，再按證據選擇 Hot Take�
 
 ```text
 Company Brain Setup
+        ↕
+  Save to Vault
         ↓
 Social Content Research
         ├── SEO + GEO Content ───────────────┐
@@ -174,6 +188,7 @@ Social Content Research
 ## Skill 邊界
 
 - `Social Post Writing` 負責共用社交策略、Voice、One Point、CTA 及平台 Routing。
+- `Save to Vault` 負責將 chatroom durable information 路由到現有 Company Vault；唔建立新 Vault、唔 dump raw chat、唔自動批准公司 fact／rule／Skill。
 - `Instagram Post` 負責 Caption、4:5 單張圖、中文排版及品牌 QA。
 - `LinkedIn Post Writing` 負責 Founder／Company 專業敘事。
 - `HK Threads Writer` 負責香港廣東話 Threads、Hook payoff、手機節奏、三種交付模式及逐段 500 字 Gate。

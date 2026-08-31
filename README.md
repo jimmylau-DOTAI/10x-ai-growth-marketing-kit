@@ -16,13 +16,13 @@
 
 所以我整咗呢套 **10x AI Growth Marketing Kit**。
 
-目前先由八個可以安裝、閱讀、測試同修改嘅 AI Marketing Skills 開始，將內容研究、SEO／GEO 內容、社交文案、Instagram Carousel、AI 圖像製作、香港 Threads、Sales Funnel Landing Page 同 Landing Page + Blog deployment，串成一條有來源、有判斷、有交接、有 Human Review 嘅工作流。
+目前先由九個可以安裝、閱讀、測試同修改嘅 AI Marketing Skills 開始，將 chatroom business memory、內容研究、SEO／GEO 內容、社交文案、Instagram Carousel、AI 圖像製作、香港 Threads、Sales Funnel Landing Page 同 Landing Page + Blog deployment，串成一條有來源、有判斷、有交接、有 Human Review 嘅工作流。
 
-八個 Skills 只係起點。我哋會按照真實 Marketing 工作持續測試、改善同加入更多 Skills，令呢個 Kit 同每一個想用 AI 成長嘅人一齊成長。
+九個 Skills 只係起點。我哋會按照真實 Marketing 工作持續測試、改善同加入更多 Skills，令呢個 Kit 同每一個想用 AI 成長嘅人一齊成長。
 
 > **目前版本：** `v0.1-team-test`
 >
-> **目前可用：** 8 個完整 Skills
+> **目前可用：** 9 個完整 Skills
 >
 > **發展方向：** [Skill Roadmap](10-SKILL-INTRO-AND-FLOW.md)
 >
@@ -34,6 +34,7 @@
 
 | Skill | 幫你做乜 | 你需要提供 | 主要輸出 |
 | --- | --- | --- | --- |
+| [Save to Vault](skills/save-to-vault/) | 將 chatroom 去噪、分類並安全存入現有 Company Vault | 當前 chatroom、現有 Vault、save intent | Route plan、最小必要寫入、receipt、read-back |
 | [Social Content Research](skills/social-content-research/) | 將社交內容變成可驗證研究 | 連結、影片、截圖或逐字稿 | Evidence、內容分析、原創角度 |
 | [SEO + GEO Blog Writing](skills/seo-geo-content/) | 將 Source 變成有觀點、有搜尋價值、適合 AI Search 理解嘅 Blog | Source、搜尋問題、客群、Company Brain、CTA | Source Guide、標題、文章、Meta、Links、HTML Review、QA |
 | [Social Post Writing](skills/social-post-writing/) | 將可靠觀點變成平台原生內容 | Idea、Audience、Voice、Platform、CTA | Threads、LinkedIn、Facebook、IG Drafts |
@@ -43,7 +44,7 @@
 | [Sales Funnel Landing Page Builder](skills/sales-funnel-landing-page-builder/) | 將一個 Offer 變成簡單直接、可驗收嘅 Lead Funnel | Offer、Audience、Proof、CTA、Design reference、form／data rules | Brief、Style、Copy、Page、UTM、Design／Operations receipts |
 | [Landing Page + Blog Deployer](skills/landing-page-blog-deployer/) | 將已批准 Landing Page 同 Blog 組合、修復、Preview 同安全部署到 Vercel | Landing／Blog handoffs、project、Vercel target、release approval | Routes、CTA／UTM continuity、QA、Preview／Production receipts |
 
-八個 Skills 可以獨立使用；亦可以由 Research 開始，一路交接到 Production、Lead Operations 同 verified website release。下面會逐個解釋我點解咁寫、每個 Skill 點樣運作，同埋點樣驗收。
+九個 Skills 可以獨立使用；亦可以由 Research 開始，一路交接到 Production、Lead Operations、verified website release，再將真正 durable decisions／learning 安全保存。下面會逐個解釋我點解咁寫、每個 Skill 點樣運作，同埋點樣驗收。
 
 ---
 
@@ -156,7 +157,7 @@ AI 可以研究、整理、挑戰、建議同起 Draft；事實、品牌立場�
 
 ---
 
-## 目前八個 Skills
+## 目前九個 Skills
 
 ### 1. Social Content Research／社交內容研究
 
@@ -509,7 +510,27 @@ Skill 會分開處理 Hook 強度同 Claim 強度：L3 可以更尖銳，但唔�
 
 ---
 
-## 八個 Skills 點樣一齊工作？
+### 9. Save to Vault／Chatroom 變 Business Memory
+
+`預計 5–20 分鐘，視乎 chatroom 同 routes 數量`
+
+👤 **你只需要提供：** 當前 chatroom、已打開嘅 Company Vault，同一句「save to vault／記低落 Vault」。
+
+呢個 Skill 會先去重、解決新舊決定衝突，再分開 Fact、Owner Decision、Observation、Interpretation、TBC 同 `NO_SAVE`。佢只會寫入最細、真正負責嘅 Vault 位置；公司 facts、Project records、Learning signals 同可重用 rule candidates 各有自己 gate。
+
+#### 主要輸出
+
+- 寫入前 route plan；
+- exact Vault paths 同 created／updated action；
+- privacy／secret exclusions；
+- Save receipt validator 同 read-back；
+- Human Review、owner、open items 同下一步。
+
+➡️ [打開 Save to Vault Skill](skills/save-to-vault/)
+
+---
+
+## 九個 Skills 點樣一齊工作？
 
 ```text
 來源／社交內容
@@ -527,6 +548,11 @@ social-content-research
                         ↓ Image Review
       ↓
 Human Review
+      ↓
+save-to-vault
+      ├── Company knowledge candidate／source receipt
+      ├── Project record／task receipt
+      └── Learning Loop signal／rule candidate
 ```
 
 每個 Skill 都可以獨立使用。但當上一個 Skill 交出可靠資料，下一個 Skill 就唔需要由零開始估。
@@ -544,6 +570,7 @@ Human Review
 5. 將兩份 approved handoff 交俾 `landing-page-blog-deployer`，由現況續做、組合 routes、完成 Preview，同等候 Production approval；
 6. 將 Campaign 觀點同活動訊息交俾 `social-post-writing`，分別製作平台原生 Draft；
 7. 由負責人核實 Claims、品牌語氣、活動資料、CTA、data behaviour 同 Preview，再決定正式發布。
+8. 用 `save-to-vault` 將已確認決定、artifact evidence 同具體 feedback 路由到 Company Vault；brainstorm、superseded versions 同敏感資料唔入 canonical knowledge。
 
 真正嘅價值唔係「一次過生成好多 Content」，而係每一步都知道資料從邊度嚟、點解咁決定、下一步交俾邊個。
 
@@ -552,6 +579,22 @@ Human Review
 ## 30 秒開始使用
 
 呢個 Repository 目前公開可見，仍然係 `v0.1-team-test`。你可以直接 Clone、安裝同測試；整個 Kit 未有統一分發 License，但 `hk-threads-writer` 子目錄已獨立採用 MIT License。
+
+### 只安裝 Save to Vault
+
+Codex 用：
+
+```bash
+npx --yes skills add jimmylau-DOTAI/10x-ai-growth-marketing-kit --skill save-to-vault -g -a codex -y
+```
+
+安裝後打開現有 Company Vault root，再開一個新 Session：
+
+```text
+Use $save-to-vault。消化今個 chatroom，只保存對之後工作有用嘅內容去目前 Company Vault；完成後列出實際檔案、排除內容、Human Review 同下一步。
+```
+
+Skill 找唔到同時含 `AGENTS.md` 同 `INDEX.md` 嘅 Vault 會停在 `VAULT_ROOT_REQUIRED`，唔會自行建立一套假 Vault。
 
 ### 只安裝 HK Threads Writer（學生建議）
 
@@ -672,6 +715,16 @@ cp -R skills/. ~/.claude/skills/
 
 ## 第一次可以點樣測試？
 
+### 測試 Save to Vault
+
+```text
+Use $save-to-vault。
+
+將今個 chatroom 消化後保存：最新決定係 Audience 改做香港 solo consultants；較早嘅 SME Audience 已經作廢；三個 slogan 只係 brainstorm，唔需要保存。
+```
+
+好嘅輸出應該先顯示 route plan，只保留最新 Audience decision，將舊版本標 superseded、slogans 標 `NO_SAVE`，再回報 exact paths、read-back 同 Human Review；唔會 copy 整段 chatroom。
+
 ### 測試內容研究
 
 ```text
@@ -776,7 +829,9 @@ Use $hk-threads-writer。
     ├── hk-threads-writer/
     ├── instagram-carousel-studio/
     ├── ai-social-image-maker/
-    └── sales-funnel-landing-page-builder/
+    ├── sales-funnel-landing-page-builder/
+    ├── landing-page-blog-deployer/
+    └── save-to-vault/
 ```
 
 每個 Skill 只保留真正執行工作需要嘅 Files：
@@ -796,7 +851,7 @@ Use $hk-threads-writer。
 
 目前嘅 Skill Roadmap 係第一個發展階段。之後會繼續按照真實工作需要，加入更多有清楚用途、經過測試同可以驗收嘅 Skills，而唔係為咗數量增加 Folder。
 
-目前 Repository 完成八個 Skills；以下十項用作第一階段能力 Roadmap。
+目前 Repository 完成九個 Skills；以下十項用作第一階段 Marketing 能力 Roadmap。
 
 | # | Skill | 狀態 |
 | --- | --- | --- |
@@ -811,7 +866,7 @@ Use $hk-threads-writer。
 | 9 | LinkedIn Post Writing | Roadmap |
 | 10 | HK Threads Writer | **Implemented** |
 
-`Instagram Carousel Studio` 同 `AI Social Image Maker` 係額外完成嘅專項 Skills，唔等同 Roadmap #7 嘅 Instagram 單張 Post。
+`Save to Vault` 係跨工作流嘅 business-memory 基礎 Skill；`Instagram Carousel Studio` 同 `AI Social Image Maker` 係額外完成嘅專項 Skills，唔等同 Roadmap #7 嘅 Instagram 單張 Post。
 
 每個 Roadmap Skill 嘅人話介紹、Input 同預期流程，見 [Skill Introductions and Workflows](10-SKILL-INTRO-AND-FLOW.md)。
 

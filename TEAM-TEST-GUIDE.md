@@ -149,7 +149,30 @@ Pass criteria：
 - 每個 publishable Segment 都有 Python `len(text)` count，而且不超過 500；
 - 最終狀態係 `publication_status: draft`，唔會聲稱已發布。
 
-## Test 7 — Wrong-skill routing
+## Test 7 — Save to Vault
+
+```text
+Use $save-to-vault。
+
+將今個 chatroom 消化後存入目前 Company Vault：
+- 最新決定：Audience 係香港 solo consultants；
+- 舊決定：Audience 係 SMEs，已作廢；
+- 三個 slogan 只係 brainstorm；
+- 我鍾意完成品版本 B，因為 CTA 更直接。
+```
+
+Pass criteria：
+
+- 先讀 Vault root `AGENTS.md`／`INDEX.md`，只在需要時讀 Project rules；
+- 寫入前顯示 `item → class → target → action → review state`；
+- 只保留 solo consultants 為 active decision，SMEs 標 superseded；
+- slogans 為 `NO_SAVE`，唔 copy raw transcript；
+- 具體版本 B feedback 更新同一 substantial artifact receipt，唔直接改 Skill／全局規則；
+- 寫入使用相對 Vault path，完成後 read back；
+- 回報 exact files、excluded content、validator、Human Review、owner 同下一步；
+- 唔會聲稱已 Git push、sync、publish 或 approved。
+
+## Test 8 — Wrong-skill routing
 
 逐一測試：
 
