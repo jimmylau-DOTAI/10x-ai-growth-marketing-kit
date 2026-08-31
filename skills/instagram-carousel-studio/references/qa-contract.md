@@ -1,32 +1,35 @@
 # QA Contract
 
-## Content
+## Brief And Audience
 
-- One coherent story across all cards.
-- One job per card and no filler cards.
-- Claims stay within supplied evidence; unknowns are `TBC`.
-- The audience can explain the framework after reading cards 1–10.
+- Objective, audience, one message, source boundary, creator judgment, and CTA are explicit.
+- The cover makes clear who should care and why now.
+- Source facts, creator interpretation, and unknowns are distinguishable.
+- Unstable or unsupported claims remain `TBC` until verified.
+
+## Story
+
+- All cards form one coherent argument.
+- Every card has one job and advances the story.
+- The creator judgment is visible by card 4 at the latest.
+- Cards 5–9 contain substance: reasoning, evidence, examples, diagnostics, or steps.
+- The leads alone form a readable short story.
 - The CTA promises only an asset and route that actually exist.
 
-## Visual
+## Handoff
 
-- Every stage and export is exactly 1080×1350.
-- The cover has one dominant focal path: pain or tension → title → promised outcome → CTA.
-- Images clarify the message rather than replace it.
-- Interior cards maintain meaningful variety within one Style.
-- No accidental flat-icon grid unless the selected Style explicitly requires it.
-- Logo uses the supplied official asset, a local quiet zone, and sufficient contrast.
-
-## Technical
-
-- HTML opens without remote dependencies unless disclosed.
-- No clipped text, missing assets, or unintended scrollbars inside a card.
-- Final filenames map deterministically to card order.
-- Contact sheet, manifest, and review receipt agree on card count and Style ID.
+- The complete plan has explicit `CAROUSEL_PLAN_APPROVED` status.
+- Card count is 2–10 and dimensions are `1080×1350px`.
+- `PREFERENCES.md` is attached without asking the user to choose a Style.
+- Only relevant approved assets are listed in the manifest.
+- No HTML or improvised image-generation step has been inserted.
 
 ## Status
 
-- `HTML_REVIEW_REQUIRED`: HTML exists but has not been approved.
-- `FINAL_DRAFT_READY`: reviewed output passes local QA; nothing is published.
-- `NEEDS_LIVE_AUTOMATION`: CTA delivery route or asset is unverified.
-- `BLOCKED`: a required source, asset, decision, or approval is missing.
+- `ANGLE_REVIEW_REQUIRED`: audience-specific angle or title needs approval.
+- `CAROUSEL_PLAN_REVIEW_REQUIRED`: complete ordered plan needs approval.
+- `CAROUSEL_PLAN_APPROVED`: content is approved; images are not yet generated.
+- `IMAGE_HANDOFF_READY`: approved package is ready for `ai-social-image-maker`.
+- `IMAGE_SKILL_REQUIRED`: downstream image Skill is unavailable.
+- `NEEDS_LIVE_AUTOMATION`: CTA asset or delivery route is unverified.
+- `BLOCKED`: a required source, decision, or approval is missing.

@@ -2,56 +2,57 @@
   "skill": "instagram-carousel-studio",
   "evals": [
     {
-      "id": "no-style-no-reference",
-      "prompt": "幫我整一個 IG 教學 Carousel，我未有品牌 Style，亦未有參考圖。",
+      "id": "audience-before-cards",
+      "prompt": "Codex 用戶注意：我想將呢段產品定價對話做成 Carousel，但未講受眾。",
       "expected": [
-        "lock the brief and title first",
-        "present four materially different Starter Styles with identical cover content",
-        "stop for Style selection before the full carousel"
+        "identify the intended Codex user and why the issue matters before writing all cards",
+        "separate source facts from creator judgment",
+        "stop for angle or title review"
       ]
     },
     {
-      "id": "existing-style",
-      "prompt": "用我 project 入面已批准嘅 STYLE-CAPSULE.md 做 10 張。",
+      "id": "no-style-choice",
+      "prompt": "我冇 Style，直接幫我開始，唔想揀 A/B/C/D。",
       "expected": [
-        "use the existing project-local Style without asking for references",
-        "produce editable 1080×1350 HTML before final output"
+        "use the project preference profile or a neutral content-first baseline",
+        "not present a style picker",
+        "not create HTML"
       ]
     },
     {
-      "id": "reference-deconstruction",
-      "prompt": "我有四張參考圖，但唔想你溝埋一齊。",
+      "id": "five-liked-images",
+      "prompt": "我俾五張鍾意嘅圖你學，之後每次直接用。",
       "expected": [
-        "classify reference roles",
-        "cluster visually different directions",
-        "create separate bounded Style Capsules rather than averaging them"
+        "extract common KEEP CHANGE BAN WHY signals into one project-local preference profile",
+        "avoid copying creator identity or mixing conflicts silently",
+        "request Human Review before saving the preference update"
       ]
     },
     {
-      "id": "comment-cta",
-      "prompt": "封面叫人留言『筆記』攞 guide。",
+      "id": "direct-image-handoff",
+      "prompt": "完整十張內容已批准，直接做 AI 圖，skip HTML。",
       "expected": [
-        "propose a short uppercase ASCII keyword",
-        "keep keyword identical across cover, final card, caption, asset, and route",
-        "mark needs_live_automation when delivery is unverified"
+        "set CAROUSEL_PLAN_APPROVED",
+        "hand the approved content plan and PREFERENCES.md to ai-social-image-maker",
+        "not insert an HTML stage"
       ]
     },
     {
-      "id": "learning-boundary",
-      "prompt": "呢次我鍾意個大主角，幫我記低下次都用。",
+      "id": "learning-three-use-gate",
+      "prompt": "呢次封面先講受眾誤解效果好，幫我自動記低同成長。",
       "expected": [
-        "record KEEP and WHY in a project-local run receipt",
-        "ask for or verify explicit save approval before adding a bounded candidate",
-        "not update the reusable Skill, shared memory, or external Vault"
+        "record one bounded KEEP or CHANGE signal with WHY",
+        "count one complete carousel as one independent use",
+        "generate a proposal at 3 comparable uses but not modify PREFERENCES.md or the public Skill automatically"
       ]
     },
     {
-      "id": "ai-image-route",
-      "prompt": "HTML 批准咗，轉做 AI 圖像版，logo 要準。",
+      "id": "direct-confirmed-rule",
+      "prompt": "我明確決定以後唔好再放 Source footer。",
       "expected": [
-        "use one generation pass per card by default",
-        "use an official logo asset as deterministic post-production",
-        "review the controlled batch once as a contact sheet"
+        "record the instruction as a direct confirmed BAN candidate",
+        "create a ready-for-review local preference proposal without pretending it has three observations",
+        "require Human approval before applying it"
       ]
     }
   ]

@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Validate the structural and production contract of a Carousel project."""
+"""Validate a Carousel content-plan workspace before image handoff."""
 
 from __future__ import annotations
 
 import argparse
+import json
 import re
 from pathlib import Path
 
@@ -12,10 +13,10 @@ REQUIRED_FILES = (
     "AGENTS.md",
     "project.yaml",
     "brief.md",
+    "PREFERENCES.md",
     "content-plan.md",
-    "carousel.html",
-    "style-picker.html",
     "learning/candidates.md",
+    "learning/log.jsonl",
     "references/ASSET-MANIFEST.md",
 )
 
@@ -46,8 +47,7 @@ def main() -> int:
             errors.append(f"missing required file: {relative}")
 
     project_file = root / "project.yaml"
-    html_file = root / "carousel.html"
-
+    expected_count: int | None = None
     if project_file.is_file():
         project_text = project_file.read_text(encoding="utf-8")
         dimensions = simple_yaml_value(project_text, "dimensions")
@@ -55,39 +55,47 @@ def main() -> int:
         if dimensions != "1080x1350":
             errors.append(f"dimensions must be 1080x1350, found {dimensions!r}")
         try:
-            count = int(count_text or "")
-            if not 2 <= count <= 10:
-                errors.append(f"card_count must be 2–10, found {count}")
-            if count != 10:
+            expected_count = int(count_text or "")
+            if not 2 <= expected_count <= 10:
+                errors.append(f"card_count must be 2–10, found {expected_count}")
+            if expected_count != 10:
                 warnings.append("card_count is not the default 10; confirm explicit user request")
         except ValueError:
             errors.append(f"card_count must be an integer, found {count_text!r}")
 
-    if html_file.is_file():
-        html = html_file.read_text(encoding="utf-8")
-        compact = re.sub(r"\s+", "", html)
-        if "width:1080px" not in compact or "height:1350px" not in compact:
-            errors.append("carousel.html must declare a 1080px × 1350px card stage")
-        card_ids = re.findall(r'id="C(\d{2})"', html)
-        if project_file.is_file():
-            count_text = simple_yaml_value(project_file.read_text(encoding="utf-8"), "card_count")
+    plan_file = root / "content-plan.md"
+    if plan_file.is_file():
+        plan_text = plan_file.read_text(encoding="utf-8")
+        card_rows = re.findall(r"(?m)^\|\s*(\d{1,2})\s*\|", plan_text)
+        if expected_count is not None and len(card_rows) != expected_count:
+            errors.append(
+                f"content-plan.md contains {len(card_rows)} card rows; project.yaml expects {expected_count}"
+            )
+        expected_order = [str(index) for index in range(1, len(card_rows) + 1)]
+        if card_rows != expected_order:
+            errors.append("content-plan.md card rows must be ordered consecutively from 1")
+
+    log_file = root / "learning" / "log.jsonl"
+    if log_file.is_file():
+        for line_number, line in enumerate(log_file.read_text(encoding="utf-8").splitlines(), start=1):
+            if not line.strip():
+                continue
             try:
-                expected_count = int(count_text or "")
-                if len(card_ids) != expected_count:
-                    errors.append(f"HTML contains {len(card_ids)} card stages; project.yaml expects {expected_count}")
-            except ValueError:
-                pass
-        if "{{" in html or "}}" in html:
-            warnings.append("carousel.html still contains template placeholders")
+                json.loads(line)
+            except json.JSONDecodeError as exc:
+                errors.append(f"learning/log.jsonl line {line_number} is invalid JSON: {exc.msg}")
 
     tbc_files: list[str] = []
-    for relative in ("brief.md", "content-plan.md"):
+    for relative in ("brief.md", "PREFERENCES.md", "content-plan.md"):
         path = root / relative
         if path.is_file() and "TBC" in path.read_text(encoding="utf-8"):
             tbc_files.append(relative)
     if tbc_files:
         message = "TBC placeholders remain in " + ", ".join(tbc_files)
         (errors if args.strict else warnings).append(message)
+
+    if (root / "carousel.html").exists() or (root / "style-picker.html").exists():
+        warnings.append("legacy HTML or Style-picker file exists; it is not part of the current workflow")
 
     for warning in warnings:
         print(f"WARN: {warning}")
@@ -98,7 +106,7 @@ def main() -> int:
         print("RESULT: FAIL")
         return 1
     print("RESULT: PASS")
-    print("NOTE: structural QA is not Human Review or publishing proof")
+    print("NOTE: structural QA is not Human Review, image generation, or publishing proof")
     return 0
 
 

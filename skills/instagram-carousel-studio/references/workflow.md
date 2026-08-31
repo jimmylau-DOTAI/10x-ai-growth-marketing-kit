@@ -2,30 +2,35 @@
 
 ## State Machine
 
-Use these states so the user can see what remains:
+`BRIEF_REQUIRED → ANGLE_REVIEW_REQUIRED → CAROUSEL_PLAN_REVIEW_REQUIRED → CAROUSEL_PLAN_APPROVED → IMAGE_HANDOFF_READY`
 
-`BRIEF_REQUIRED → TITLE_REVIEW_REQUIRED → STYLE_INPUT_REQUIRED → STYLE_OPTIONS_READY → STYLE_SELECTED_FOR_PROJECT → HTML_REVIEW_REQUIRED → FINAL_DRAFT_READY`
+The downstream image Skill may then use:
 
-Use `NEEDS_LIVE_AUTOMATION` when a comment CTA promises delivery but the asset or route is unverified. Use `BLOCKED` for missing evidence, brand assets, or approval that materially changes the output.
+`C01_REVIEW_REQUIRED → C01_APPROVED → FINAL_DRAFT_READY`
+
+Use `IMAGE_SKILL_REQUIRED` when `ai-social-image-maker` is unavailable. Use `NEEDS_LIVE_AUTOMATION` when a CTA promises delivery but its asset or route is unverified. Use `BLOCKED` when a missing source, decision, or approval materially changes the work.
 
 ## Brief To Story
 
-1. Extract objective, audience, one message, CTA, language, claim boundary, and card count.
-2. Propose five title directions if no title is approved.
-3. After title approval, write one sentence describing the whole story arc.
-4. Assign one job to each card.
-5. For every card record: `job`, `lead`, `support`, `visual_role`, and `handoff_to_next`.
-6. Read the leads from cards 1–10 without the support copy. They must form a coherent short story.
-7. Add substance: definitions, reasoning, examples, diagnostics, steps, or proof.
+1. Extract objective, audience, audience tension, one message, source boundary, creator judgment, CTA, language, and card count.
+2. Distinguish `source_fact`, `creator_interpretation`, and `unknown`.
+3. Propose up to five audience-specific angles if none is approved.
+4. After angle approval, write the complete story in one sentence.
+5. Assign exactly one job to each card.
+6. Record `job`, `lead`, `support_or_proof`, `visual_role`, and `handoff` for every card.
+7. Read all leads without support copy. They must form one coherent short argument.
+8. Add definitions, reasoning, examples, diagnostics, proof, or practical steps. Remove filler.
+9. Show the whole plan for Human Review before image handoff.
 
 ## Density Check
 
-- Cover: 8–28 Chinese characters in the primary headline where practical.
+- Cover: one audience tension and one promised payoff.
 - Interior lead: one concise claim or instruction.
-- Support: enough to teach, never filler.
-- A card fails if removing its image leaves no useful insight.
+- Support: enough to teach; never decorative filler.
+- A card fails if removing its image leaves no useful idea.
 - A card fails if it repeats the previous card without advancing the argument.
+- The creator judgment must become visible by card 4 at the latest.
 
 ## CTA Check
 
-Use one action only. If the CTA uses a keyword, require short uppercase ASCII and repeat it exactly across cover, final card, caption, delivery asset, and automation route.
+Use one action only. For keyword CTAs, require short uppercase ASCII and repeat it exactly across cover, final card, caption, delivery asset, and automation route. Unverified delivery is `NEEDS_LIVE_AUTOMATION`, not live.

@@ -6,7 +6,9 @@ TBC
 
 ## Audience
 
-TBC
+- Primary audience: TBC
+- Current tension or misconception: TBC
+- Why they should care now: TBC
 
 ## One Message
 
@@ -15,8 +17,14 @@ TBC
 ## Source And Claim Boundary
 
 - Source: TBC
-- Allowed claims: TBC
+- Confirmed source facts: TBC
 - Unsupported or unstable claims: TBC
+
+## Creator Judgment
+
+- My interpretation: TBC
+- What this adds beyond repeating the source: TBC
+- What the audience should think or do differently: TBC
 
 ## Topic And Title
 
@@ -32,9 +40,8 @@ TBC
 - Delivery asset: TBC
 - Delivery route: TBC
 
-## Brand Inputs
+## Inputs
 
-- Official logo files: TBC
-- Fonts: TBC
-- Palette: TBC
+- Official logo or identity assets: TBC
+- Liked reference images: TBC
 - Forbidden treatments: TBC

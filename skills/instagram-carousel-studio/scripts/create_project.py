@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create a safe, project-local Instagram Carousel workspace."""
+"""Create a safe, project-local Instagram Carousel planning workspace."""
 
 from __future__ import annotations
 
@@ -10,8 +10,6 @@ from pathlib import Path
 
 SKILL_ROOT = Path(__file__).resolve().parents[1]
 TEMPLATE_ROOT = SKILL_ROOT / "assets" / "project-template"
-CAROUSEL_TEMPLATE = SKILL_ROOT / "assets" / "carousel-card-template.html"
-STYLE_PICKER = SKILL_ROOT / "assets" / "style-picker.html"
 
 
 def parse_args() -> argparse.Namespace:
@@ -22,7 +20,7 @@ def parse_args() -> argparse.Namespace:
 
 
 def replace_tokens(path: Path, project_name: str) -> None:
-    if path.suffix.lower() not in {".md", ".yaml", ".html"}:
+    if path.suffix.lower() not in {".md", ".yaml", ".jsonl"}:
         return
     text = path.read_text(encoding="utf-8")
     path.write_text(text.replace("{{PROJECT_NAME}}", project_name), encoding="utf-8")
@@ -33,13 +31,13 @@ def main() -> int:
     destination = Path(args.project_dir).expanduser()
     if not destination.is_absolute():
         raise SystemExit("ERROR: --project-dir must be an absolute path")
+    if destination.exists() and not destination.is_dir():
+        raise SystemExit(f"ERROR: destination exists and is not a directory: {destination}")
     if destination.exists() and any(destination.iterdir()):
         raise SystemExit(f"ERROR: destination is not empty: {destination}")
 
     destination.mkdir(parents=True, exist_ok=True)
     shutil.copytree(TEMPLATE_ROOT, destination, dirs_exist_ok=True)
-    shutil.copy2(CAROUSEL_TEMPLATE, destination / "carousel.html")
-    shutil.copy2(STYLE_PICKER, destination / "style-picker.html")
 
     agents_template = destination / "PROJECT-AGENTS.template.md"
     agents_template.rename(destination / "AGENTS.md")
@@ -50,7 +48,8 @@ def main() -> int:
 
     print(f"CREATED: {destination}")
     print("STATUS: BRIEF_REQUIRED")
-    print("NEXT: complete brief.md, choose a title, then select a Style route")
+    print("NEXT: complete brief.md; PREFERENCES.md is reused automatically")
+    print("NOTE: no Style selection or HTML stage is created")
     return 0
 
 

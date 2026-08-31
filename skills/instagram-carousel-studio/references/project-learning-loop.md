@@ -2,61 +2,61 @@
 
 ## Purpose
 
-Improve one project's Style without turning every preference into a global rule. The reusable Skill owns the method; the consuming project owns its identity and learning.
+Improve one user's or project's working preferences without turning every reaction into a universal design rule. The reusable Skill owns the method; `PREFERENCES.md` owns local taste.
 
-## Default Mode
-
-`learning_mode: local_review_only`
-
-Alternative: `off`. Never default to shared, global, Company Vault, or automatic Skill learning.
-
-## Per-Run Receipt
+## Evidence Record
 
 After Human Review, record:
 
 - run ID and date
-- source and approved title
-- selected Style ID and version
-- output path and status
-- `KEEP`: specific mechanisms to retain
-- `CHANGE`: specific mechanisms to test next time
-- `BAN`: repeated failures to avoid
-- `WHY`: audience, clarity, brand, production, or performance reason
+- candidate key
+- `KEEP`, `CHANGE`, or `BAN`
+- one bounded proposed rule
+- `WHY`
 - evidence type: `human_review` or `published_result`
-- candidate key, if any
+- receipt path
+- whether it was a directly confirmed user rule
 
-Human preference and published performance are different evidence types. Do not combine them as if they prove the same thing.
+Human preference and published performance are different evidence types. Do not merge them as if they prove the same claim.
 
-## Candidate Rule
+## Comparable Independent Use
 
-A candidate must be bounded and testable, for example:
+One complete carousel is one use. Ten cards are not ten uses. Revisions of the same carousel retain the same run ID and cannot increment the count.
 
-`cover.focal_object_scale: increase from about 35% to 50–60%`
+Candidate keys must be bounded and testable, for example:
 
-Avoid vague candidates such as “make it more creative.”
+`cover-audience-tension`
 
-One carousel is one independent use. Ten cards from the same carousel do not count as ten uses. A revision of the same carousel is not a fresh independent use unless the audience, content job, or test condition materially changes.
+with proposed rule:
 
-## Three-Use Gate
+`Open with the audience's misconception before introducing the product detail.`
 
-When the same candidate key appears in three comparable independent uses:
+Avoid keys such as `make-it-better` or rules such as “more creative.”
 
-1. create `learning/proposed-style-update.md`
-2. list all three receipts
-3. distinguish observation, insight, hypothesis, and proposed decision
-4. show the exact Style Capsule lines or fields to change
-5. request Human approval
+## Automatic Three-Use Loop
 
-Only after approval may the project-local Style Capsule version change. Do not update the reusable Skill unless the user separately requests a Skill revision and the rule is genuinely cross-project.
+Use `scripts/record_learning.py`. It will:
+
+1. reject duplicate run evidence for the same candidate
+2. append a JSONL evidence record
+3. update `learning/candidates.md` to `1/3`, `2/3`, or `3/3`
+4. at `3/3`, generate `learning/proposals/<candidate-key>.md`
+5. stop at `HUMAN_REVIEW_REQUIRED`
+
+It never edits `PREFERENCES.md` or this public Skill. At three comparable uses, a Human decides whether the proposed line should be applied, revised, or rejected.
+
+## Direct Confirmed Preference
+
+When the user explicitly states a standing preference, use `--direct-confirmed`. The script creates a proposal marked `DIRECT_USER_RULE`; it does not claim three observations. Human approval is still required before applying the change to `PREFERENCES.md`.
 
 ## Destination Map
 
 | Information | Destination |
 |---|---|
-| one run's feedback | `reviews/<run-id>.md` |
+| one run's feedback | `reviews/<run-id>.md` and `learning/log.jsonl` |
 | bounded repeated candidate | `learning/candidates.md` |
-| three-use proposal | `learning/proposed-style-update.md` |
-| approved project identity | `styles/<style-id>/STYLE-CAPSULE.md` |
-| universal method change | separate Skill revision with approval |
+| three-use or direct-rule proposal | `learning/proposals/<candidate-key>.md` |
+| approved local preference | `PREFERENCES.md` |
+| reusable method change | separate Skill revision with explicit approval |
 
 No step writes to an external Vault, shared memory, dashboard, or public repository by default.

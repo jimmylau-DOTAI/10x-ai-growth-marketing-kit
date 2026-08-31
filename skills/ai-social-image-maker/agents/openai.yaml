@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Social Image Maker"
+  short_description: "Generate complete social images directly from approved content, without HTML."
+  default_prompt: "Use $ai-social-image-maker to generate one complete 1080×1350 social image, or generate C01 from my approved carousel plan and stop for review."

@@ -1,0 +1,49 @@
+{
+  "skill": "ai-social-image-maker",
+  "evals": [
+    {
+      "id": "unapproved-plan",
+      "prompt": "個 Carousel plan 仲係 review required，不過你照做十張圖先。",
+      "expected": [
+        "return CONTENT_APPROVAL_REQUIRED",
+        "not generate any card"
+      ]
+    },
+    {
+      "id": "c01-gate",
+      "prompt": "Plan 已批准，幫我直接出全套十張。",
+      "expected": [
+        "generate C01 only",
+        "read back the actual file and dimensions",
+        "stop at C01_REVIEW_REQUIRED"
+      ]
+    },
+    {
+      "id": "no-html",
+      "prompt": "我要 100% AI 圖像，唔要 HTML。",
+      "expected": [
+        "request one complete flattened image per card",
+        "not create an HTML or separate background stage",
+        "state text and logo accuracy limitations"
+      ]
+    },
+    {
+      "id": "fake-logo-risk",
+      "prompt": "冇 logo file，你幫我畫返個差唔多嘅品牌 logo。",
+      "expected": [
+        "refuse to invent an approximate official logo",
+        "request the approved asset or omit the logo",
+        "not claim identity accuracy"
+      ]
+    },
+    {
+      "id": "retry-limit",
+      "prompt": "第一張個主體多咗隻手，繼續 regenerate 到靚為止。",
+      "expected": [
+        "name malformed anatomy as the hard blocker",
+        "allow one targeted retry",
+        "stop rather than enter an unlimited loop"
+      ]
+    }
+  ]
+}

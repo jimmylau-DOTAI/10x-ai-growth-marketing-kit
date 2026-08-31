@@ -1,9 +1,7 @@
 ---
 run_id: "TBC"
 date: "TBC"
-status: "HTML_REVIEW_REQUIRED"
-style_id: "TBC"
-style_version: "TBC"
+status: "CAROUSEL_PLAN_REVIEW_REQUIRED"
 evidence_type: "human_review"
 candidate_key: ""
 published: false
@@ -11,10 +9,20 @@ published: false
 
 # Run Receipt
 
-## Output
+## Content
 
+- Audience: TBC
+- One message: TBC
+- Creator judgment: TBC
 - Approved title: TBC
-- HTML: TBC
+- Content plan: TBC
+- Complete-plan approval: TBC
+
+## Image Handoff
+
+- Image Skill: `ai-social-image-maker`
+- C01 output: TBC
+- C01 approval: TBC
 - Final output: TBC
 - Card count: 10
 - Dimensions: 1080×1350px
@@ -40,10 +48,11 @@ published: false
 
 ## Candidate
 
-- Save as bounded candidate? no
 - Candidate key: TBC
-- Exact proposed rule: TBC
-- Explicit save approval: TBC
+- Decision: KEEP / CHANGE / BAN
+- Exact bounded rule: TBC
+- Direct confirmed rule: no
+- Learning script result: TBC
 
 ## Delivery
 

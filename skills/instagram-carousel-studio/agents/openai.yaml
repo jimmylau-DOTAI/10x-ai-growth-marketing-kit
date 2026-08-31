@@ -1,4 +1,4 @@
 interface:
   display_name: "Instagram Carousel Studio"
-  short_description: "Create reviewed carousels with four-style selection."
-  default_prompt: "Use $instagram-carousel-studio to turn my brief or source into a reviewed 1080×1350 Instagram carousel."
+  short_description: "Plan reviewed carousels, then hand off directly to AI image production."
+  default_prompt: "Use $instagram-carousel-studio to turn my source and point of view into an audience-specific 1080×1350 carousel plan, then hand the approved plan to $ai-social-image-maker."

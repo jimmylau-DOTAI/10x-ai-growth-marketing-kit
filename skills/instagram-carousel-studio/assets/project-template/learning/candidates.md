@@ -1,6 +1,6 @@
 # Project-Local Learning Candidates
 
-Only add a row after explicit Human approval to save the feedback as a candidate.
+Generated from `learning/log.jsonl`. Do not edit counts by hand.
 
-| candidate_key | bounded rule | evidence type | independent uses | receipt links | status |
-|---|---|---|---:|---|---|
+| candidate_key | decision | bounded rule | evidence | progress | receipts | status |
+|---|---|---|---|---:|---|---|

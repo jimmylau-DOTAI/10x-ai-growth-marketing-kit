@@ -1,23 +1,24 @@
 ---
 name: instagram-carousel-studio
-description: Build a reusable Instagram carousel from a source or brief through topic and title selection, four-style comparison, editable HTML review, optional one-pass AI-image rendering, QA, and project-local learning. Use when creating or revising a 2–10 card educational, guide, framework, or insight carousel. Default to 10 cards at exactly 1080×1350px. Do not use this Skill to publish, automate delivery, or update an external Vault.
+description: Turn a source or brief into an approved 2–10 card Instagram carousel story and hand it directly to an AI social-image Skill. Use when the user needs audience-aware angles, creator judgment, one coherent carousel, content review, image-production handoff, QA, and project-local learning. Default to 10 cards at exactly 1080×1350px. This Skill does not choose styles, build HTML, generate final images, publish, or update shared knowledge automatically.
 ---
 
 # Instagram Carousel Studio
 
-Create one coherent story, not several posts forced into one carousel. Keep content, Style, rendering, and learning as separate decisions.
+Create one coherent story, not several posts forced into one carousel. Own the content strategy and review surface; hand approved cards to `ai-social-image-maker` for rendering.
 
 ## Non-Negotiable Contract
 
-- Render every card at exactly `1080×1350px`.
 - Default to 10 cards. Use 2–9 only when the user explicitly requests another count.
-- Decide the topic and title before writing the full carousel.
-- Use the same approved cover content when comparing Styles.
-- Make HTML the editable Human Review surface before final output.
-- Preserve useful teaching substance. Attractive imagery without a clear insight fails.
-- Generate each AI-image card once. Permit a second generation only for a hard visual blocker; prefer deterministic post-production for official logos and exact text.
-- Never publish, deploy, schedule, send, install, or write to an external knowledge base without current-turn approval.
-- Keep learning inside the consuming project unless the user explicitly approves another destination.
+- Target every final card at exactly `1080×1350px`.
+- Lock objective, audience, one message, source boundary, creator judgment, and title before writing the full carousel.
+- Give every card one job. Attractive filler does not count as teaching.
+- Use one project-local `PREFERENCES.md` automatically when present. Do not ask the user to choose a Style.
+- Five liked references may initialize or refine one preference profile; do not turn them into a style menu or average conflicting identities.
+- Stop at `CAROUSEL_PLAN_REVIEW_REQUIRED`. Only an explicit approval of the complete plan permits image handoff.
+- Do not build HTML or generate final images in this Skill.
+- Never publish, deploy, schedule, send, install, or update shared knowledge without current-turn approval.
+- Keep learning inside the consuming project. Never auto-modify this reusable `SKILL.md`.
 
 ## Start Here
 
@@ -27,131 +28,98 @@ For a new consuming project, run:
 python3 scripts/create_project.py --project-dir "/absolute/path/to/project" --project-name "Project name"
 ```
 
-Read only the files needed for the current phase. Do not load every reference at once.
+Read only the files required for the current phase.
 
-## Phase 1 — Lock The Brief
+## Phase 1 — Lock The Brief And Point Of View
 
-Read `project.yaml` and `brief.md`. Confirm or infer only these fields:
+Read `project.yaml`, `brief.md`, and `PREFERENCES.md`. Confirm or infer only:
 
 1. objective
 2. audience
-3. one_message
-4. source_or_claim_boundary
-5. CTA
-6. language
-7. card_count
+3. audience's current tension or misconception
+4. one message
+5. source and claim boundary
+6. creator judgment: what this carousel adds beyond repeating the source
+7. CTA, language, and card count
 
-Mark unstable or unsupported claims `TBC`. Do not invent scores, research findings, customer results, or automation destinations.
+Mark unstable or unsupported claims `TBC`. Separate source facts from creator interpretation. Do not invent customer results, research findings, product limits, or delivery routes.
 
-Offer five topic/title directions when the title is not approved. Stop for Human Review of the topic and title before completing all cards.
+If the angle or title is not approved, offer up to five audience-specific directions. Each direction must say who should care and why now. Stop for Human Review before completing every card.
 
 Then read [references/workflow.md](references/workflow.md) and write `content-plan.md`.
 
-## Phase 2 — Choose The Style Route
+## Phase 2 — Build One Carousel Story
 
-Use exactly one route:
+Use this default rhythm, adapting it to the idea rather than filling a template mechanically:
 
-1. `existing_style`: load the approved project-local Style Capsule.
-2. `reference_deconstruction`: classify supplied images, cluster visually different references, and create up to four bounded Style Capsules.
-3. `starter_styles`: show the four bundled Starter Styles when no usable Style or references exist.
+1. Cover: name the audience tension and promised payoff.
+2. Recognition: show the audience's current situation.
+3. Misdiagnosis: expose the common but incomplete interpretation.
+4. Reframe: state the creator's core judgment.
+5–8. Reasoning, layers, evidence, examples, or practical steps.
+9. Application: what the audience should do differently.
+10. Summary and one CTA.
 
-Read [references/style-intake.md](references/style-intake.md). Use [assets/style-picker.html](assets/style-picker.html) for the neutral four-style comparison and [references/starter-style-catalog.md](references/starter-style-catalog.md) for the design mechanisms.
+Every row in `content-plan.md` needs `job`, `lead`, `support_or_proof`, `visual_role`, and `handoff`. Cards 1–10 must read as a single argument even without images. Remove any card that merely repeats the previous one.
 
-Do not blend multiple reference clusters by default. Do not copy another creator's distinctive identity, private brand assets, or visible claims. Mechanism can be referenced; identity cannot.
+For comment-to-get CTAs, use one short uppercase ASCII keyword. The cover, final card, caption, asset, and real delivery route must use the identical keyword. If the asset or route is unverified, set `NEEDS_LIVE_AUTOMATION`; do not imply delivery is live.
 
-Record the chosen route and Style ID in `project.yaml`. Copy and complete [assets/project-template/styles/STYLE-CAPSULE.template.md](assets/project-template/styles/STYLE-CAPSULE.template.md) as `styles/<style-id>/STYLE-CAPSULE.md`.
+## Phase 3 — Content Review
 
-## Phase 3 — Build One 10-Card Story
-
-Use this default rhythm, adapting it without changing the one story:
-
-1. Cover: tension + promised outcome + CTA when applicable.
-2. Recognition: the audience sees its current situation.
-3. Misdiagnosis: explain why the obvious fix fails.
-4. Reframe: introduce the core model.
-5. Layer or step 1.
-6. Layer or step 2.
-7. Layer or step 3.
-8. Layer or step 4, example, or diagnostic.
-9. Application: what to do next.
-10. Summary + one CTA.
-
-Each card needs one job, one lead sentence, and supporting proof or explanation. Use cards 3–9 for knowledge density; do not stretch one sentence across several empty cards.
-
-If using a comment-to-get-notes CTA, choose one short uppercase ASCII keyword. The cover, final card, caption, and real delivery route must use the identical keyword. If the asset or route is unverified, mark `needs_live_automation` and block publishing.
-
-## Phase 4 — Produce Editable HTML
-
-Read [references/html-contract.md](references/html-contract.md). Duplicate [assets/carousel-card-template.html](assets/carousel-card-template.html) for the carousel and replace the sample content.
-
-Requirements:
-
-- Self-contained HTML and CSS.
-- One visible 1080×1350 stage per card.
-- Actual text remains editable in HTML.
-- No visible pagination unless the brief explicitly requests it.
-- Respect safe zones and readable mobile hierarchy.
-- Reserve only a quiet local logo zone; do not flatten the entire background for logo placement.
-
-Stop at `HTML_REVIEW_REQUIRED`. Continue only after Human Review approves the content and direction.
-
-## Phase 5 — Choose Final Route
-
-### HTML Final
-
-Use when exact wording, editable layout, diagrams, or deterministic typography matter most. Export the reviewed stages without changing the approved content.
-
-### AI-Image Final
-
-Read [references/imagegen-contract.md](references/imagegen-contract.md). Use one approved HTML card as the composition brief and one Style continuity reference when available.
-
-- Keep Chinese as the primary visible language unless the brief says otherwise.
-- Use official supplied logos as deterministic overlays after generation when exact identity matters.
-- Select black or white logo treatment from the local background contrast.
-- Do not rely on generated text for claim-critical wording.
-- Generate cards in a controlled batch; review once as a contact sheet.
-
-## Phase 6 — QA And Receipt
-
-Read [references/qa-contract.md](references/qa-contract.md). Validate the project with:
+Run the checks in [references/qa-contract.md](references/qa-contract.md), then validate the project:
 
 ```bash
 python3 scripts/validate_project.py --project-dir "/absolute/path/to/project"
 ```
 
-Write a run receipt under `reviews/`. A local file is not publishing proof. State whether the final status is:
+Show the complete ordered plan together. Set `CAROUSEL_PLAN_REVIEW_REQUIRED` and stop. A title approval alone is not approval of the complete plan.
 
-- `HTML_REVIEW_REQUIRED`
-- `FINAL_DRAFT_READY`
-- `NEEDS_LIVE_AUTOMATION`
-- `BLOCKED`
+Only exact approval such as `CAROUSEL_PLAN_APPROVED` permits the next phase. Record that status in `project.yaml` and the run receipt.
 
-## Phase 7 — Project-Local Learning
+## Phase 4 — Direct Image Handoff
 
-Read [references/project-learning-loop.md](references/project-learning-loop.md).
+After `CAROUSEL_PLAN_APPROVED`, call the installed `ai-social-image-maker` Skill with:
 
-Default `learning_mode` is `local_review_only`:
+- absolute project path
+- approved `content-plan.md`
+- current `PREFERENCES.md`
+- relevant approved assets from `references/ASSET-MANIFEST.md`
+- card count, language, and exact dimensions
+- CTA delivery status
 
-1. Capture Human Review as `KEEP / CHANGE / BAN / WHY`.
-2. Save feedback in the current run receipt.
-3. Update neither the Style Capsule nor this Skill automatically.
-4. If the user explicitly says to save a rule, append one bounded candidate to `learning/candidates.md`.
-5. After three independent, comparable carousel uses of the same candidate, create `learning/proposed-style-update.md`.
-6. Apply the proposal to the project-local Style Capsule only after explicit Human approval.
+The image Skill owns generation, the C01 pilot, visual continuity, final image QA, and output receipts. Do not insert an HTML step. If the image Skill is unavailable, return `IMAGE_SKILL_REQUIRED` with the exact handoff package; do not silently replace it with improvised rendering.
 
-One 10-card carousel counts as one use, not ten. Never transfer one project's learning into another project's identity without approval.
+## Phase 5 — Learning Log And Three-Use Loop
+
+Read [references/project-learning-loop.md](references/project-learning-loop.md). After each Human Review, record one bounded signal:
+
+```bash
+python3 scripts/record_learning.py \
+  --project-dir "/absolute/path/to/project" \
+  --run-id "carousel-2026-01" \
+  --candidate-key "cover-audience-tension" \
+  --decision KEEP \
+  --rule "Open with the audience's misconception before the product detail" \
+  --why "The intended reader understood immediately why the post mattered" \
+  --evidence-type human_review \
+  --receipt "reviews/carousel-2026-01.md"
+```
+
+The script automatically appends the learning log, updates the candidate count, and creates `learning/proposals/<candidate-key>.md` when the same candidate reaches three comparable independent carousel uses. It never applies the proposal.
+
+A directly stated user preference may use `--direct-confirmed`; this creates a ready-for-review proposal without pretending it has three performance observations. Human approval is still required before editing `PREFERENCES.md`.
 
 ## Output Contract
 
 Return:
 
 - project path
-- selected Style and route
+- approved audience, one message, and creator judgment
 - card count and dimensions
-- HTML review path
-- final output path, if produced
-- QA status
-- learning receipt path or `learning_mode: off`
+- content-plan path and approval status
+- image-Skill handoff status and output path, if produced
+- content and image QA status
+- learning receipt and candidate count
 - explicit statement that nothing was published unless destination read-back proves otherwise
 
 Use [references/output-contract.md](references/output-contract.md) for the exact handoff format.

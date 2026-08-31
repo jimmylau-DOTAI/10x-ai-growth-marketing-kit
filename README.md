@@ -16,13 +16,13 @@
 
 所以我整咗呢套 **10x AI Growth Marketing Kit**。
 
-目前先由六個可以安裝、閱讀、測試同修改嘅 AI Marketing Skills 開始，將內容研究、SEO／GEO 內容、社交文案、Instagram Carousel、香港 Threads 同 Sales Funnel Landing Page，串成一條有來源、有判斷、有交接、有 Human Review 嘅工作流。
+目前先由七個可以安裝、閱讀、測試同修改嘅 AI Marketing Skills 開始，將內容研究、SEO／GEO 內容、社交文案、Instagram Carousel、AI 圖像製作、香港 Threads 同 Sales Funnel Landing Page，串成一條有來源、有判斷、有交接、有 Human Review 嘅工作流。
 
-六個 Skills 只係起點。我哋會按照真實 Marketing 工作持續測試、改善同加入更多 Skills，令呢個 Kit 同每一個想用 AI 成長嘅人一齊成長。
+七個 Skills 只係起點。我哋會按照真實 Marketing 工作持續測試、改善同加入更多 Skills，令呢個 Kit 同每一個想用 AI 成長嘅人一齊成長。
 
 > **目前版本：** `v0.1-team-test`
 >
-> **目前可用：** 6 個完整 Skills
+> **目前可用：** 7 個完整 Skills
 >
 > **發展方向：** [Skill Roadmap](10-SKILL-INTRO-AND-FLOW.md)
 >
@@ -38,10 +38,11 @@
 | [SEO + GEO Blog Writing](skills/seo-geo-content/) | 將 Source 變成有觀點、有搜尋價值、適合 AI Search 理解嘅 Blog | Source、搜尋問題、客群、Company Brain、CTA | Source Guide、標題、文章、Meta、Links、HTML Review、QA |
 | [Social Post Writing](skills/social-post-writing/) | 將可靠觀點變成平台原生內容 | Idea、Audience、Voice、Platform、CTA | Threads、LinkedIn、Facebook、IG Drafts |
 | [HK Threads Writer](skills/hk-threads-writer/) | 寫自然香港廣東話、手機優先而且逐段驗證嘅 Threads | Source、新聞、觀點、故事或工作紀錄 | 單 Post、筆記 Link Reply、樓梯 Post、Python 字數 Receipt |
-| [Instagram Carousel Studio](skills/instagram-carousel-studio/) | 將 Source 變成可編輯、可 QA 嘅 Instagram Carousel | Source／Brief、受眾、One Message、CTA、Style reference | 10-card Story、Style comparison、HTML Review、QA Receipt |
+| [Instagram Carousel Studio](skills/instagram-carousel-studio/) | 將 Source、見解同目標受眾重新編排成一個完整 Carousel Story | Source／Brief、Audience、One Message、Creator Judgment、CTA | Approved Content Plan、AI Image Handoff、Learning Log |
+| [AI Social Image Maker](skills/ai-social-image-maker/) | 將已批准內容直接生成完整 Social Images，唔經 HTML | Approved copy／Carousel Plan、PREFERENCES、Assets | C01 Pilot、1080×1350 Images、Contact-sheet QA |
 | [Sales Funnel Landing Page Builder](skills/sales-funnel-landing-page-builder/) | 將一個 Offer 變成簡單直接、可驗收嘅 Lead Funnel | Offer、Audience、Proof、CTA、Design reference、form／data rules | Brief、Style、Copy、Page、UTM、Design／Operations receipts |
 
-六個 Skills 可以獨立使用；亦可以由 Research 開始，一路交接到 Production 同 Lead Operations。下面會逐個解釋我點解咁寫、每個 Skill 點樣運作，同埋點樣驗收。
+七個 Skills 可以獨立使用；亦可以由 Research 開始，一路交接到 Production 同 Lead Operations。下面會逐個解釋我點解咁寫、每個 Skill 點樣運作，同埋點樣驗收。
 
 ---
 
@@ -154,7 +155,7 @@ AI 可以研究、整理、挑戰、建議同起 Draft；事實、品牌立場�
 
 ---
 
-## 目前六個 Skills
+## 目前七個 Skills
 
 ### 1. Social Content Research／社交內容研究
 
@@ -433,22 +434,41 @@ Skill 會分開處理 Hook 強度同 Claim 強度：L3 可以更尖銳，但唔�
 
 `預計 45–120 分鐘`
 
-👤 **你只需要提供：** Source／Brief、Audience、One Message、CTA、品牌資料同可用 Style reference。
+👤 **你只需要提供：** Source／Brief、Audience、One Message、你自己嘅見解、CTA，同可選參考圖。
 
-呢個 Skill 會先鎖定題目同標題，再比較 Style route，將一個重點寫成預設 10 張、每張 `1080×1350px` 嘅完整故事。HTML 係可編輯 Human Review surface；AI image 只係其中一個 final route，唔會自動發布。
+呢個 Skill 會先鎖定「寫俾邊個、點解佢要理、你比 Source 多咗乜嘢判斷」，再將一個重點寫成預設 10 張嘅完整故事。唔使揀 Style，亦冇 HTML；完整內容經 Human Review 後，直接交俾 AI 圖像 Skill。
 
 #### 主要輸出
 
-- Content plan 同 10-card story；
-- Style comparison／Style Capsule；
-- Editable HTML review；
-- Final draft、QA receipt 同 project-local learning record。
+- Audience-specific angle、Creator Judgment 同 10-card story；
+- Approved Content Plan；
+- `ai-social-image-maker` direct handoff；
+- Learning Log、三次成長 proposal 同 QA receipt。
 
 ➡️ [打開 Instagram Carousel Studio Skill](skills/instagram-carousel-studio/)
 
 ---
 
-## 六個 Skills 點樣一齊工作？
+### 7. AI Social Image Maker／AI 社交圖像製作
+
+`預計每張 5–15 分鐘，視乎圖像模型`
+
+👤 **你只需要提供：** 已批准文案或 Carousel Plan、Audience、PREFERENCES，同可用品牌／參考資產。
+
+呢個 Skill 會直接生成一張完整 `1080×1350px` Social Image，唔經 HTML。Carousel 先出 C01，Human Review 批准後先逐張做其餘內容；每張預設一個 ImageGen call，只容許一次針對 Hard Blocker 嘅重試。
+
+#### 主要輸出
+
+- C01 Pilot 同實際尺寸 read-back；
+- 每張完整 Final Image；
+- Ordered outputs、Contact Sheet 同 Generation Receipt；
+- 文字、Claim、Logo 同連貫性 QA。
+
+➡️ [打開 AI Social Image Maker Skill](skills/ai-social-image-maker/)
+
+---
+
+## 七個 Skills 點樣一齊工作？
 
 ```text
 來源／社交內容
@@ -459,6 +479,9 @@ social-content-research
       └── social-post-writing
               ├── hk-threads-writer
               └── instagram-carousel-studio
+                        ↓ Human Review
+                  ai-social-image-maker
+                        ↓ Image Review
       ↓
 Human Review
 ```
@@ -690,6 +713,7 @@ Use $hk-threads-writer。
     ├── social-post-writing/
     ├── hk-threads-writer/
     ├── instagram-carousel-studio/
+    ├── ai-social-image-maker/
     └── sales-funnel-landing-page-builder/
 ```
 
@@ -710,7 +734,7 @@ Use $hk-threads-writer。
 
 目前嘅 Skill Roadmap 係第一個發展階段。之後會繼續按照真實工作需要，加入更多有清楚用途、經過測試同可以驗收嘅 Skills，而唔係為咗數量增加 Folder。
 
-目前 Repository 完成六個 Skills；以下九項用作第一階段能力 Roadmap。
+目前 Repository 完成七個 Skills；以下九項用作第一階段能力 Roadmap。
 
 | # | Skill | 狀態 |
 | --- | --- | --- |
@@ -724,7 +748,7 @@ Use $hk-threads-writer。
 | 8 | LinkedIn Post Writing | Roadmap |
 | 9 | HK Threads Writer | **Implemented** |
 
-`Instagram Carousel Studio` 係額外完成嘅專項 Skill，唔等同 Roadmap #7 嘅 Instagram 單張 Post。
+`Instagram Carousel Studio` 同 `AI Social Image Maker` 係額外完成嘅專項 Skills，唔等同 Roadmap #7 嘅 Instagram 單張 Post。
 
 每個 Roadmap Skill 嘅人話介紹、Input 同預期流程，見 [Skill Introductions and Workflows](10-SKILL-INTRO-AND-FLOW.md)。
 
