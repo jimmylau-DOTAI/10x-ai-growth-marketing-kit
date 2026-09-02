@@ -1,0 +1,7 @@
+interface:
+  display_name: "Mira Audience Think & Check"
+  short_description: "Check ideas and artifacts through the audience's eyes"
+  default_prompt: "Use $mira-audience-qa to think from my intended audience's perspective, find the most important problems, explain why they matter, and recommend the smallest useful fixes."
+
+policy:
+  allow_implicit_invocation: true

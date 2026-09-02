@@ -16,13 +16,13 @@
 
 所以我整咗呢套 **10x AI Growth Marketing Kit**。
 
-目前先由九個可以安裝、閱讀、測試同修改嘅 AI Marketing Skills 開始，將 chatroom business memory、內容研究、SEO／GEO 內容、社交文案、Instagram Carousel、AI 圖像製作、香港 Threads、Sales Funnel Landing Page 同 Landing Page + Blog deployment，串成一條有來源、有判斷、有交接、有 Human Review 嘅工作流。
+目前先由十個可以安裝、閱讀、測試同修改嘅 AI Marketing Skills 開始，將 chatroom business memory、Audience Think & Check、內容研究、SEO／GEO 內容、社交文案、Instagram Carousel、AI 圖像製作、香港 Threads、Sales Funnel Landing Page 同 Landing Page + Blog deployment，串成一條有來源、有判斷、有交接、有 Human Review 嘅工作流。
 
-九個 Skills 只係起點。我哋會按照真實 Marketing 工作持續測試、改善同加入更多 Skills，令呢個 Kit 同每一個想用 AI 成長嘅人一齊成長。
+十個 Skills 只係起點。我哋會按照真實 Marketing 工作持續測試、改善同加入更多 Skills，令呢個 Kit 同每一個想用 AI 成長嘅人一齊成長。
 
 > **目前版本：** `v0.1-team-test`
 >
-> **目前可用：** 9 個完整 Skills
+> **目前可用：** 10 個完整 Skills
 >
 > **發展方向：** [Skill Roadmap](10-SKILL-INTRO-AND-FLOW.md)
 >
@@ -35,6 +35,7 @@
 | Skill | 幫你做乜 | 你需要提供 | 主要輸出 |
 | --- | --- | --- | --- |
 | [Save to Vault](skills/save-to-vault/) | 將 chatroom 去噪、分類並安全存入現有 Company Vault | 當前 chatroom、現有 Vault、save intent | Route plan、最小必要寫入、receipt、read-back |
+| [Mira Audience Think & Check](skills/mira-audience-qa/) | 從指定受眾角度檢查 Idea、Plan、Content、Visual 同成品 | 要判斷嘅內容、目標受眾、預期行動 | Audience reaction、Top problems、原因、改善次序、Verdict |
 | [Social Content Research](skills/social-content-research/) | 將社交內容變成可驗證研究 | 連結、影片、截圖或逐字稿 | Evidence、內容分析、原創角度 |
 | [SEO + GEO Blog Writing](skills/seo-geo-content/) | 將 Source 變成有觀點、有搜尋價值、適合 AI Search 理解嘅 Blog | Source、搜尋問題、客群、Company Brain、CTA | Source Guide、標題、文章、Meta、Links、HTML Review、QA |
 | [Social Post Writing](skills/social-post-writing/) | 將可靠觀點變成平台原生內容 | Idea、Audience、Voice、Platform、CTA | Threads、LinkedIn、Facebook、IG Drafts |
@@ -44,7 +45,7 @@
 | [Sales Funnel Landing Page Builder](skills/sales-funnel-landing-page-builder/) | 將一個 Offer 變成簡單直接、可驗收嘅 Lead Funnel | Offer、Audience、Proof、CTA、Design reference、form／data rules | Brief、Style、Copy、Page、UTM、Design／Operations receipts |
 | [Landing Page + Blog Deployer](skills/landing-page-blog-deployer/) | 將已批准 Landing Page 同 Blog 組合、修復、Preview 同安全部署到 Vercel | Landing／Blog handoffs、project、Vercel target、release approval | Routes、CTA／UTM continuity、QA、Preview／Production receipts |
 
-九個 Skills 可以獨立使用；亦可以由 Research 開始，一路交接到 Production、Lead Operations、verified website release，再將真正 durable decisions／learning 安全保存。下面會逐個解釋我點解咁寫、每個 Skill 點樣運作，同埋點樣驗收。
+十個 Skills 可以獨立使用；Mira 亦可以喺 Idea、Plan、Content、Visual Direction、成品或 Recheck 階段，以受眾角度檢查工作。其他 Skills 可以由 Research 開始，一路交接到 Production、Lead Operations、verified website release，再將真正 durable decisions／learning 安全保存。下面會逐個解釋我點解咁寫、每個 Skill 點樣運作，同埋點樣驗收。
 
 ---
 
@@ -157,7 +158,7 @@ AI 可以研究、整理、挑戰、建議同起 Draft；事實、品牌立場�
 
 ---
 
-## 目前九個 Skills
+## 目前十個 Skills
 
 ### 1. Social Content Research／社交內容研究
 
@@ -530,7 +531,29 @@ Skill 會分開處理 Hook 強度同 Claim 強度：L3 可以更尖銳，但唔�
 
 ---
 
-## 九個 Skills 點樣一齊工作？
+### 10. Mira Audience Think & Check／受眾角度判斷
+
+`預計 5–30 分鐘，視乎階段同 artifact`
+
+👤 **你只需要提供：** 想檢查嘅 Idea、Plan、Content、Visual Direction 或實際成品，加上目標受眾同希望佢採取嘅行動。
+
+呢個 Skill 唔係由創作者角度判斷「我鍾唔鍾意」，而係代入真正接收內容嘅人：第一眼見到乜、明唔明、覺得關唔關自己事、信唔信，同知唔知下一步做乜。
+
+佢會先找出最影響 `Understand`、`Relevant`、`Trust` 同 `Act` 嘅問題，再逐項講清楚位置、實際觀察、受眾反應、點解重要、改善方向同優先級。未睇過實際 Render，就唔會當 Visual QA 已通過。
+
+#### 主要輸出
+
+- Review stage、Audience、Intended outcome 同 Evidence boundary；
+- 真實而精簡嘅 Audience Reaction；
+- Top Problems、原因、影響同具體改善方向；
+- `Proceed／Proceed after fixes／Revise／Rethink audience or angle／Insufficient evidence`；
+- Recheck 時逐項確認修正同 regression。
+
+➡️ [打開 Mira Audience Think & Check Skill](skills/mira-audience-qa/)
+
+---
+
+## 十個 Skills 點樣一齊工作？
 
 ```text
 來源／社交內容
@@ -553,6 +576,8 @@ save-to-vault
       ├── Company knowledge candidate／source receipt
       ├── Project record／task receipt
       └── Learning Loop signal／rule candidate
+
+mira-audience-qa ← 可喺 Idea／Plan／Content／Visual／Rendered Experience／Recheck 介入
 ```
 
 每個 Skill 都可以獨立使用。但當上一個 Skill 交出可靠資料，下一個 Skill 就唔需要由零開始估。
@@ -569,8 +594,9 @@ save-to-vault
 4. 將已確認 Offer、Proof 同 CTA 交俾 `sales-funnel-landing-page-builder`，完成文案、設計、UTM、Lead journey 同 Landing handoff；
 5. 將兩份 approved handoff 交俾 `landing-page-blog-deployer`，由現況續做、組合 routes、完成 Preview，同等候 Production approval；
 6. 將 Campaign 觀點同活動訊息交俾 `social-post-writing`，分別製作平台原生 Draft；
-7. 由負責人核實 Claims、品牌語氣、活動資料、CTA、data behaviour 同 Preview，再決定正式發布。
-8. 用 `save-to-vault` 將已確認決定、artifact evidence 同具體 feedback 路由到 Company Vault；brainstorm、superseded versions 同敏感資料唔入 canonical knowledge。
+7. 用 `mira-audience-qa` 代入目標客戶，檢查對方是否理解、覺得相關、信任內容，同知道下一步；修正後再 Recheck。
+8. 由負責人核實 Claims、品牌語氣、活動資料、CTA、data behaviour 同 Preview，再決定正式發布。
+9. 用 `save-to-vault` 將已確認決定、artifact evidence 同具體 feedback 路由到 Company Vault；brainstorm、superseded versions 同敏感資料唔入 canonical knowledge。
 
 真正嘅價值唔係「一次過生成好多 Content」，而係每一步都知道資料從邊度嚟、點解咁決定、下一步交俾邊個。
 
@@ -578,7 +604,25 @@ save-to-vault
 
 ## 30 秒開始使用
 
-呢個 Repository 目前公開可見，仍然係 `v0.1-team-test`。你可以直接 Clone、安裝同測試；整個 Kit 未有統一分發 License，但 `hk-threads-writer` 子目錄已獨立採用 MIT License。
+呢個 Repository 目前公開可見，仍然係 `v0.1-team-test`。你可以直接 Clone、安裝同測試；整個 Kit 未有統一分發 License，但 `hk-threads-writer` 同 `mira-audience-qa` 子目錄已各自採用 MIT License。
+
+### 只安裝 Mira Audience Think & Check
+
+Codex 用：
+
+```bash
+npx --yes skills add jimmylau-DOTAI/10x-ai-growth-marketing-kit --skill mira-audience-qa -g -a codex -y
+```
+
+安裝後開一個新 Session：
+
+```text
+Use $mira-audience-qa。
+
+以第一次接觸呢個 Offer 嘅香港中小企老闆角度，Think and check 呢個 Idea。先找出最影響理解、信任同下一步行動嘅問題，解釋點解，再提供最小改善方向。
+```
+
+Mira 可以喺 Idea、Plan、Content、Visual Direction、Rendered Experience 或 Recheck 階段使用；未有實際 Render 時，唔會聲稱 Visual QA 已通過。
 
 ### 只安裝 Save to Vault
 
@@ -715,6 +759,16 @@ cp -R skills/. ~/.claude/skills/
 
 ## 第一次可以點樣測試？
 
+### 測試 Mira Audience Think & Check
+
+```text
+Use $mira-audience-qa。
+
+我想整一個「一日學識 AI Marketing」課程頁，目標係完全未用過 AI 嘅香港小店老闆。暫時只有呢個 Idea，未有文案同設計。請由受眾角度判斷有咩問題、點解，同應該先改乜。
+```
+
+好嘅輸出應該將 Stage 標為 `Idea`，講清楚 Audience、Intended outcome、Evidence 同限制；先交真實受眾反應，再指出具體問題、原因、影響、建議同優先級。未有畫面時只可以評論 Visual Direction，唔可以聲稱 Visual QA PASS，亦唔會直接接管完整課程頁創作。
+
 ### 測試 Save to Vault
 
 ```text
@@ -818,6 +872,7 @@ Use $hk-threads-writer。
 
 ```text
 10x-ai-growth-marketing-kit/
+├── AGENTS.md
 ├── README.md
 ├── TEAM-TEST-GUIDE.md
 ├── 10-SKILL-INTRO-AND-FLOW.md
@@ -831,7 +886,8 @@ Use $hk-threads-writer。
     ├── ai-social-image-maker/
     ├── sales-funnel-landing-page-builder/
     ├── landing-page-blog-deployer/
-    └── save-to-vault/
+    ├── save-to-vault/
+    └── mira-audience-qa/
 ```
 
 每個 Skill 只保留真正執行工作需要嘅 Files：
@@ -851,7 +907,7 @@ Use $hk-threads-writer。
 
 目前嘅 Skill Roadmap 係第一個發展階段。之後會繼續按照真實工作需要，加入更多有清楚用途、經過測試同可以驗收嘅 Skills，而唔係為咗數量增加 Folder。
 
-目前 Repository 完成九個 Skills；以下十項用作第一階段 Marketing 能力 Roadmap。
+目前 Repository 完成十個 Skills；以下十項用作第一階段 Marketing 能力 Roadmap。
 
 | # | Skill | 狀態 |
 | --- | --- | --- |
@@ -866,7 +922,7 @@ Use $hk-threads-writer。
 | 9 | LinkedIn Post Writing | Roadmap |
 | 10 | HK Threads Writer | **Implemented** |
 
-`Save to Vault` 係跨工作流嘅 business-memory 基礎 Skill；`Instagram Carousel Studio` 同 `AI Social Image Maker` 係額外完成嘅專項 Skills，唔等同 Roadmap #7 嘅 Instagram 單張 Post。
+`Save to Vault` 係跨工作流嘅 business-memory 基礎 Skill；`Mira Audience Think & Check` 係跨 Idea、Plan、Content、Visual 同成品嘅受眾判斷 Skill；`Instagram Carousel Studio` 同 `AI Social Image Maker` 係額外完成嘅專項 Skills，唔等同 Roadmap #7 嘅 Instagram 單張 Post。
 
 每個 Roadmap Skill 嘅人話介紹、Input 同預期流程，見 [Skill Introductions and Workflows](10-SKILL-INTRO-AND-FLOW.md)。
 

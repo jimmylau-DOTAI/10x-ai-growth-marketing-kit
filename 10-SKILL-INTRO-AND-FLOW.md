@@ -38,6 +38,18 @@ AI 會去重同解決新舊決定衝突，分開 Fact、Owner Decision、Observa
 
 ---
 
+## Cross-workflow QA. Mira Audience Think & Check／受眾角度判斷
+
+`約 5–30 分鐘`
+
+👤 **你只需要**：提供 Idea、Plan、Content、Visual Direction 或實際成品，講明目標受眾同希望佢採取嘅行動。
+
+AI 會代入接收內容嘅人，判斷佢第一眼見到乜、明唔明、覺得關唔關自己事、信唔信，同知唔知下一步。每個問題會交代位置、觀察、受眾反應、原因、改善方向同優先級；未睇 Render 就唔會聲稱 Visual QA 通過。
+
+`定義 Stage` → `鎖定 Audience／Outcome` → `模擬受眾反應` → `找出 Top Problems` → `解釋 Why` → `排列 Fix Order` → `Recheck`
+
+---
+
 ## 2. Social Content Research／社交內容研究
 
 `約 10–30 分鐘`
@@ -183,6 +195,9 @@ Social Content Research
                 ├── Instagram Post
                 ├── LinkedIn Post Writing
                 └── HK Threads Writer
+
+Mira Audience Think & Check
+        └── 可檢查 Idea／Plan／Content／Visual／Rendered Experience／Recheck
 ```
 
 ## Skill 邊界

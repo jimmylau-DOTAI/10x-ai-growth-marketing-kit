@@ -172,7 +172,34 @@ Pass criteria：
 - 回報 exact files、excluded content、validator、Human Review、owner 同下一步；
 - 唔會聲稱已 Git push、sync、publish 或 approved。
 
-## Test 8 — Wrong-skill routing
+## Test 8 — Mira Audience Think & Check
+
+```text
+Use $mira-audience-qa。
+
+我想做一個「一日學識 AI Marketing」課程頁，目標係完全未用過 AI 嘅香港小店老闆。暫時只有呢個 Idea，未有文案同設計。
+
+請由受眾角度判斷有咩問題、點解，同應該先改乜。
+```
+
+Pass criteria：
+
+- 將 Stage 標為 `Idea`，不要求先完成文案或設計；
+- 明確講出 Audience、Intended outcome、Evidence reviewed 同 Limitations；
+- Audience Reaction 係有標示嘅合理推測，不扮成真實 user research；
+- 每個 Top Problem 都有位置／範圍、觀察、受眾反應、點解重要、具體建議同優先級；
+- 使用 `Understand`、`Relevant`、`Trust`、`Act` 判斷受眾決策；
+- 未有實際 Render 時，不會聲稱 Visual QA 已通過；
+- 預設只診斷同建議，不會自行寫完整課程頁或發布。
+
+同一 Session 再提供實際課程頁 Screenshot，要求 `Rendered Experience` review。Pass criteria：
+
+- 真正檢查 Screenshot，而唔係只沿用上一輪推測；
+- 分開 Content 問題同 Visual 問題；
+- 標示 `Visual evidence: checked`；
+- Recheck 時逐項驗證原本 Must fix／Should fix，同時指出新 regression。
+
+## Test 9 — Wrong-skill routing
 
 逐一測試：
 
