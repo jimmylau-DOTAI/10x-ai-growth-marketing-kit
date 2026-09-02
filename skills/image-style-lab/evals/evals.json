@@ -1,0 +1,60 @@
+{
+  "skill_name": "image-style-lab",
+  "evals": [
+    {
+      "id": 1,
+      "name": "visual-reference-to-instagram-carousel-style",
+      "hidden_holdout": false,
+      "prompt": "我鍾意呢三張圖嘅視覺感覺，幫我拆出嚟，之後想用喺 IG Carousel。",
+      "expected_output": "A short natural Cantonese acknowledgement followed by visual Style extraction for the Instagram carousel destination. The assistant does not ask the student to choose a mode and does not create Tone or Skill candidates without supporting language or workflow evidence.",
+      "files": [],
+      "assertions": [
+        "The first reply is brief, natural Hong Kong Cantonese and asks at most one material question",
+        "Auto routing selects the style layer and ig-carousel target use without exposing internal status codes",
+        "The candidate keeps STYLE.md and DESIGN.md separate from current copy, identity and campaign content",
+        "No Vault write, installation, generation or publication is implied"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "mixed-reference-to-style-tone-and-skill",
+      "hidden_holdout": false,
+      "prompt": "呢批資料有設計圖、caption 同埋作者示範點樣由資料做到貼文。幫我拆成可以重用嘅嘢。",
+      "expected_output": "Auto mode identifies supported visual, language and workflow signals, explains them in a three-row plain-language review, and creates candidate STYLE/DESIGN, TONE and SKILL/evals outputs only after evidence review.",
+      "files": [],
+      "assertions": [
+        "The assistant routes by evidence inside the references rather than by file extension",
+        "Visual, language and workflow conclusions preserve separate evidence and do-not-copy boundaries",
+        "The Skill output remains a candidate with two normal scenarios and one hidden holdout",
+        "The assistant asks one combined review instead of three technical interviews"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "single-attractive-output-does-not-prove-workflow",
+      "hidden_holdout": false,
+      "prompt": "我得一張靚圖，幫我變成 Style、Tone 同 Skill。",
+      "expected_output": "A visual candidate may be proposed with uncertainty, but unsupported Tone and Skill layers are explicitly withheld. The assistant explains what more evidence would be needed in plain language.",
+      "files": [],
+      "assertions": [
+        "The assistant does not force all three candidate layers",
+        "One image is not treated as proof of a repeatable workflow or writing Tone",
+        "Identity, exact copy, Logo and source claims are excluded from reusable rules",
+        "Only one next question is asked"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "ordinary-summary-request-does-not-become-a-style-pack",
+      "hidden_holdout": true,
+      "prompt": "幫我總結呢篇文章講咩。",
+      "expected_output": "The task is treated as an ordinary summary request, not as Style, Tone or Skill extraction. Image Style Lab should not claim candidates or create save routes.",
+      "files": [],
+      "assertions": [
+        "No STYLE.md, TONE.md or SKILL.md candidate is created",
+        "No technical route receipt is shown to the user",
+        "No save or publication action is inferred"
+      ]
+    }
+  ]
+}

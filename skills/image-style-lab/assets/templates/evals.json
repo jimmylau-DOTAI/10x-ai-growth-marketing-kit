@@ -1,0 +1,32 @@
+{
+  "skill_name": "TBC",
+  "evals": [
+    {
+      "id": 1,
+      "name": "normal-scenario-one",
+      "hidden_holdout": false,
+      "prompt": "TBC",
+      "expected_output": "TBC",
+      "files": [],
+      "assertions": ["TBC"]
+    },
+    {
+      "id": 2,
+      "name": "normal-scenario-two",
+      "hidden_holdout": false,
+      "prompt": "TBC",
+      "expected_output": "TBC",
+      "files": [],
+      "assertions": ["TBC"]
+    },
+    {
+      "id": 3,
+      "name": "hidden-holdout",
+      "hidden_holdout": true,
+      "prompt": "TBC",
+      "expected_output": "TBC",
+      "files": [],
+      "assertions": ["TBC"]
+    }
+  ]
+}

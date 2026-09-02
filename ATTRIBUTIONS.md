@@ -52,6 +52,13 @@
 - `emil-design-eng`：源自 [emilkowalski/skills](https://github.com/emilkowalski/skills)；用作 interaction purpose、motion、state、reduced-motion 同 UI engineering review。此 Repository 只記錄 dependency contract，沒有複製上游 Skill。
 - 兩個依賴需要由使用者按各自 Repository 同 License 另行安裝；不可假設隨本 Kit 一併提供。
 
+## Image Style Lab method reference
+
+- `design-md-creator`：源自 [lcandy2/agent-skills](https://github.com/lcandy2/agent-skills/tree/main/design-md-creator)。
+- Used as method inspiration for observable rules、prose／bounded vocabulary／deterministic-check separation、baseline-versus-guided testing and hidden holdouts.
+- `image-style-lab` 嘅學生入口、Auto routing、Style／Tone／Skill separation、templates、validators、tests 同廣東話文字均為重新設計；冇複製上游 Skill 文字、fixtures、assets 或 scripts，亦唔需要上游 Skill 先可以執行。
+- GitHub repository metadata checked on 2026-09-03 did not declare a repository-level License；因此只引用概念並清楚 attribution，唔重新分發上游檔案。
+
 ## Public release reminder
 
 目前 Kit 整體係 Team Test Package，未選定統一公開分發 License；`skills/hk-threads-writer/` 已獨立採用 MIT。其餘內容公開前需要：

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Image Style Lab"
+  short_description: "Turn references into reusable Style, Tone, or Skills"
+  default_prompt: "Use $image-style-lab in auto mode. Read the references I provide, tell me briefly whether they support a visual Style, writing Tone, reusable Skill, or a combination, and ask only one question if a missing decision would change the result. Do not save or publish anything yet."

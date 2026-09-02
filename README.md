@@ -16,13 +16,13 @@
 
 所以我整咗呢套 **10x AI Growth Marketing Kit**。
 
-目前先由十個可以安裝、閱讀、測試同修改嘅 AI Marketing Skills 開始，將 chatroom business memory、Audience Think & Check、內容研究、SEO／GEO 內容、社交文案、Instagram Carousel、AI 圖像製作、香港 Threads、Sales Funnel Landing Page 同 Landing Page + Blog deployment，串成一條有來源、有判斷、有交接、有 Human Review 嘅工作流。
+目前有十一個可以安裝、閱讀、測試同修改嘅 AI Marketing Skills，將 chatroom business memory、Audience Think & Check、內容研究、SEO／GEO 內容、社交文案、Reference Style／Tone／Skill 拆解、Instagram Carousel、AI 圖像製作、香港 Threads、Sales Funnel Landing Page 同 Landing Page + Blog deployment，串成一條有來源、有判斷、有交接、有 Human Review 嘅工作流。
 
-十個 Skills 只係起點。我哋會按照真實 Marketing 工作持續測試、改善同加入更多 Skills，令呢個 Kit 同每一個想用 AI 成長嘅人一齊成長。
+十一個 Skills 只係起點。我哋會按照真實 Marketing 工作持續測試、改善同加入更多 Skills，令呢個 Kit 同每一個想用 AI 成長嘅人一齊成長。
 
 > **目前版本：** `v0.1-team-test`
 >
-> **目前可用：** 10 個完整 Skills
+> **目前可用：** 11 個完整 Skills
 >
 > **發展方向：** [Skill Roadmap](10-SKILL-INTRO-AND-FLOW.md)
 >
@@ -42,10 +42,11 @@
 | [HK Threads Writer](skills/hk-threads-writer/) | 寫自然香港廣東話、手機優先而且逐段驗證嘅 Threads | Source、新聞、觀點、故事或工作紀錄 | 單 Post、筆記 Link Reply、樓梯 Post、Python 字數 Receipt |
 | [Instagram Carousel Studio](skills/instagram-carousel-studio/) | 將 Source、見解同目標受眾重新編排成一個完整 Carousel Story | Source／Brief、Audience、One Message、Creator Judgment、CTA | Approved Content Plan、AI Image Handoff、Learning Log |
 | [AI Social Image Maker](skills/ai-social-image-maker/) | 將已批准內容直接生成完整 Social Images，唔經 HTML | Approved copy／Carousel Plan、PREFERENCES、Assets | C01 Pilot、1080×1350 Images、Contact-sheet QA |
+| [Image Style Lab](skills/image-style-lab/) | 將 Reference 自動拆成可重用視覺 Style、文字 Tone 或工作 Skill | 圖片、Post、頁面、影片、script 或示例，以及目標用途 | `STYLE.md + DESIGN.md`、`TONE.md`、candidate `SKILL.md + evals` |
 | [Sales Funnel Landing Page Builder](skills/sales-funnel-landing-page-builder/) | 將一個 Offer 變成簡單直接、可驗收嘅 Lead Funnel | Offer、Audience、Proof、CTA、Design reference、form／data rules | Brief、Style、Copy、Page、UTM、Design／Operations receipts |
 | [Landing Page + Blog Deployer](skills/landing-page-blog-deployer/) | 將已批准 Landing Page 同 Blog 組合、修復、Preview 同安全部署到 Vercel | Landing／Blog handoffs、project、Vercel target、release approval | Routes、CTA／UTM continuity、QA、Preview／Production receipts |
 
-十個 Skills 可以獨立使用；Mira 亦可以喺 Idea、Plan、Content、Visual Direction、成品或 Recheck 階段，以受眾角度檢查工作。其他 Skills 可以由 Research 開始，一路交接到 Production、Lead Operations、verified website release，再將真正 durable decisions／learning 安全保存。下面會逐個解釋我點解咁寫、每個 Skill 點樣運作，同埋點樣驗收。
+十一個 Skills 可以獨立使用；Mira 亦可以喺 Idea、Plan、Content、Visual Direction、成品或 Recheck 階段，以受眾角度檢查工作。其他 Skills 可以由 Research 開始，一路交接到 Style／Tone／Skill、Production、Lead Operations、verified website release，再將真正 durable decisions／learning 安全保存。下面會逐個解釋我點解咁寫、每個 Skill 點樣運作，同埋點樣驗收。
 
 ---
 
@@ -158,7 +159,7 @@ AI 可以研究、整理、挑戰、建議同起 Draft；事實、品牌立場�
 
 ---
 
-## 目前十個 Skills
+## 目前十一個 Skills
 
 ### 1. Social Content Research／社交內容研究
 
@@ -511,7 +512,26 @@ Skill 會分開處理 Hook 強度同 Claim 強度：L3 可以更尖銳，但唔�
 
 ---
 
-### 9. Save to Vault／Chatroom 變 Business Memory
+### 9. Image Style Lab／Reference 變 Style、Tone 或 Skill
+
+`預計 15–60 分鐘，視乎 Reference 數量同輸出層數`
+
+👤 **你只需要提供：** 1–5 個圖片、Post、頁面、影片、script 或示例，再講之後想用喺邊個平台／格式。
+
+學生只需要一個 `image-style-lab`。Auto mode 會按 Reference 入面真正可重用嘅證據，判斷要建立視覺 `STYLE.md + DESIGN.md`、文字 `TONE.md`、工作方法 `SKILL.md + evals`，或者其中一個組合；唔會為咗交齊三份而虛構規則。
+
+#### 主要輸出
+
+- 三層人話 review：畫面、語氣、做法；
+- 可攜式 Style pack、Tone candidate 或 Skill candidate；
+- SEO Banner、IG Carousel、IG 單圖或 portable destination route；
+- Baseline／guided tests、evidence boundary 同 explicit Save gate。
+
+➡️ [打開 Image Style Lab Skill](skills/image-style-lab/)
+
+---
+
+### 10. Save to Vault／Chatroom 變 Business Memory
 
 `預計 5–20 分鐘，視乎 chatroom 同 routes 數量`
 
@@ -531,7 +551,7 @@ Skill 會分開處理 Hook 強度同 Claim 強度：L3 可以更尖銳，但唔�
 
 ---
 
-### 10. Mira Audience Think & Check／受眾角度判斷
+### 11. Mira Audience Think & Check／受眾角度判斷
 
 `預計 5–30 分鐘，視乎階段同 artifact`
 
@@ -553,12 +573,13 @@ Skill 會分開處理 Hook 強度同 Claim 強度：L3 可以更尖銳，但唔�
 
 ---
 
-## 十個 Skills 點樣一齊工作？
+## 十一個 Skills 點樣一齊工作？
 
 ```text
 來源／社交內容
       ↓
 social-content-research
+      ├── image-style-lab ──→ STYLE／TONE／SKILL candidates
       ├── seo-geo-content ────────────────┐
       ├── sales-funnel-landing-page-builder ─┤
       │                                      ↓
@@ -623,6 +644,24 @@ Use $mira-audience-qa。
 ```
 
 Mira 可以喺 Idea、Plan、Content、Visual Direction、Rendered Experience 或 Recheck 階段使用；未有實際 Render 時，唔會聲稱 Visual QA 已通過。
+
+### 只安裝 Image Style Lab（學生單一入口）
+
+Codex 用：
+
+```bash
+npx --yes skills add jimmylau-DOTAI/10x-ai-growth-marketing-kit --skill image-style-lab -g -a codex -y
+```
+
+安裝後開一個新 Session，直接提供 Reference：
+
+```text
+Use $image-style-lab。
+
+幫我拆呢啲 Reference，之後想用嚟做 IG Carousel。
+```
+
+Auto mode 會判斷 Reference 支持 Visual Style、Writing Tone、Reusable Skill，定其中一個組合；未收到 `save it as style／tone／skill` 前唔會寫入 Vault、安裝 candidate 或發布。
 
 ### 只安裝 Save to Vault
 
@@ -907,7 +946,7 @@ Use $hk-threads-writer。
 
 目前嘅 Skill Roadmap 係第一個發展階段。之後會繼續按照真實工作需要，加入更多有清楚用途、經過測試同可以驗收嘅 Skills，而唔係為咗數量增加 Folder。
 
-目前 Repository 完成十個 Skills；以下十項用作第一階段 Marketing 能力 Roadmap。
+目前 Repository 有十一個可用 Skills；以下十項仍然係第一階段 Marketing 能力 Roadmap。
 
 | # | Skill | 狀態 |
 | --- | --- | --- |
@@ -922,7 +961,7 @@ Use $hk-threads-writer。
 | 9 | LinkedIn Post Writing | Roadmap |
 | 10 | HK Threads Writer | **Implemented** |
 
-`Save to Vault` 係跨工作流嘅 business-memory 基礎 Skill；`Mira Audience Think & Check` 係跨 Idea、Plan、Content、Visual 同成品嘅受眾判斷 Skill；`Instagram Carousel Studio` 同 `AI Social Image Maker` 係額外完成嘅專項 Skills，唔等同 Roadmap #7 嘅 Instagram 單張 Post。
+`Save to Vault` 係跨工作流嘅 business-memory 基礎 Skill；`Mira Audience Think & Check` 係跨 Idea、Plan、Content、Visual 同成品嘅受眾判斷 Skill；`Image Style Lab` 係學生用嚟將 Reference 變成 Style／Tone／Skill 嘅單一入口；`Instagram Carousel Studio` 同 `AI Social Image Maker` 係額外完成嘅專項 Skills，唔等同 Roadmap #7 嘅 Instagram 單張 Post。
 
 每個 Roadmap Skill 嘅人話介紹、Input 同預期流程，見 [Skill Introductions and Workflows](10-SKILL-INTRO-AND-FLOW.md)。
 
