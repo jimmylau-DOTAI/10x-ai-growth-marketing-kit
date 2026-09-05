@@ -140,4 +140,4 @@ Google Doc、CMS upload、publish、deploy 或 send 屬於另一個交付階段�
 
 文章經 Human Review 批准後，可產生 `blog-publish-handoff.json`。Handoff 指向真實 article source，列出 slug、metadata、canonical、internal links、CTA、Schema、image rights 同 open items。
 
-`APPROVED_FOR_ASSEMBLY` 只代表內容可以交俾 `landing-page-blog-deployer` 進行網站組合。佢唔等於 CMS upload、Preview、Production、tracking 或其他外部 mutation 已批准。
+`APPROVED_FOR_ASSEMBLY` 只代表內容可以交返現有網站 Project，由 AI 按自然語言整合要求接手 進行網站組合。佢唔等於 CMS upload、Preview、Production、tracking 或其他外部 mutation 已批准。

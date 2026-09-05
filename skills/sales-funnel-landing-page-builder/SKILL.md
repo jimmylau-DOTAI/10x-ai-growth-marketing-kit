@@ -160,7 +160,7 @@ Deploy page、deploy endpoint、install trigger、write CRM、send email、conne
 
 ## Landing site handoff
 
-如果用戶要將已批准 Landing Page 同 Blog 組合成一個 multi-route website，本 Skill 停止擴張 scope，建立 `landing-site-handoff.json` 交俾 `landing-page-blog-deployer`。Handoff contract 見 [landing-page-output.md](assets/landing-page-output.md)，最少包括：
+如果用戶要將已批准 Landing Page 同 Blog 組合成一個 multi-route website，本 Skill 停止擴張 scope，建立 `landing-site-handoff.json` 交返現有網站 Project，由 AI 按自然語言整合要求接手。Handoff contract 見 [landing-page-output.md](assets/landing-page-output.md)，最少包括：
 
 - source artifact、approval status 同 `/` route；
 - Primary CTA label、intent、target 同 verification status；

@@ -75,7 +75,7 @@
 
 ## Optional landing site handoff
 
-Use when an approved page will be assembled with a Blog by `landing-page-blog-deployer`.
+Use when an approved page will be assembled with a Blog in the existing website Project using natural-language instructions.
 
 - File: `landing-site-handoff.json`
 - Schema version: `1.0`

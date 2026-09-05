@@ -16,13 +16,13 @@
 
 所以我整咗呢套 **10x AI Growth Marketing Kit**。
 
-目前有十一個可以安裝、閱讀、測試同修改嘅 AI Marketing Skills，將 chatroom business memory、Audience Think & Check、內容研究、SEO／GEO 內容、社交文案、Reference Style／Tone／Skill 拆解、Instagram Carousel、AI 圖像製作、香港 Threads、Sales Funnel Landing Page 同 Landing Page + Blog deployment，串成一條有來源、有判斷、有交接、有 Human Review 嘅工作流。
+目前有十個可以安裝、閱讀、測試同修改嘅 AI Marketing Skills，將 chatroom business memory、Audience Think & Check、內容研究、SEO／GEO 內容、社交文案、Reference Style／Tone／Skill 拆解、Instagram Carousel、AI 圖像製作、香港 Threads、Sales Funnel Landing Page，串成一條有來源、有判斷、有交接、有 Human Review 嘅工作流。
 
-十一個 Skills 只係起點。我哋會按照真實 Marketing 工作持續測試、改善同加入更多 Skills，令呢個 Kit 同每一個想用 AI 成長嘅人一齊成長。
+十個 Skills 只係起點。我哋會按照真實 Marketing 工作持續測試、改善同加入更多 Skills，令呢個 Kit 同每一個想用 AI 成長嘅人一齊成長。
 
 > **目前版本：** `v0.1-team-test`
 >
-> **目前可用：** 11 個完整 Skills
+> **目前可用：** 10 個完整 Skills
 >
 > **發展方向：** [Skill Roadmap](10-SKILL-INTRO-AND-FLOW.md)
 >
@@ -44,9 +44,8 @@
 | [AI Social Image Maker](skills/ai-social-image-maker/) | 將已批准內容直接生成完整 Social Images，唔經 HTML | Approved copy／Carousel Plan、PREFERENCES、Assets | C01 Pilot、1080×1350 Images、Contact-sheet QA |
 | [Image Style Lab](skills/image-style-lab/) | 將 Reference 自動拆成可重用視覺 Style、文字 Tone 或工作 Skill | 圖片、Post、頁面、影片、script 或示例，以及目標用途 | `STYLE.md + DESIGN.md`、`TONE.md`、candidate `SKILL.md + evals` |
 | [Sales Funnel Landing Page Builder](skills/sales-funnel-landing-page-builder/) | 將一個 Offer 變成簡單直接、可驗收嘅 Lead Funnel | Offer、Audience、Proof、CTA、Design reference、form／data rules | Brief、Style、Copy、Page、UTM、Design／Operations receipts |
-| [Landing Page + Blog Deployer](skills/landing-page-blog-deployer/) | 將已批准 Landing Page 同 Blog 組合、修復、Preview 同安全部署到 Vercel | Landing／Blog handoffs、project、Vercel target、release approval | Routes、CTA／UTM continuity、QA、Preview／Production receipts |
 
-十一個 Skills 可以獨立使用；Mira 亦可以喺 Idea、Plan、Content、Visual Direction、成品或 Recheck 階段，以受眾角度檢查工作。其他 Skills 可以由 Research 開始，一路交接到 Style／Tone／Skill、Production、Lead Operations、verified website release，再將真正 durable decisions／learning 安全保存。下面會逐個解釋我點解咁寫、每個 Skill 點樣運作，同埋點樣驗收。
+十個 Skills 可以獨立使用；Mira 亦可以喺 Idea、Plan、Content、Visual Direction、成品或 Recheck 階段，以受眾角度檢查工作。其他 Skills 可以由 Research 開始，一路交接到 Style／Tone／Skill、Production、Lead Operations、verified website release，再將真正 durable decisions／learning 安全保存。下面會逐個解釋我點解咁寫、每個 Skill 點樣運作，同埋點樣驗收。
 
 ---
 
@@ -159,7 +158,7 @@ AI 可以研究、整理、挑戰、建議同起 Draft；事實、品牌立場�
 
 ---
 
-## 目前十一個 Skills
+## 目前十個 Skills
 
 ### 1. Social Content Research／社交內容研究
 
@@ -410,47 +409,7 @@ Offer Brief
 
 ---
 
-### 5. Landing Page + Blog Deployer／網站組合及部署
-
-`預計 30–90 分鐘；視乎現有網站同 Vercel 狀態`
-
-👤 **你只需要提供：** 已批准嘅 Landing／Blog artifacts、網站 project 同想部署嘅 Vercel target。已存在嘅資料會由 AI 自動讀取，唔需要重新回答。
-
-#### 點解我會寫呢個 Skill？
-
-初學者最容易卡住嘅位置，通常唔係寫唔到頁面，而係唔知道而家完成咗幾多、Blog 應該放邊、UTM 點樣保留、Git 係咪必須，以及 Vercel 成功畫面算唔算真正完成。
-
-呢個 Skill 會先讀現況同保存進度，一次只問一條真正影響結果嘅問題。Build 或 deploy 出錯時，佢會保留已完成工作，由失敗 gate 修復再繼續；唔會叫學生由頭做，亦唔會用一堆 technical prompts 推返畀學生。
-
-#### 工作流程
-
-```text
-讀取現況／Resume
-→ 修復 Landing／Blog handoff 缺口
-→ 組合 `/`、`/blog`、article routes
-→ CTA／UTM／Form／Mobile QA
-→ Vercel Preview
-→ Human Review
-→ Production approval
-→ Deploy and live read-back
-```
-
-Git 可以用作版本記錄或 connected deployment，但唔係學生開始或建立 Preview 嘅先決條件。CMS 亦係可選；Markdown、MDX、JSON 或現有 content folder 足夠時，唔會強行加入 Supabase。
-
-#### 主要輸出
-
-- `site-deployment-state.json` 同可續做進度；
-- Landing／Blog handoff validation；
-- `/`、`/blog`、`/blog/[slug]` routes；
-- Blog 中段 CTA 同 article-only mobile fixed CTA；
-- UTM first-touch、form dry-run 同 connected-status evidence；
-- Local、Preview、Production QA 及 live destination receipt。
-
-➡️ [打開 Landing Page + Blog Deployer Skill](skills/landing-page-blog-deployer/)
-
----
-
-### 6. HK Threads Writer／香港 Threads 文案
+### 5. HK Threads Writer／香港 Threads 文案
 
 `預計 5–20 分鐘`
 
@@ -474,7 +433,7 @@ Skill 會分開處理 Hook 強度同 Claim 強度：L3 可以更尖銳，但唔�
 
 ---
 
-### 7. Instagram Carousel Studio／Instagram Carousel
+### 6. Instagram Carousel Studio／Instagram Carousel
 
 `預計 45–120 分鐘`
 
@@ -493,7 +452,7 @@ Skill 會分開處理 Hook 強度同 Claim 強度：L3 可以更尖銳，但唔�
 
 ---
 
-### 8. AI Social Image Maker／AI 社交圖像製作
+### 7. AI Social Image Maker／AI 社交圖像製作
 
 `預計每張 5–15 分鐘，視乎圖像模型`
 
@@ -512,7 +471,7 @@ Skill 會分開處理 Hook 強度同 Claim 強度：L3 可以更尖銳，但唔�
 
 ---
 
-### 9. Image Style Lab／Reference 變 Style、Tone 或 Skill
+### 8. Image Style Lab／Reference 變 Style、Tone 或 Skill
 
 `預計 15–60 分鐘，視乎 Reference 數量同輸出層數`
 
@@ -531,7 +490,7 @@ Skill 會分開處理 Hook 強度同 Claim 強度：L3 可以更尖銳，但唔�
 
 ---
 
-### 10. Save to Vault／Chatroom 變 Business Memory
+### 9. Save to Vault／Chatroom 變 Business Memory
 
 `預計 5–20 分鐘，視乎 chatroom 同 routes 數量`
 
@@ -551,7 +510,7 @@ Skill 會分開處理 Hook 強度同 Claim 強度：L3 可以更尖銳，但唔�
 
 ---
 
-### 11. Mira Audience Think & Check／受眾角度判斷
+### 10. Mira Audience Think & Check／受眾角度判斷
 
 `預計 5–30 分鐘，視乎階段同 artifact`
 
@@ -573,7 +532,7 @@ Skill 會分開處理 Hook 強度同 Claim 強度：L3 可以更尖銳，但唔�
 
 ---
 
-## 十一個 Skills 點樣一齊工作？
+## 十個 Skills 點樣一齊工作？
 
 ```text
 來源／社交內容
@@ -583,7 +542,7 @@ social-content-research
       ├── seo-geo-content ────────────────┐
       ├── sales-funnel-landing-page-builder ─┤
       │                                      ↓
-      │                         landing-page-blog-deployer
+      │                         網站整合（自然語言 Project 任務）
       └── social-post-writing
               ├── hk-threads-writer
               └── instagram-carousel-studio
@@ -613,7 +572,7 @@ mira-audience-qa ← 可喺 Idea／Plan／Content／Visual／Rendered Experience
 2. 由負責人確認主要受眾、Offer、核心訊息、CTA、渠道同轉化路徑；
 3. 將需要建立搜尋信任嘅題目交俾 `seo-geo-content`，Human Review 後輸出 Blog handoff；
 4. 將已確認 Offer、Proof 同 CTA 交俾 `sales-funnel-landing-page-builder`，完成文案、設計、UTM、Lead journey 同 Landing handoff；
-5. 將兩份 approved handoff 交俾 `landing-page-blog-deployer`，由現況續做、組合 routes、完成 Preview，同等候 Production approval；
+5. 將已確認 Landing Page 同 Blog 交返網站 Project，直接用自然語言要求整合，由現況續做、組合 routes、完成 Preview，同等候 Production approval；
 6. 將 Campaign 觀點同活動訊息交俾 `social-post-writing`，分別製作平台原生 Draft；
 7. 用 `mira-audience-qa` 代入目標客戶，檢查對方是否理解、覺得相關、信任內容，同知道下一步；修正後再 Recheck。
 8. 由負責人核實 Claims、品牌語氣、活動資料、CTA、data behaviour 同 Preview，再決定正式發布。
@@ -742,23 +701,16 @@ Use $seo-geo-content。
 
 如果唔用 Terminal，可以[下載整個 Repository ZIP](https://github.com/jimmylau-DOTAI/10x-ai-growth-marketing-kit/archive/refs/heads/main.zip)，解壓後只取 `skills/seo-geo-content`。
 
-### 只安裝 Landing Page + Blog Deployer
+### 網站整合：直接用自然語言
 
-如果 Landing Page 同 Blog 已經完成 Human Review，可以安裝部署 Skill。Codex 用：
-
-```bash
-npx --yes skills add jimmylau-DOTAI/10x-ai-growth-marketing-kit --skill landing-page-blog-deployer -g -a codex -y
-```
-
-安裝後開一個新 Session：
+將已確認 Blog 同現有網站交畀 AI，唔需要另裝網站組裝 Skill：
 
 ```text
-Use $landing-page-blog-deployer。
-
-讀取我現有 Landing Page 同 Blog project，由而家嘅進度繼續，一次只問我一條必要問題。先做到 Local QA 同 Preview，Production 前再等我確認。
+先讀目前網站同已確認 Blog，接住現有進度，加入文章列表同文章頁。沿用原本風格、文案、表格同 Email 設定，將文章接返 Landing Page，保留 UTM 來源追蹤。
+檢查手機版、連結、表格同來源追蹤，修好本機問題，再打開畀我睇。缺資料先問，唔好估。今次先做本機，唔上架、唔寄信、唔寫真 CRM。
 ```
 
-第一次會先檢查現況、保留已完成工作同指出最早缺口；唔會因為冇 `site-deployment-state.json` 就由零重建網站。
+上架需要指定目標及批准，完成後核對實際網址；網站、CRM、Email 各自回報已驗證同未測項目。
 
 ### 安裝全部 Skills
 
@@ -924,7 +876,6 @@ Use $hk-threads-writer。
     ├── instagram-carousel-studio/
     ├── ai-social-image-maker/
     ├── sales-funnel-landing-page-builder/
-    ├── landing-page-blog-deployer/
     ├── save-to-vault/
     └── mira-audience-qa/
 ```
@@ -946,7 +897,7 @@ Use $hk-threads-writer。
 
 目前嘅 Skill Roadmap 係第一個發展階段。之後會繼續按照真實工作需要，加入更多有清楚用途、經過測試同可以驗收嘅 Skills，而唔係為咗數量增加 Folder。
 
-目前 Repository 有十一個可用 Skills；以下十項仍然係第一階段 Marketing 能力 Roadmap。
+目前 Repository 有十個可用 Skills；以下十項仍然係第一階段 Marketing 能力 Roadmap。
 
 | # | Skill | 狀態 |
 | --- | --- | --- |
@@ -955,7 +906,7 @@ Use $hk-threads-writer。
 | 3 | SEO + GEO Content | **Implemented** |
 | 4 | Social Post Writing | **Implemented** |
 | 5 | Sales Funnel Landing Page Builder | **Implemented** |
-| 6 | Landing Page + Blog Deployer | **Implemented** |
+| 6 | 網站整合 | 自然語言 Project 任務，不另設 Skill |
 | 7 | Proposal Deck Builder | Roadmap |
 | 8 | Instagram Post | Roadmap |
 | 9 | LinkedIn Post Writing | Roadmap |

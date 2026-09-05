@@ -116,15 +116,11 @@ AI 會先鎖定 Brief，再逐步確認 Style 同 Copy，建立簡單直接嘅 L
 
 ---
 
-## 6. Landing Page + Blog Deployer／網站組合及部署
+## 6. 網站整合／自然語言 Project 任務
 
-`約 30–90 分鐘`
+提供現有網站及已確認 Blog，直接叫 AI 加入文章列表、文章頁同共同 CTA；保留原有風格、Form、UTM 同 Email 設定。完成本機檢查後打開成果，再按批准上架。這段不需要另外安裝 Skill。
 
-👤 **你只需要**：提供已批准 Landing／Blog artifacts 同現有 website project；AI 會自行讀取可發現資料，再一次只問一條必要問題。
-
-AI 會保存現有進度，修復 handoff 缺口，組合 Landing Page、Blog index 同 article routes，再驗證 CTA、UTM、Form 同手機固定 CTA。先完成 Local QA 同 Vercel Preview，經 Human Review 及當次 Production approval 後先正式部署並 read back。
-
-`Resume／Inspect` → `Repair inputs` → `Assemble` → `Local QA` → `Preview` → `Human Review` → `Production Deploy` → `Live Read-back`
+`讀現況` → `加入 Blog` → `本機驗收` → `確認上架目標` → `按批准部署與核對`
 
 ---
 
@@ -178,7 +174,7 @@ AI 會先保護 Source、身份同 Claim boundary，再按證據選擇 Hot Take�
 
 ---
 
-## 十個 Skills 嘅整體 Flow
+## Marketing 工作嘅整體 Flow
 
 ```text
 Company Brain Setup
@@ -189,7 +185,7 @@ Social Content Research
         ├── SEO + GEO Content ───────────────┐
         ├── Sales Funnel Landing Page Builder ─┤
         │                                      ↓
-        │                          Landing Page + Blog Deployer
+        │                          網站整合（自然語言 Project 任務）
         ├── Proposal Deck Builder
         └── Social Post Writing
                 ├── Instagram Post
@@ -209,7 +205,7 @@ Mira Audience Think & Check
 - `HK Threads Writer` 負責香港廣東話 Threads、Hook payoff、手機節奏、三種交付模式及逐段 500 字 Gate。
 - `SEO + GEO Content` 負責文章研究、寫作、QA 同 approved Blog handoff；不負責 deploy。
 - `Sales Funnel Landing Page Builder` 負責一個 Offer 嘅頁面文案、設計、Build、UTM、短表格、可選 Lead Operations 同 approved Landing handoff；進階 Assessment 另開 Skill。
-- `Landing Page + Blog Deployer` 負責讀取兩份 approved handoff、續做／修復、multi-route assembly、Vercel Preview／Production gate 同 live read-back；不重新寫 Offer 或 Blog。
+- 網站整合由 AI 按 Project 指令直接完成；保留已確認 Offer／Blog，驗收現有功能，按批准部署並核對結果。
 - `Proposal Deck Builder` 負責客戶提案 Storyline、逐頁內容及可編輯 PPTX。
 
 ## 共通安全界線

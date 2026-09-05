@@ -106,6 +106,6 @@ HTTP success、success screen、redirect、同一 request 寫入嘅 timestamp �
 
 ## 7. Landing plus Blog handoff
 
-當要求變成 `/`、`/blog` 同 article routes 嘅同一網站，Landing Skill 完成 `landing-site-handoff.json` 後交俾 `landing-page-blog-deployer`，唔在本 Skill 重建 Blog／site deployment 功能。
+當要求變成 `/`、`/blog` 同 article routes 嘅同一網站，Landing Skill 完成 `landing-site-handoff.json` 後交返現有網站 Project，由 AI 按自然語言整合要求接手，唔在本 Skill 重建 Blog／site deployment 功能。
 
 Handoff 必須指向已批准 artifacts，列出 CTA、form、UTM、QA evidence 同 open items。`APPROVED_FOR_ASSEMBLY` 只代表可以進入 assembly，唔代表 Preview、Production、CRM、email、analytics 或 domain action 已批准。

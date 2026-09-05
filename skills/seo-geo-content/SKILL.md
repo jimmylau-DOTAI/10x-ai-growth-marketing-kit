@@ -157,7 +157,7 @@ CTA 必須對應已確認 Offer、適合本文讀者及真實目的地；否則�
 
 ## Phase 5: Blog publish handoff
 
-文章經 Human Review 批准後，可以建立 `blog-publish-handoff.json` 交俾 `landing-page-blog-deployer`。HTML 唔係必要條件；可以交 Markdown、MDX、JSON 或現有 CMS-safe source，但必須指向真實 artifact。
+文章經 Human Review 批准後，可以建立 `blog-publish-handoff.json` 交返現有網站 Project，由 AI 按自然語言整合要求接手。HTML 唔係必要條件；可以交 Markdown、MDX、JSON 或現有 CMS-safe source，但必須指向真實 artifact。
 
 Handoff contract 見 [article-output.md](assets/article-output.md)，最少包括：
 

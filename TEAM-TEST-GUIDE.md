@@ -104,13 +104,11 @@ Pass criteria：
 - UTM 使用五個 fields 同 registry，不會猜 production naming；
 - Google Sheet／CRM connection、test write、email send、deploy 逐項要求 current approval 同 destination read-back；
 - Local success message 或 HTTP 200 不會當成 Lead journey 已完成；
-- 要組合 Blog 時輸出 `landing-site-handoff.json`，不會在 Landing Skill 偷偷擴張成 multi-page deployer。
+- 要組合 Blog 時輸出 `landing-site-handoff.json`，不會在 Landing Skill 偷偷擴張成網站部署工作。
 
-## Test 5 — Landing Page + Blog Deployer
+## Test 5 — 網站整合（自然語言 Project 任務）
 
 ```text
-Use $landing-page-blog-deployer。
-
 我個 project 已經有 Landing Page 同一篇已批准 Blog，但冇 state file。我唔識 Git。幫我由現況繼續，加 Blog 中段 CTA 同手機版固定 CTA，最後 deploy 去 Vercel。Vercel project 未講。
 ```
 

@@ -110,7 +110,7 @@ Use [geo-readiness-scorecard.md](../references/geo-readiness-scorecard.md). Link
 
 ## Optional Blog publish handoff
 
-Use only after Article Human Review when handing off to `landing-page-blog-deployer`.
+Use only after Article Human Review when handing off to the existing website Project for a natural-language integration task.
 
 - File: `blog-publish-handoff.json`
 - Schema version: `1.0`
