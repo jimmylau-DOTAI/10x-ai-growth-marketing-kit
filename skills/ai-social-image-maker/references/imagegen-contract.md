@@ -11,10 +11,10 @@ Audience response: recognise the problem and want the promised answer
 Visible copy: exact approved wording
 Visual subject: one primary subject or explanatory structure
 Composition: focal path, scale, depth, safe zones
-Continuity: relevant lines from PREFERENCES.md
+Style: selected STYLE.md and only the relevant visual relationships
 Approved assets: exact local files and roles
 Forbidden: unsupported claims, fake logos, copied creator identity
-Output: one complete flattened 1080×1350 image
+Output: one complete flattened image at the requested dimensions
 ```
 
 ## Complete Image Rule
@@ -34,10 +34,11 @@ The generation request must describe the full frame. Do not request:
 - Never generate a plausible substitute for an official logo.
 - If an official logo asset is supplied and the tool supports image editing, use the real asset without redrawing it.
 - If exact logo or claim-critical text remains impossible under the pure-AI constraint, report the limitation and recommend a deterministic finish.
+- When a real Logo is required, reserve a natural low-detail area in the composition. Do not draw a white pill, card, frame, or pedestal merely to hold the Logo.
 
 ## Continuity
 
-Later cards may use approved C01 as a continuity reference. Preserve relationships—hierarchy, palette balance, texture, focal scale, and recurring motifs—rather than copying one rigid composition.
+Later cards may use approved C01 as a continuity reference. Preserve relationships—hierarchy, palette balance, texture, focal scale, and recurring motifs—rather than copying one rigid composition or fixed grid.
 
 ## Call Budget
 

@@ -1,94 +1,36 @@
 ---
 name: ai-social-image-maker
-description: Generate one complete social image or an ordered set of Instagram carousel images directly from an approved content plan and optional preference profile, without HTML. Use when the user wants native AI-generated 1080×1350 social images, a C01 pilot and review gate, one image-model call per final card, continuity QA, and a local output receipt. Do not use for content strategy, unapproved carousel plans, exact-logo recreation, publishing, or automatic preference updates.
+description: Create or edit complete AI social images, Carousel cards and Blog banners using the selected Style, visible copy and real brand assets. Verify the actual image, text, Logo and requested dimensions before delivery.
 ---
 
 # AI Social Image Maker
 
-Turn approved content into complete, flattened social images. Do not add an HTML layout stage or produce separate background plates for later composition.
+將內容、已選 Style 同品牌素材做成完整 AI 圖像。文字、主體、構圖、材質與光影一齊設計；不用 HTML／CSS 排版替代原生圖像。
 
-## Non-Negotiable Contract
+## 1. 讀今次資料
 
-- For a carousel, require explicit `CAROUSEL_PLAN_APPROVED` before any image generation.
-- Generate C01 first and stop at `C01_REVIEW_REQUIRED`.
-- Generate the remaining cards only after explicit `C01_APPROVED`.
-- Make one native image-model call per final card. A second call is allowed only for one named hard blocker.
-- Target exactly `1080×1350px` for every final image.
-- Each output is a complete image: background, subject, hierarchy, visible copy, and visual treatment in one frame.
-- Use the supplied `PREFERENCES.md` automatically. Do not present a Style chooser.
-- Never invent an official logo, trademark, customer result, quotation, product UI, or claim.
-- Never publish, send, deploy, schedule, or modify preferences automatically.
+沿用已有內容、用途／尺寸、Style、參考圖、品牌同 Logo 要求，只問真正影響下一步嘅缺口。先看實圖；新版 STYLE 已包含設計方法，唔補造 DESIGN。舊 Style 有獨立 DESIGN 才按需補讀；品牌共通 DESIGN 係另一類資料。
 
-## Required Inputs
+按需要讀：品牌圖用 [品牌與真素材](references/brand-adaptation.md)，將來源色彩／字形／圖像方法轉成自己品牌；未確認適配圖只交候選。平台同具體位置跟 Style 界線，未驗格式需重排並驗圖；Banner 用 [橫幅處理](references/banner-production.md)。學生只講想完成乜，AI 管理所需檔案，唔要求填技術表。
 
-For one image:
+## 2. 確認尺寸與工具
 
-- approved message and visible copy
-- audience and content job
-- exact dimensions
-- optional `PREFERENCES.md`
-- approved reference or identity assets
-- output path
+按 [尺寸需求](references/size-intake.md) 寫 request，執行 preflight；已確認資料唔重問。再按 [工具能力](references/tool-adapters.md) 核對實際生成／編輯能力、參考圖輸入及尺寸控制。只喺 prompt 寫尺寸不代表工具做到。
 
-For a carousel:
+預設用環境提供嘅 image tool；用戶指定其他可用工具時跟其要求。遵守 runtime 編輯規則，不自動安裝、付費或連帳戶。工具缺能力如實說明。
 
-- absolute project path
-- `content-plan.md` with exact `CAROUSEL_PLAN_APPROVED`
-- card count and ordered card IDs
-- `PREFERENCES.md`
-- relevant approved assets from `ASSET-MANIFEST.md`
-- CTA delivery status
+## 3. 做完整圖片
 
-If the plan is incomplete or merely says `CAROUSEL_PLAN_REVIEW_REQUIRED`, return `CONTENT_APPROVAL_REQUIRED`. Do not infer approval from casual phrases such as “looks fine” when the complete plan was not shown.
+先定今次想觀眾注意／理解乜，再把文案、第一眼焦點、Style 的字形／色彩／質感及必要參考寫成簡短生成指令。用主次與視覺關係指導構圖，不主動用百分比、座標或固定格數綁住版面；只有用戶指定精確版面或窄修改才保留相應位置。需要 Logo 時留自然低細節背景，唔畫空白容器；用戶要求真 Logo 就要完成原檔放置，不能只交留位。
 
-## Phase 1 — Prepare One Self-Contained Card Brief
+依 [生成、修改與 Logo 操作](references/imagegen-contract.md) 實際調用工具。窄修改保持其餘已選內容；Carousel 首圖／方向 review 跟該文件及有效用戶要求，普通單圖不強加多次選擇。每個 job 最多一次有具體方法嘅 targeted retry；仍失敗就列缺口。
 
-Read [references/imagegen-contract.md](references/imagegen-contract.md). Convert the approved card row into a bounded image brief containing:
+## 4. 睇新圖，再驗檔
 
-1. card ID and content job
-2. audience response to create
-3. exact visible wording
-4. visual subject or explanatory structure
-5. composition and hierarchy
-6. continuity rules from `PREFERENCES.md`
-7. approved assets and forbidden inventions
-8. exact output size and filename
+按 [圖像驗收](references/qa-contract.md) 對照當次 Style 特徵及用戶要求：標題、主角、質感、層次同指定修正有冇落實。逐字核對文案，檢查真 Logo、素材及實際尺寸；改圖後重驗，唔沿用舊 PASS。
 
-Use only information needed for that card plus the minimum continuity context. Do not send the entire source archive to every generation call.
+按 [交付記錄格式](references/output-contract.md) 留同一版本嘅工具與檢查證據，執行 delivery gate。程式只核對檔案與記錄，不能代替實際看圖或證明用戶批准。
 
-## Phase 2 — Generate C01 Only
+## 5. 交返成果
 
-Make one image-generation call for C01. Ask for a complete final social image at `1080×1350px`, not a mockup, slide canvas, HTML screenshot, or blank background.
-
-Read back the actual file, dimensions, visible text, claims, and identity treatment. Create a C01 receipt and stop at `C01_REVIEW_REQUIRED`.
-
-If a hard blocker exists—such as broken anatomy, unreadable headline, accidental logo imitation, or wrong core subject—name that blocker and permit one targeted retry. Taste-only exploration is a new direction and needs Human Review, not automatic retry loops.
-
-## Phase 3 — Continue After C01 Approval
-
-Only exact `C01_APPROVED` permits the remaining cards. Use approved C01 as the smallest continuity reference where the image tool supports it. Keep hierarchy, palette relationships, texture, focal scale, and recurring graphic language coherent without forcing every card into an identical layout.
-
-Generate each remaining card in one separate call. Never treat ten cards as one multi-panel image.
-
-## Phase 4 — Final QA
-
-Read [references/qa-contract.md](references/qa-contract.md). Verify every file individually, then inspect an ordered contact sheet when available.
-
-Important limitation: native image generation may misspell Chinese or English and cannot guarantee exact official logos. Claim-critical text and brand identity require Human Review. If exact copy or exact logo cannot be achieved inside the allowed calls, return `DETERMINISTIC_FINISH_RECOMMENDED`; do not claim the pure-AI image is exact.
-
-Whole-image resizing to `1080×1350px` is allowed only when the source has the same aspect ratio and no crop or recomposition occurs. Record the resize. Do not crop away content to force compliance.
-
-## Output Contract
-
-Return:
-
-- approval state received
-- C01 path, actual dimensions, QA, and retry count
-- Human decision on C01
-- ordered final paths and actual dimensions
-- contact-sheet path, if created
-- unresolved text, claim, identity, or continuity issues
-- generation receipt path
-- explicit `not published` statement
-
-Use [references/output-contract.md](references/output-contract.md) for the exact handoff.
+展示圖片／實際檔案位置、尺寸、完成項目及未解決問題，簡述實際使用嘅 Skill。未通過就標 preview；通過本地驗收仍需用戶 review，唔自動發布、排程或保存成預設 Style。只檢查文件而未出圖時，清楚說明尚未驗證生成效果。

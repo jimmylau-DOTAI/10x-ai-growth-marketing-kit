@@ -1,67 +1,21 @@
 # AI Social Image Maker
 
-將一份已批准嘅 Content Plan，直接逐張生成完整 Social Image：
+生成完整 AI 社交圖片、Carousel 卡、Story／Cover／網站 banner，亦可修改現有圖片或加入授權 Logo。先讀 [SKILL.md](SKILL.md)；本學生包已內置，毋須再裝全域副本。
 
-`Approved Plan → C01 AI Image → Human Review → Remaining Images → Contact-sheet QA`
+你可以講：
 
-冇 HTML，冇「先整背景再疊字」，亦唔會一次生成十格拼圖。每張都係一個完整、扁平化、可直接審閱嘅 `1080×1350px` 圖像。
+> 用 ai-social-image-maker 幫我整張圖。如果平台、用途或尺寸唔清楚，先問我；跟我選定 Style，用真正 AI 圖像工具製作。
 
-## 安裝
+或者直接提供：
 
-### Codex
+> 做一張 1080×1920 圖，保留呢張參考嘅風格，用以下文案……
 
-```bash
-npx --yes skills add jimmylau-DOTAI/10x-ai-growth-marketing-kit \
-  --skill ai-social-image-maker -g -a codex -y
-```
+流程：確認用途與尺寸 → AI 選擇並調用可用生成／改圖模式 → 實際圖片、尺寸與文字 QA → Human Review。
 
-### Claude Code
+1080×1350 只適用本課指定 Carousel brief；其他工作按各自要求。只講平台名或比例時，AI 會先問清楚。多平台分別設定尺寸及構圖。
 
-```bash
-npx --yes skills add jimmylau-DOTAI/10x-ai-growth-marketing-kit \
-  --skill ai-social-image-maker -g -a claude-code -y
-```
+你要求完整 AI banner 時，AI 會一次過設計主體、材質、光影、文字與完整閱讀節奏，唔會先整吉底圖再排字。AI 只會在畫面內設計一個小型 Logo-safe zone；正式要加 Logo 時先把原檔放入，唔會叫模型重畫 Logo，亦唔會改變作品構圖。呢個唔係 HTML 或 Canva；學生毋須選工具路線。
 
-## 使用方法
+Carousel 先確認完整文案，再出 C01；用戶確認第一張後才做其餘卡。自然語言的有效批准可用，不需要學生打狀態碼。
 
-做單張圖：
-
-```text
-Use $ai-social-image-maker。
-
-Audience：
-Message：
-Visible copy：
-Preferences／參考圖：
-```
-
-做 Carousel，建議先用 [`instagram-carousel-studio`](../instagram-carousel-studio/) 完成內容：
-
-```text
-Use $ai-social-image-maker，根據已批准 content-plan.md 生成 C01。
-```
-
-## 硬性流程
-
-1. 完整 Carousel Plan 要有明確 `CAROUSEL_PLAN_APPROVED`；
-2. 只生成 C01；
-3. 讀返實際圖片、尺寸、文字同品牌處理；
-4. 停在 `C01_REVIEW_REQUIRED`；
-5. 只有明確 `C01_APPROVED` 先生成其餘圖片；
-6. 每張一個獨立 ImageGen call；
-7. 完成後逐張 QA，再睇 Contact Sheet。
-
-每張預設只生成一次。只有清楚命名嘅 Hard Blocker，例如主體錯誤、文字不可讀、出現假 Logo，先可以針對問題再試一次。
-
-## 100% AI 圖像代表甚麼
-
-代表一張完整 Final Image 由圖像模型一次生成，唔經 HTML 排版中間層。但唔代表 AI 對中文字、數字、Logo 或 UI 可以 100% 準確。
-
-- 重要 Claim 一定要 Human Review；
-- 冇官方 Logo 檔時，唔會叫 AI 畫一個似樣嘅假 Logo；
-- 純 AI 做唔到精準文字時，會標示 `DETERMINISTIC_FINISH_RECOMMENDED`；
-- Local PNG 唔等於已發布。
-
-## 邊界
-
-呢個 Skill 唔負責揀題目、寫完整 Carousel Story、改 `PREFERENCES.md`、發布、Schedule 或設定自動回覆。內容策略交俾 `instagram-carousel-studio`；偏好更新必須經 Human Review。
+本地檢查不代表審美批准或發布。示例中錯尺寸的 pilot 是歷史 preview；新工作按當前 request preflight 與 delivery schema 3 驗收。

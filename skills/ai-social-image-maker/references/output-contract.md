@@ -1,12 +1,12 @@
 # Output Handoff
 
 ```markdown
-Status: C01_REVIEW_REQUIRED / FINAL_DRAFT_READY / BLOCKED
-Input approval: CAROUSEL_PLAN_APPROVED
+Status: REVIEW_REQUIRED / C01_REVIEW_REQUIRED / FINAL_DRAFT_READY / BLOCKED
+Input approval: approved copy, source, or carousel plan
 Project: /absolute/path
-Preference profile: /absolute/path/PREFERENCES.md
+Selected Style: /absolute/path/STYLE.md / not used
 C01: /absolute/path/output/C01.png
-C01 actual size: 1080×1350px
+C01 actual size: requested dimensions
 C01 retry: 0 / 1; blocker if retried
 C01 Human decision: pending / C01_APPROVED
 Final images: ordered absolute paths / not produced

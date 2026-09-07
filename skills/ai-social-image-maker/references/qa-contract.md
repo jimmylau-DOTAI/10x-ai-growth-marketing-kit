@@ -3,9 +3,10 @@
 ## Per Image
 
 - Actual file exists and opens.
-- Actual dimensions are exactly `1080×1350px`.
+- Actual dimensions match the current approved request.
 - One complete frame, not a mockup, collage, or background plate.
 - Card job and approved message remain obvious.
+- The first-glance message, visual hierarchy, Style qualities, and any user-requested correction are visible in the actual image. Matching a previous position or proportion alone is not a pass.
 - Visible wording is checked character by character.
 - No invented quote, metric, product UI, partnership, or result.
 - No fake or approximate official logo.
