@@ -1,0 +1,157 @@
+{
+  "repository": "https://github.com/jimmylau-DOTAI/10x-ai-growth-marketing-kit",
+  "commit": "7676b6a3f99901138a457a000892f7b58d20dcd6",
+  "skills": [
+    "image-style-lab",
+    "ai-social-image-maker",
+    "instagram-carousel-studio",
+    "social-content-research",
+    "social-post-writing",
+    "hk-threads-writer",
+    "seo-geo-content",
+    "save-to-vault"
+  ],
+  "vault_source": "100X-Class01-Company-Vault-v1.3.zip",
+  "status": "LOCAL_CANDIDATE",
+  "local_additions": [
+    {
+      "skill": "meta-ads-results-review",
+      "source": "Jimmy Lesson 3 latest brief, 2026-09-05",
+      "status": "LOCAL_CANDIDATE",
+      "scope": "supplied ad results and existing Vault return; no live API"
+    },
+    {
+      "skill": "utm-link-builder",
+      "source": "Jimmy Lesson 3 latest brief, 2026-09-05",
+      "status": "LOCAL_CANDIDATE",
+      "scope": "reviewable UTM links and project registry; no deploy, publishing, ads, or account connection"
+    },
+    {
+      "skill": "reels-text-storyboard",
+      "source": "Jimmy Lesson 3 Reels correction and DotAI phase-pattern review, 2026-09-07",
+      "status": "LOCAL_CANDIDATE",
+      "scope": "60–75 second source-backed text storyboard before HTML; no private Skill content, render, export or publishing"
+    },
+    {
+      "skill": "reels-html-storyboard",
+      "source": "Jimmy Lesson 3 Reels correction and DotAI phase-pattern review, 2026-09-07",
+      "status": "LOCAL_CANDIDATE",
+      "scope": "Approved text storyboard to editable 9:16 timing preview; no render, export or publishing"
+    },
+    {
+      "skill": "toapis-image-creator",
+      "source": "Jimmy Lesson 3 latest brief and official ToAPIs pages checked 2026-09-07",
+      "status": "LOCAL_CANDIDATE",
+      "scope": "One complete paid image task after a student checks current model, price and budget; no credential storage, retry or publishing"
+    },
+   {
+     "skill": "product-understanding-studio",
+      "source": "Jimmy Lesson 3 product/service flow revision, 2026-09-08",
+     "status": "LOCAL_CANDIDATE",
+      "scope": "Confirm task and source-backed understanding; product checks only needed appearance or operation, service checks scope or delivery; optional previews before design"
+   },
+   {
+     "skill": "brand-image-studio",
+      "source": "Jimmy Lesson 3 product/service flow revision, 2026-09-08",
+     "status": "LOCAL_CANDIDATE",
+      "scope": "Reuse confirmed understanding; confirm creative direction and complete copy before the requested detail-page or ad production; no unsupported claim or publishing"
+    }
+  ],
+  "local_revisions": [
+    {
+      "skills": [
+        "instagram-carousel-studio",
+        "ai-social-image-maker"
+      ],
+      "source": "Jimmy Lesson 3 source-first and first-image brief, 2026-09-05",
+      "scope": "Explicit C01 draft authorization, combined content/image review, no separate student Caption task",
+      "status": "LOCAL_CANDIDATE_NOT_LIVE_TESTED"
+    },
+    {
+      "skills": [
+        "social-content-research"
+      ],
+      "source": "Jimmy Lesson 3 Source Guide and parallel platform Task brief, 2026-09-05",
+      "scope": "Natural-language Source/Blog routing; shared Brief and authorized native Tasks; platform-specific direction review before production; progress summaries and approved project-local reusable prompt preferences",
+      "status": "LOCAL_CANDIDATE_NOT_LIVE_TESTED"
+    },
+    {
+      "skills": [
+        "instagram-carousel-studio",
+        "ai-social-image-maker",
+        "hk-threads-writer"
+      ],
+      "source": "Jimmy Lesson 3 direction-first teaching revision, 2026-09-05",
+      "scope": "Honor explicit requests for three short creative directions per platform and wait for each platform selection before image generation or full copy; preserve existing brand and QA",
+      "status": "LOCAL_CANDIDATE_NOT_LIVE_TESTED"
+    },
+    {
+      "skills": [
+        "reels-text-storyboard",
+        "reels-html-storyboard"
+      ],
+      "source": "Jimmy Lesson 3 correction after inspecting DotAI phase separation, 2026-09-07",
+      "scope": "Split text-first 60–75 second storyboard from post-approval HTML timing preview; 20-second combined prototype superseded and retained as history",
+      "status": "LOCAL_CANDIDATE_NOT_LIVE_TESTED"
+    },
+    {
+      "skills": [
+        "reels-text-storyboard",
+        "reels-html-storyboard",
+        "social-content-research"
+      ],
+      "source": "Student-accessible generic Reels request, 2026-09-07",
+      "scope": "Generic inputs, user approval and version evidence, narrative patterns, honest timing, text-first dispatch and portable HTML review",
+      "status": "LOCAL_CANDIDATE_BEHAVIOR_NOT_INDEPENDENTLY_TESTED"
+    },
+    {
+      "skills": [
+        "reels-text-storyboard",
+        "reels-html-storyboard"
+      ],
+      "source": "User clarification 2026-09-07: spoken-style contrast, full script section, A-roll/B-roll and HTML cue plan",
+      "scope": "Shoot-ready output sections and per-shot AI alternatives; full-script parity; independent HTML reader specification",
+      "status": "LOCAL_CANDIDATE_FORMAT_CHECKED_NOT_VIDEO_TESTED"
+    },
+    {
+      "skills": [
+        "reels-text-storyboard",
+        "reels-html-storyboard"
+      ],
+      "source": "User clarification 2026-09-07: richer A-roll composition and message-led HTML layouts",
+      "scope": "Every scene declares frame composition, focal area and safe text space; five message-led layout modes prevent generic repeated text-card previews",
+      "status": "LOCAL_CANDIDATE_FORMAT_CHECKED_NOT_VIDEO_TESTED"
+    },
+    {
+      "skills": [
+        "product-understanding-studio",
+        "brand-image-studio"
+      ],
+      "source": "User clarification 2026-09-07: research-first offer analysis and user-selected evidence views",
+      "scope": "Replace fixed five-image gate with supplied-source plus public research, conversion analysis and optional evidence views; brand work may start from confirmed text analysis with visual-proof limitation recorded",
+      "status": "LOCAL_CANDIDATE_FORMAT_CHECKED_NOT_LIVE_RESEARCH_TESTED"
+    },
+    {
+      "skills": [
+        "brand-image-studio"
+      ],
+      "source": "User clarification 2026-09-07: choose visual Style before ad-image directions",
+     "scope": "Inspect existing Vault/Project Style and ask user to reuse it, provide references or select from three candidates; no final image brief before Style selection",
+     "status": "LOCAL_CANDIDATE_FORMAT_CHECKED_NOT_LIVE_RESEARCH_TESTED"
+    },
+    {
+      "skills": [
+        "product-understanding-studio",
+        "brand-image-studio"
+      ],
+      "source": "User-approved product/service flow revision, 2026-09-08",
+      "scope": "Shared gates for task, understanding, necessary visual check, creative plan and review; optional previews, scope-sized single-image or detail-page plans, and carry-forward confirmations",
+      "status": "LOCAL_CANDIDATE_STATICALLY_VALIDATED_NOT_RUNTIME_TESTED"
+   }
+  ],
+  "local_course_routing": {
+    "source": "Jimmy Lesson 3 website integration brief, 2026-09-05",
+    "scope": "Existing website assembly uses natural-language project instructions, no dedicated deployer dependency",
+    "status": "LOCAL_CANDIDATE_NOT_SITE_TESTED"
+  }
+}

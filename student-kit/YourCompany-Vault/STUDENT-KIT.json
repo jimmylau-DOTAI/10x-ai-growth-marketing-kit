@@ -1,0 +1,27 @@
+{
+  "package": "lesson3-student-candidate",
+  "version": "0.4.4",
+  "vault_template_version": "1.6",
+  "skills": [
+    "ai-social-image-maker",
+    "brand-image-studio",
+    "company-vault-builder",
+    "company-vault-learning-loop",
+    "hk-threads-writer",
+    "image-style-lab",
+    "instagram-carousel-studio",
+    "product-understanding-studio",
+    "reels-html-storyboard",
+    "reels-text-storyboard",
+    "remotion-reel-scene",
+    "save-to-vault",
+    "seo-geo-content",
+    "social-content-research",
+    "social-post-writing",
+    "toapis-minimax-h3-video",
+    "toapis-image-creator",
+    "utm-link-builder"
+  ],
+  "production_medium": "native-complete-image",
+  "release_status": "LOCAL_CANDIDATE"
+}
