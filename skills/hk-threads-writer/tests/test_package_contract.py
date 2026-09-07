@@ -14,6 +14,7 @@ REQUIRED_FILES = {
     "THIRD_PARTY_NOTICES.md",
     "agents/openai.yaml",
     "references/content-jobs.md",
+    "references/source-depth-guide.md",
     "references/hook-lab.md",
     "references/hk-threads-language.md",
     "references/de-ai-patterns.md",
@@ -45,7 +46,7 @@ class PackageContractTests(unittest.TestCase):
                         f"{token!r} found in {path.relative_to(ROOT)}",
                     )
 
-    def test_content_job_reference_has_exactly_eight_canonical_sections(self):
+    def test_content_job_reference_covers_supported_routes(self):
         text = (ROOT / "references" / "content-jobs.md").read_text(encoding="utf-8")
         job_ids = (
             "hot-take",
@@ -56,10 +57,11 @@ class PackageContractTests(unittest.TestCase):
             "anti-pattern",
             "curated-list",
             "how-to",
+            "discussion",
         )
         for job_id in job_ids:
             self.assertEqual(text.count(f"## `{job_id}`"), 1, job_id)
-        self.assertEqual(text.count("\n## `"), 8)
+        self.assertEqual(text.count("\n## `"), len(job_ids))
 
     def test_mobile_reference_has_three_canonical_modes(self):
         text = (ROOT / "references" / "mobile-rhythm.md").read_text(encoding="utf-8")
@@ -118,6 +120,7 @@ class PackageContractTests(unittest.TestCase):
         text = (ROOT / "SKILL.md").read_text(encoding="utf-8")
         for name in (
             "content-jobs.md",
+            "source-depth-guide.md",
             "hook-lab.md",
             "hk-threads-language.md",
             "de-ai-patterns.md",
@@ -141,7 +144,7 @@ class PackageContractTests(unittest.TestCase):
 
     def test_eval_metadata_and_case_contract(self):
         payload = json.loads((ROOT / "evals" / "evals.json").read_text(encoding="utf-8"))
-        expected_ids = {
+        required_ids = {
             "hot_take_hk_cantonese",
             "personal_story_no_invention",
             "reaction_source_boundary",
@@ -154,12 +157,24 @@ class PackageContractTests(unittest.TestCase):
             "de_ai_without_meaning_loss",
             "brand_neutral_no_voice_leak",
             "prompt_injection_as_data",
+            "brand_style_discovery_warm",
+            "brand_style_discovery_formal",
+            "style_current_request_plain_override",
+            "empty_tone_honest_fallback",
+            "short_judgment_no_forced_thread",
+            "implicit_progression_resource_reply",
+            "ask_to_learn_keeps_answer_with_community",
+            "style_reference_changes_mechanics_not_decorations",
+            "commercial_launch_requires_offer_truth",
+            "source_depth_keeps_related_points_in_root",
+            "brand_blog_reply_has_contextual_cta",
+            "full_root_depth_target_with_brand_blog",
+            "semantic_paragraph_breathing",
         }
         cases = payload["cases"]
         ids = [case["id"] for case in cases]
-        self.assertEqual(len(ids), 12)
         self.assertEqual(len(ids), len(set(ids)))
-        self.assertEqual(set(ids), expected_ids)
+        self.assertTrue(required_ids.issubset(ids), required_ids - set(ids))
 
         required_fields = {
             "id",
@@ -175,12 +190,58 @@ class PackageContractTests(unittest.TestCase):
             self.assertEqual(set(case), required_fields, case["id"])
             for field in required_fields - {"input"}:
                 self.assertTrue(case[field], f"{case['id']} has empty {field}")
+            self.assertIsInstance(case["input"], dict)
+            self.assertIn(case["expected_mode"], {
+                "complete-single-500", "notes-link-reply", "staircase-thread"
+            })
 
         skill_text = (ROOT / "SKILL.md").read_text(encoding="utf-8")
         name = re.search(r"^name: (.+)$", skill_text, flags=re.MULTILINE).group(1)
         version = re.search(r'^  version: "([^"]+)"$', skill_text, flags=re.MULTILINE).group(1)
         self.assertEqual(payload["skill"], name)
         self.assertEqual(payload["version"], version)
+
+    def test_fixture_entrypoints_and_links_are_portable(self):
+        eval_root = ROOT / "evals"
+        payload = json.loads((eval_root / "evals.json").read_text(encoding="utf-8"))
+        fixture_root = (eval_root / "fixtures").resolve()
+        for case in payload["cases"]:
+            data = case["input"]
+            if "fixture_project" not in data:
+                continue
+            project = (eval_root / data["fixture_project"]).resolve()
+            self.assertTrue(project.is_relative_to(fixture_root), case["id"])
+            entry = (project / data["entrypoint"]).resolve()
+            self.assertTrue(entry.is_relative_to(project), case["id"])
+            self.assertTrue(entry.is_file(), case["id"])
+            self.assertTrue((project / "INDEX.md").is_file(), case["id"])
+        for path in fixture_root.rglob("*.md"):
+            for target in re.findall(r"\[[^\]]+\]\(([^)]+)\)", path.read_text(encoding="utf-8")):
+                resolved = (path.parent / target).resolve()
+                self.assertTrue(resolved.is_relative_to(fixture_root), str(path))
+                self.assertTrue(resolved.is_file(), f"{path.name}: {target}")
+
+    def test_project_tone_isolation_fixture_is_self_contained(self):
+        project = ROOT / "evals" / "fixtures" / "project-tone-isolation"
+        tone = project / "Threads" / "TONE.md"
+        self.assertTrue(tone.is_file())
+        self.assertIn("AI 顧問", tone.read_text(encoding="utf-8"))
+        self.assertTrue((project / "SAMPLE.md").is_file())
+
+    def test_example_payloads_pass_actual_segment_counter(self):
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("example_counter", ROOT / "scripts" / "count_segments.py")
+        counter = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(counter)
+        text = (ROOT / "references" / "examples.md").read_text(encoding="utf-8")
+        blocks = re.findall(r"```json\n(.*?)\n```", text, re.DOTALL)
+        self.assertTrue(blocks)
+        for block in blocks:
+            payload = json.loads(block)
+            results, passed = counter.validate_payload(payload)
+            self.assertTrue(passed, results)
+            for segment, counted in zip(payload["segments"], results):
+                self.assertEqual(counted["count"], len(segment["text"]))
 
     def test_local_markdown_links_resolve(self):
         link_pattern = re.compile(r"\[[^\]]+\]\(([^)]+)\)")

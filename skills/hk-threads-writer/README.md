@@ -4,9 +4,11 @@
 
 Package 只產生 draft，唔會登入、發布、排程或修改 Threads 帳戶。
 
+v1.0.0 先讀當前 Project 的 `Threads/TONE.md`、品牌資料及適用樣本；平台共用 TONE 只作學生啟動指引，唔帶任何品牌身份，亦唔會跨 Project 借用語氣。再按 source 決定選題與深度。Blog 轉写預設完整主帖加自然 CTA reply；每個重點用空白行分段，多個重點不自動拆樓梯。篇幅以當次要求及 TONE 為先；約 300 字的判斷見 [Source depth guide](references/source-depth-guide.md)，分段及 CTA 見 [Mobile rhythm](references/mobile-rhythm.md)。
+
 ## What it handles
 
-八個 content jobs：
+九個 content jobs：
 
 - `hot-take`：有立場、有可解釋理由；
 - `reaction`：回應目前可核實 source；
@@ -15,11 +17,12 @@ Package 只產生 draft，唔會登入、發布、排程或修改 Threads 帳戶
 - `review`：實際體驗，或披露 research-only；
 - `anti-pattern`：拆失敗機制同替代做法；
 - `curated-list`：有多個選項同選擇準則；
-- `how-to`：可重做步驟及成功／失敗 check。
+- `how-to`：可重做步驟及成功／失敗 check；
+- `discussion`：真心收集讀者經驗，不強加觀點或答案。
 
 三個 delivery modes：
 
-- `complete-single-500`：一段完成 Hook、解釋／例子同判斷；
+- `complete-single-500`：一段完成解答／觀點，或完整的討論邀請；
 - `notes-link-reply`：有獨立價值嘅 root，加第一個 self-reply link；
 - `staircase-thread`：多段有次序推進，每段一層，最後先放 CTA。
 
@@ -40,7 +43,7 @@ Use $hk-threads-writer to turn the supplied source into a L2 notes-link-reply dr
 亦可以直接要求：
 
 ```text
-用香港廣東話將呢段材料寫成 Threads hot take。手機分段要清楚，每段用 Python 計 500 字，唔好發布。
+用呢個 Project 嘅 Blog 寫 Threads，沿用我哋品牌同文字風格，畀讀者睇完想讀完整文章。
 ```
 
 手動放入 skills directory 嘅例子（只係安裝示例，執行前自行核對目標位置）：
