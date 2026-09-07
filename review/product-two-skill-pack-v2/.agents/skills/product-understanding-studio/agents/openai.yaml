@@ -1,0 +1,4 @@
+interface:
+  display_name: "產品／服務理解與應用工作室"
+  short_description: "主動研究產品、服務或混合方案，整理文案素材筆記及五張不同用途的理解圖"
+  default_prompt: "用 $product-understanding-studio 主動研究我的產品或服務，重用已有資料，一次補問缺口，整理可用文案及五張有不同資訊用途的理解圖，再交接詳情頁、服務介紹頁與廣告。"

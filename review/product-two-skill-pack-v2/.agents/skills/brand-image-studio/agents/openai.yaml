@@ -1,0 +1,4 @@
+interface:
+  display_name: "品牌詳情頁與廣告工作室"
+  short_description: "承接產品、服務或混合方案的理解與客戶問題，規劃逐頁藍圖，再製作完整品牌詳情圖片與廣告素材"
+  default_prompt: "用 $brand-image-studio Quick Batch 接住產品或服務資料同理解圖；如有參考圖，先進入 Reference Match Mode，跟足它的版式、亮度、色彩比例、圖文密度和攝影語言，再換入真產品或真實服務證據與真 Logo，一次過生成已選詳情圖及廣告草稿。"
