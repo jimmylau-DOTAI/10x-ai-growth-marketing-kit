@@ -1,6 +1,8 @@
 ---
 name: social-content-research
-description: Use when a user provides a social post, screenshot, carousel, video, transcript, or URL and asks to research it, run SL or Save and Learn, turn it into a source-backed social-post brief, save it to a Company Vault, or review several SL notes for recurring content insights.
+description: Retrieve or download social video sources, inspect posts and media, run SL or Save and Learn, and prepare source-backed social-post research and briefs. Use for a supplied social URL, video, screenshot, carousel, or transcript; download-only requests do not require a research report or Vault write.
+metadata:
+  version: "0.4.0"
 ---
 
 # Social Content Research
@@ -14,7 +16,7 @@ description: Use when a user provides a social post, screenshot, carousel, video
 Source → Source Receipt → SL → Source-bounded Post Brief
                          └→ 3-day cross-source review → Candidate Insight → Human Review
 
-呢個 Skill 只服務 Social Post research。唔可以用佢更新公司事實、產品資料、品牌核心、Design System、Proposal、Skill 規則、CRM，亦唔可以自行 Publish。
+呢個 Skill 服務 Social Post research 及其來源媒體下載／擷取；只要下載影片時，可交付檔案及收據後停止。唔可以用佢更新公司事實、產品資料、品牌核心、Design System、Proposal、Skill 規則、CRM，亦唔可以自行 Publish。
 
 所有持久化產物使用 content_scope: social-post-research-only。
 
@@ -26,6 +28,7 @@ Source → Source Receipt → SL → Source-bounded Post Brief
 2. **Deep SL**：用戶明確講 `deep sl`、Save and Learn、完整消化、入／存 Vault，或 Project AGENTS.md 已明確授權建立持久化產物。
 3. **Three-day Insight Review**：用戶要求整理 Insights，或已授權排程而 TRIAGE-STATE 顯示到期。
 4. **Post Handoff**：用戶要出 Post。先建立或讀取相關 SL，再交一份 content brief 俾平台 Post Skill。
+5. **Media Acquisition**：用戶要求下載／取得本機影片。先讀 [video-acquisition.md](references/video-acquisition.md)，按平台及實際錯誤選方法，交付影片及驗證收據；毋須先做 SL、OCR、contact sheet 或寫入 Vault。若同時要研究，取得檔案後繼續 Evidence Capture。
 
 不要一次啟動全部模式。不要因為收到一條 URL 就自動做永久知識寫入。
 
@@ -50,7 +53,9 @@ URL 優先讀原頁。影片先讀官方字幕；無字幕才轉錄實際音訊�
 
 ## Evidence Capture Before Analysis
 
-社交 URL 或來源包含 Instagram、Carousel、Reel、Screenshot、Image、Video 時，分析前必須讀 [social-evidence-capture.md](references/social-evidence-capture.md) 並完成適用嘅擷取步驟。Evidence Capture 係所有 mode 共用嘅 phase，唔係會自動寫 Vault 嘅第五個 mode。
+社交 URL 或來源包含 Instagram、Carousel、Reel、Screenshot、Image、Video 時，分析前必須讀 [social-evidence-capture.md](references/social-evidence-capture.md) 並完成適用嘅擷取步驟。Evidence Capture 係研究 mode 共用嘅 phase，唔會自動寫 Vault；只要下載時使用 Media Acquisition。
+
+用戶已明確要求下載公開影片作本機研究，就執行適用方法；唔因冇平台 Download 按鈕而直接停止，亦唔將 `yt-dlp` 一概禁止。工具支援唔代表必然成功；登入、付費、DRM、存取限制及執行環境規則仍須遵守。下載成功唔等於已完整分析或已取得公開重用授權。
 
 最少要完成：
 
@@ -173,6 +178,8 @@ Content brief 最少包括：
 - 沒有自行 Publish 或改動其他知識層。
 
 ## Completion report
+
+Media Acquisition 只報：原始 URL／ID、方法及工具版本、`acquisition_status`、本機路徑、大小／時長／音軌／解碼結果、來源身份核對、失敗原因或缺口。套用下列研究報告前先確認用戶亦要求研究。
 
 完成時簡短列出：
 

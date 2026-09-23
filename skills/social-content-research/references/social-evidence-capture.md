@@ -36,10 +36,11 @@ Instagram、Carousel、Reel、Screenshot、Image 或 Video source 先讀本檔�
 
 1. 先確認真實影片可以播放。Cover image 唔等於影片 evidence。
 2. 擷取 cover，以及開頭、主要轉折、關鍵 proof／示範、結尾嘅 representative frames。
-3. 如合法取得 local media file／audio stream，先驗證檔案可播放，再做 frame extraction 或 transcription。
+3. 需要本機影片時，讀 [video-acquisition.md](video-acquisition.md)，按平台執行下載／取得及檔案驗證。可用公開影片 extractor、發布方檔案、平台匯出或用戶原檔；唔因 `Save video` 只係收藏而宣稱無其他方法。
 4. 只有 browser playback 時，只記錄實際可見 frames／subtitles；除非真實音訊已轉錄，否則要寫 `audio transcript unavailable`。
 5. 記錄 duration（如可見）、frames captured、Caption／subtitle／audio states 及 missing evidence。
 6. 影片不能播放時只可用 `PARTIAL` 或 `BLOCKED`；不要以 cover 推斷完整內容。
+7. `VERIFIED_LOCAL` 只代表檔案經檢查可解碼，唔代表完整內容已檢查或重用授權已確認。檢查來源 ID、標題、時長及代表畫面；瀏覽器可能播放廣告或自動跳去下一條片，唔可以用其時長覆蓋已確認嘅來源影片時長。
 
 ## 5. OCR and visual inventory
 
