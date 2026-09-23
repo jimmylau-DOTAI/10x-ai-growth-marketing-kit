@@ -1,6 +1,6 @@
 # Social Content Research benchmark
 
-每次修改 routing、SL schema、三日門檻或 automation boundary 後，重跑 eval。
+每次修改 routing、media acquisition、SL schema、三日門檻或 automation boundary 後，重跑相關 eval。JSON cases 係行為驗收情境，唔等於已自動執行；報告須分清單元測試、實際下載及人工／Agent 情境檢查。
 
 ## Pass conditions
 
@@ -16,6 +16,11 @@
 - Candidate Insight 保持 Human Review pending；
 - Source-to-Post 先有 SL 及 evidence boundary；
 - 完成報告列出實際檔案、validator 及下一步。
+
+- Media Acquisition 直接執行適用下載方法，唔強制 SL／Vault write；
+- Native Download 失敗唔等於所有方法失敗；先按實際錯誤分類；
+- 多條影片逐條回報檔案／失敗，驗證可解碼但唔自動標完整研究；
+- 不繞過存取限制、不秘密提取 cookies、不將替代片當原片。
 
 ## Hard fail
 
