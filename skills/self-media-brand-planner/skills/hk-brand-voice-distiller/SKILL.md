@@ -1,6 +1,6 @@
 ---
 name: hk-brand-voice-distiller
-description: Distil a reusable Hong Kong brand voice from the user's own copy or a reference brand's public copy. Use to define the speaker role, reader relationship, tone and manner, vocabulary, rhythm and writing structure, then test the rules on the user's own topic.
+description: Distil a reusable Hong Kong brand voice from the user's own copy or a reference brand's public copy. Use to define the speaker role, reader relationship, tone and manner, vocabulary, rhythm and writing structure, then test the rules on the user's own topic. Use reference-match mode when the user asks to make the draft recognisably similar to a sample.
 ---
 
 # 拆解同蒸餾品牌語氣
@@ -10,7 +10,7 @@ description: Distil a reusable Hong Kong brand voice from the user's own copy or
 ## 1｜收文案同確認用嚟做咩
 
 - 沿用對話或用戶指定品牌頁入面嘅定位、客群、內容方向、題目同已確認事實。有原語氣指引就先讀。
-- 先收同一品牌、最好同一渠道同用途嘅 2–3 段文案或口播逐字稿。用自家文案就問或沿用用戶認可嘅例子；用同行文案就了解佢嘅寫法，將合適部分轉成自家做法。只有一段可以交初稿，標做候選。只收到連結而讀唔到原文，就請用戶貼文案。
+- 先收同一品牌、最好同一渠道同用途嘅 2–3 段文案或口播逐字稿。用自家文案就問或沿用用戶認可嘅例子；用同行文案就了解佢嘅寫法，將合適部分轉成自家做法。同一篇重複貼只計一個樣本。只有一篇亦可以試稿，標明做法來自單篇樣本。只收到連結而讀唔到原文，就請用戶貼文案。
 - 用一個已確認題目試稿。欠咗會令試稿失準嘅題目或關鍵資料時，只問一條具體問題。
 
 ## 2｜拆解，再定自家規則
@@ -19,7 +19,18 @@ description: Distil a reusable Hong Kong brand voice from the user's own copy or
 2. **語氣、用字同節奏**：觀察口語程度、稱呼、情緒強弱、術語點解釋、每句放幾多意思，同邊個位置會停頓或換段。將形容詞變成做法，例如「規格名沿用包裝用語，下一句用日常字講用途」。
 3. **開場到收尾**：睇文案點由讀者處境開場、點排資訊或解疑慮，以及用咩行動結尾。揀適合自己渠道同當期目標嘅一種結構。唔照搬同行稱號、招牌句、故事、數字、產品承諾或 CTA 原句。觀察到嘅寫法同自家嘅決定要分得清。
 
+### 要出稿似參考｜先鎖寫法，再換題目
+
+用戶講「要似參考」、「七成相似」或原試稿唔似時，先用參考貼文做寫法依據。已確認嘅品牌資料、IG 角色、客群同題目決定講咩、替邊個講同想讀者做乜；參考決定開場、段落順序、用字、節奏、格式同收尾。如果參考係促銷但今次要互動，可以保留行動句早出場同用字力度，將「買」換成「留言」等適合今次目的嘅行動。
+
+1. **先記骨架。** 將參考文案每一段嘅功能按原順序排好。用戶指定重寫時沿用同一題，方便比較。
+2. **先定十個可對照特徵。** 由開場、段落骨架、用字同句子節奏、版面格式及收尾搵實際睇到嘅特徵。每項要能喺成稿指出位置，例如「首段用問句開場」、「要點用 emoji 引導」、「用一句直接行動收尾」。揀最有辨識度嘅兩項必須保留。只計樣本實際有嘅特徵。
+3. **寫完整試稿再逐項驗。** 保留參考骨架同兩個必留特徵。用戶要七成，十項至少對到七項，按對應段落核對，未達標先重寫。樣本短得列唔到十項，交代實際項數，按同一比例核對。使用已核對嘅自家事實同原創句子，將專屬叫法、承諾、優惠或經歷換成今次可用內容。
+4. **先交稿。** 再附最多三條可重用規則同一行「對到幾項，邊啲有保留，邊啲因目的改咗」。分數代表可觀察嘅寫法，最後由用戶判斷讀落似唔似。用戶指出差距時，先改對應特徵，再交完整稿對照。
+
 ## 3｜用一題試稿，等用戶確認
+
+以下係一般交件。參考近似模式按上段交完整試稿。
 
 - **品牌角色**｜一句，包含同讀者嘅關係。
 - **寫法**｜最多三點。每點用一句講小編落稿時做咩，可涵蓋語氣同用字、句式同節奏、開場同收尾。用戶想睇分析時，先按需要補一個簡短觀察。
