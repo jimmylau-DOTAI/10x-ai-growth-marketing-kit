@@ -1,10 +1,11 @@
 # 自媒體定位套件完整清單
 
-[Master 入口](../SKILL.md)先處理今次嘅定位問題。完整套件有 9 個子 Skill、23 個可按需要打開嘅方法。客人痛點、四種價值、三個定位方向係定位子 Skill 內嘅步驟。
+[Master 入口](../SKILL.md)先處理今次嘅定位問題。完整套件有 10 個子 Skill、23 個可按需要打開嘅方法。客人痛點、四種價值、三個定位方向係定位子 Skill 內嘅步驟。
 
-## 九個子 Skill
+## 十個子 Skill
 
 - [品牌、自媒體定位與客人痛點](../skills/hk-brand-positioning/SKILL.md)
+- [品牌語氣拆解與試稿](../skills/hk-brand-voice-distiller/SKILL.md)
 - [內容支柱、選題與日曆](../skills/hk-brand-editorial-calendar/SKILL.md)
 - [素材轉帖](../skills/hk-brand-source-to-post/SKILL.md)
 - [品牌社交文案](../skills/hk-brand-social-copy/SKILL.md)
@@ -19,7 +20,7 @@
 - [產品與買家需要分析](../workflows/product-understanding-studio/METHOD.md)
 - [讀者角度檢查](../workflows/mira-audience-qa/METHOD.md)
 - [內容研究、靈感與拆帖](../workflows/social-content-research/METHOD.md)
-- [視覺風格及語氣拆解](../workflows/image-style-lab/METHOD.md)
+- [視覺風格拆解](../workflows/image-style-lab/METHOD.md)
 
 ## 策劃後嘅內容製作
 

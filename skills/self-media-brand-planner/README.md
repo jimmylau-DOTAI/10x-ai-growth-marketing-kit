@@ -4,7 +4,7 @@
 
 [打開 Agent 工作流程](SKILL.md)
 
-[查看全部 9 個子 Skill 同 23 個專門方法](references/skill-list.md)
+[查看全部 10 個子 Skill 同 23 個專門方法](references/skill-list.md)
 
 ## 點解要將成套工作交畀同一個小編？
 

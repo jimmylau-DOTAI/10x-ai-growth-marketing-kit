@@ -49,7 +49,7 @@
 | 「幫我儲今日嘅內容靈感」 | 有合資格資料就交最多五篇，等你揀先拆。每日自動執行要另外設定。 |
 | 「用呢宗案例寫一條 Threads」 | 沿用品牌立場，交一條香港廣東話草稿。 |
 
-Master 內有 9 個子 Skill 同 23 個專門方法。[睇完整清單](skills/self-media-brand-planner/references/skill-list.md)
+Master 內有 10 個子 Skill 同 23 個專門方法。[睇完整清單](skills/self-media-brand-planner/references/skill-list.md)
 
 ## 目前可用 Skills
 
