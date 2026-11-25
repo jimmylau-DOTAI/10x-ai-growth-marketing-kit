@@ -1,0 +1,6 @@
+interface:
+  display_name: "品牌與自媒體定位 Master"
+  short_description: "由品牌依據、客人痛點同內容價值，揀出讀者願意持續關注嘅方向。"
+  default_prompt: "用 $self-media-brand-planner 讀我已有嘅品牌資料，分析客人痛點，再幫我揀自媒體定位。"
+policy:
+  allow_implicit_invocation: true

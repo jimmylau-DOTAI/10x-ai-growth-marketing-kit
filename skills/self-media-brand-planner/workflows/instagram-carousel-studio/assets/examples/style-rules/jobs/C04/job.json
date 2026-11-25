@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "C04",
+  "status": "DRAFT",
+  "dimensions": [
+    1080,
+    1350
+  ],
+  "role": "Observation",
+  "visible_copy": {
+    "lead": "主體有冇做緊一件事？",
+    "body": "物件應該幫讀者明白內容，而唔只係填空。"
+  },
+  "visual_direction": "有意義的動作",
+  "source_note": "source.md；教學建議，不含實證成效",
+  "preferences": "# Preference\n\nCandidate direction: bright lavender-white, dimensional translucent materials, strong editorial Traditional Chinese text; no private brand identity.\n原創教學候選；正式風格由用戶提供，唔自動加入品牌規則。\n",
+  "approval_note": "Demo/review export; no human approval inferred.",
+  "publish": false
+}

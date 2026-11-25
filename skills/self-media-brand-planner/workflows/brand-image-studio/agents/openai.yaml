@@ -1,0 +1,4 @@
+interface:
+  display_name: "品牌詳情頁與廣告工作室"
+  short_description: "承接已確認產品或服務資料，先確認風格與完整文案，再按所需張數製作詳情圖或廣告"
+  default_prompt: "用 $brand-image-studio 沿用已確認資料，先展示我需要的圖片方向與完整文案，等我確認後製作，再一起 review 成品。"

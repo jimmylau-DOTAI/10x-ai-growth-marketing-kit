@@ -1,0 +1,4 @@
+interface:
+  display_name: "Image Style Lab"
+  short_description: "Extract reusable Style plus executable Design"
+  default_prompt: "Use $image-style-lab to inspect these visual references, preserve the design qualities I like, and create a reusable STYLE.md plus executable DESIGN.md for my own brand."

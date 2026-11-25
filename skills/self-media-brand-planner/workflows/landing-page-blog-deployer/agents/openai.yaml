@@ -1,0 +1,4 @@
+interface:
+  display_name: "Landing Page + Blog Deployer"
+  short_description: "Guide a landing page and blog through safe Vercel release"
+  default_prompt: "Use $landing-page-blog-deployer to resume my landing page and blog project, guide me one question at a time, and prepare a verified Vercel release."

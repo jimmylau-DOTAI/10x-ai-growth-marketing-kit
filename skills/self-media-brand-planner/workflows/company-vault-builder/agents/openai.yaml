@@ -1,0 +1,4 @@
+interface:
+  display_name: "Company Vault Builder"
+  short_description: "驗證、匯入公司文件並逐題建立 Company Vault"
+  default_prompt: "使用 $company-vault-builder 檢查這個 Vault，或把我指定的公司文件加入 Vault；每次只處理一個 exact target，最後停在 Human Review。"

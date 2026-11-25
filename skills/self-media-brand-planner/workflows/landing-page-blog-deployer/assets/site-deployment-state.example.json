@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "current_phase": "inspect",
+  "status": "INPUT_REPAIR_REQUIRED",
+  "completed_gates": [],
+  "approved_decisions": {},
+  "artifacts": {
+    "landing_handoff": "TBC",
+    "blog_handoffs": [],
+    "release_receipt": "TBC"
+  },
+  "blocked_items": [],
+  "external_actions": [],
+  "next_action": "Inspect current project and recover existing progress",
+  "updated_at": "TBC"
+}

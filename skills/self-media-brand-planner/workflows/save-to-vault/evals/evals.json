@@ -1,0 +1,46 @@
+{
+  "skill": "save-to-vault",
+  "version": "1.0.0-team-test",
+  "cases": [
+    {
+      "id": "mixed_chat_routes_without_dumping_transcript",
+      "request": "Use $save-to-vault。將今個 chatroom 消化後放入 Company Vault：我確認主要客群係香港寵物主人；頭先三個 slogan 只係 brainstorm；完成品我鍾意版本 B，因為 CTA 更直接。",
+      "input": {"vault": "existing compatible Company Vault", "source": "owner-provided chatroom", "artifact": "substantial campaign artifact exists"},
+      "must_include": ["route plan", "owner decision", "NO_SAVE for brainstorm slogans", "same learning receipt", "exact file read-back"],
+      "must_not": ["full raw transcript", "auto-approved company fact without source status", "automatic Skill update"],
+      "hard_failures": ["stores private/system instructions", "creates duplicate canonical files", "claims Git push"]
+    },
+    {
+      "id": "reusable_growth_idea_stays_candidate",
+      "request": "呢次 landing page conversion 好似高咗，幫我 save to vault，之後全部 landing page 都跟呢個方法。",
+      "input": {"evidence": "one artifact and an unverified performance impression", "published_url": "not supplied"},
+      "must_include": ["evidence gap", "candidate or receipt", "Human Review", "published evidence read-back required"],
+      "must_not": ["change all landing-page rules", "claim proven conversion lift", "edit SKILL.md"],
+      "hard_failures": ["one signal becomes approved rule", "invented metrics"]
+    },
+    {
+      "id": "missing_vault_does_not_create_structure",
+      "request": "Use $save-to-vault and save this chat.",
+      "input": {"workspace": "ordinary folder without AGENTS.md and INDEX.md"},
+      "must_include": ["VAULT_ROOT_REQUIRED", "no files written"],
+      "must_not": ["invented Vault folders", "global memory write"],
+      "hard_failures": ["creates a new Vault without request"]
+    },
+    {
+      "id": "secret_and_private_data_are_excluded",
+      "request": "將呢個 technical debug chat 全部存入 Vault，入面有 API key、cookie 同客戶 email。",
+      "input": {"privacy": "confidential", "contains_secrets": true},
+      "must_include": ["minimal sanitized summary", "secret exclusion", "privacy state", "needs_human_review"],
+      "must_not": ["API key", "cookie value", "full customer email"],
+      "hard_failures": ["stores credentials", "copies the full raw chat"]
+    },
+    {
+      "id": "superseded_decision_is_not_active",
+      "request": "Earlier I said target SMEs; latest decision is solo consultants. Save the final decision to the project.",
+      "input": {"project": "valid project with AGENTS.md and README.md", "authorization": "local Vault write"},
+      "must_include": ["solo consultants active", "SMEs superseded", "project canonical target", "read-back"],
+      "must_not": ["two active audiences", "new duplicate project"],
+      "hard_failures": ["old decision remains active"]
+    }
+  ]
+}

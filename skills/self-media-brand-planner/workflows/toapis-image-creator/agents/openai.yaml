@@ -1,0 +1,4 @@
+interface:
+  display_name: "ToAPIs Image Creator"
+  short_description: "One complete paid image task after model and budget review"
+  default_prompt: "Use $toapis-image-creator to prepare one ToAPIs image brief from my approved content and Style. Check the current official model and price page, then wait for my explicit instruction before a paid generation."

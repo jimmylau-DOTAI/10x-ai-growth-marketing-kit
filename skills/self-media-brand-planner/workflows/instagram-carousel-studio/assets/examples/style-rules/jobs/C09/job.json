@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "C09",
+  "status": "DRAFT",
+  "dimensions": [
+    1080,
+    1350
+  ],
+  "role": "Review",
+  "visible_copy": {
+    "lead": "睇返機制，有冇保留？",
+    "body": "檢查可讀性、質感、文字、來源與實際尺寸。"
+  },
+  "visual_direction": "一張作品接受檢查",
+  "source_note": "source.md；教學建議，不含實證成效",
+  "preferences": "# Preference\n\nCandidate direction: bright lavender-white, dimensional translucent materials, strong editorial Traditional Chinese text; no private brand identity.\n原創教學候選；正式風格由用戶提供，唔自動加入品牌規則。\n",
+  "approval_note": "Demo/review export; no human approval inferred.",
+  "publish": false
+}

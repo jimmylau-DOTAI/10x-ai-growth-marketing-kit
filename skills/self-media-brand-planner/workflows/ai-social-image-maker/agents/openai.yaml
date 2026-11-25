@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Social Image Maker"
+  short_description: "Native AI images with platform and size checks"
+  default_prompt: "Use $ai-social-image-maker to create or edit a complete AI image; reuse my specified platform and size, ask if unclear, select and call an available native image mode, then verify the output."

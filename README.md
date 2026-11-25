@@ -32,7 +32,7 @@
 
 ## 第一次用，先做品牌定位
 
-把下面一句畀 Codex，就可以直接由 GitHub 安裝定位 Skill：
+將以下指令交畀 Codex，一次安裝自媒體 Master 同佢會用到嘅方法。
 
 > 請由 https://github.com/jimmylau-DOTAI/10x-ai-growth-marketing-kit 安裝 skills/self-media-brand-planner 到目前 Project 嘅 .agents/skills/。
 
@@ -40,7 +40,16 @@
 
 > $self-media-brand-planner 呢度係我間公司嘅介紹同最近三條客人查詢。請幫我定自媒體方向。我揀定之後，將定位同原因存返我指定嘅品牌知識庫。
 
-已經有定位嘅團隊，可以直接畀品牌首頁，叫 AI 讀返已確認版本，再按今次需要接 Threads、文案或輪播。[睇定位 Skill](skills/self-media-brand-planner/SKILL.md)
+同一個入口可以接住做日常工作，按你問嘅事打開相應方法。
+
+| 你可以點講 | AI 會交咩 |
+| --- | --- |
+| 「幫我定自媒體方向」 | 根據品牌證據、受眾痛點同四種內容價值交三案，你揀定後保存。 |
+| 「沿用已定方向，幫我排兩星期內容」 | 按人手、材料同平台排內容日曆。 |
+| 「幫我儲今日嘅內容靈感」 | 有合資格資料就交最多五篇，等你揀先拆。每日自動執行要另外設定。 |
+| 「用呢宗案例寫一條 Threads」 | 沿用品牌立場，交一條香港廣東話草稿。 |
+
+Master 內有 9 個子 Skill 同 23 個專門方法。[睇完整清單](skills/self-media-brand-planner/references/skill-list.md)
 
 ## 目前可用 Skills
 
