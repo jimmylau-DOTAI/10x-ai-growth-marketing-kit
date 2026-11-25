@@ -58,7 +58,7 @@ Master 內有 10 個子 Skill 同 23 個專門方法。[睇完整清單](skills/
 | [自媒體品牌定位](skills/self-media-brand-planner/SKILL.md) | 定清楚邊個會持續追蹤你、點解 | 公司介紹、一個真實案例、客人常問嘅問題 | 三個定位選項、內容主題、可寫返公司知識庫嘅定案 |
 | [Save to Vault](skills/save-to-vault/) | 將 chatroom 去噪、分類並安全存入現有 Company Vault | 當前 chatroom、現有 Vault、save intent | Route plan、最小必要寫入、receipt、read-back |
 | [Mira Audience Think & Check](skills/mira-audience-qa/) | 從指定受眾角度檢查 Idea、Plan、Content、Visual 同成品 | 要判斷嘅內容、目標受眾、預期行動 | Audience reaction、Top problems、原因、改善次序、Verdict |
-| [Social Content Research](skills/social-content-research/) | 將社交內容變成可驗證研究 | 連結、影片、截圖或逐字稿 | Evidence、內容分析、原創角度 |
+| [Social Content Research](skills/social-content-research/) | 下載原帖圖片或影片，再按需要做研究 | 貼文連結、影片、截圖或逐字稿 | 可開媒體檔、證據、內容分析、原創角度 |
 | [SEO + GEO Blog Writing](skills/seo-geo-content/) | 將 Source 變成有觀點、有搜尋價值、適合 AI Search 理解嘅 Blog | Source、搜尋問題、客群、Company Brain、CTA | Source Guide、標題、文章、Meta、Links、HTML Review、QA |
 | [Social Post Writing](skills/social-post-writing/) | 將可靠觀點變成平台原生內容 | Idea、Audience、Voice、Platform、CTA | Threads、LinkedIn、Facebook、IG Drafts |
 | [HK Threads Writer](skills/hk-threads-writer/) | 寫自然香港廣東話、手機優先而且逐段驗證嘅 Threads | Source、新聞、觀點、故事或工作紀錄 | 單 Post、筆記 Link Reply、樓梯 Post、Python 字數 Receipt |
@@ -225,7 +225,9 @@ AI 可以研究、整理、挑戰、建議同起 Draft；事實、品牌立場�
 - 風險或盲點；
 - 三個重新發展嘅原創角度。
 
-➡️ [打開 Social Content Research Skill](skills/social-content-research/)
+只想拎素材，可以貼原帖連結，叫 AI 按順序下載每張圖，核對張數後交檔。IG 同 Facebook 有各自嘅輪播／相簿做法，影片按平台取得可播放嘅檔案。
+
+➡️ [打開 Social Content Research Skill](skills/social-content-research/) · [圖片逐張下載](skills/social-content-research/references/image-acquisition.md) · [影片下載](skills/social-content-research/references/video-acquisition.md)
 
 ---
 

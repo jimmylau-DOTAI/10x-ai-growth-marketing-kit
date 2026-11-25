@@ -31,6 +31,8 @@ description: Guide Hong Kong brands through platform-neutral self-media position
 
 **「每日幫我搵靈感」**就開[內容靈感袋](workflows/social-content-research/references/content-selection.md)。每日最多五張待選卡，交一次名單就等用戶揀。**「幫我拆第 2 篇」**就按當日名單連返原卡補 Source Guide；下次問「之前拆過咩」就讀已拆解檢視。
 
+**「下載呢篇帖全部圖／片」**就用[內容研究方法](workflows/social-content-research/METHOD.md#choose-one-mode)嘅 Media Acquisition，核對檔案先交件。**「拆呢組圖片風格」**就交實圖畀[視覺風格拆解](workflows/image-style-lab/METHOD.md)。
+
 收到同行參考、幾條候選題或既有拆稿，按同一份分析方法揀相應步驟：比較同行可借條件，合併重貼，交一個推薦角度、自家案例及已認可口吻。想揀方向就附實際開場同推薦原因；已揀角度就直接交平台寫手。定稿回填原題，按今期目標檢討。只需一項交件就做嗰項。
 
 ## 帳號營運流程

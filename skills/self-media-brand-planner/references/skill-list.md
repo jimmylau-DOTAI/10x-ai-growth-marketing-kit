@@ -19,7 +19,7 @@
 
 - [產品與買家需要分析](../workflows/product-understanding-studio/METHOD.md)
 - [讀者角度檢查](../workflows/mira-audience-qa/METHOD.md)
-- [內容研究、靈感與拆帖](../workflows/social-content-research/METHOD.md)
+- [內容研究、靈感、拆帖與下載](../workflows/social-content-research/METHOD.md)
 - [視覺風格拆解](../workflows/image-style-lab/METHOD.md)
 
 ## 策劃後嘅內容製作
