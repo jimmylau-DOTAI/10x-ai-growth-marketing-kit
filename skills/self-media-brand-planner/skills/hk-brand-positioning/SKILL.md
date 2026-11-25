@@ -1,6 +1,6 @@
 ---
 name: hk-brand-positioning
-description: Position a brand and its owned media for a specific audience. Use for customer pain points, reasons to follow and differentiated editorial directions, with an optional platform adaptation.
+description: Position a brand and its owned media for a specific audience. Use for evidence-based customer pain point lists, reasons to follow and differentiated editorial directions, with an optional platform adaptation.
 ---
 
 # 品牌與自媒體定位
@@ -10,7 +10,7 @@ description: Position a brand and its owned media for a specific audience. Use f
 按[三個定位決定](../../references/positioning-decisions.md)辨認要交品牌定位、帳號追蹤理由定內容主題。只問內容定位，已有帳號定案就行主題試題同取捨；三案只喺需要重新揀方向時做。
 
 1. **分析品牌同客群。** 從公司資料整理產品類別、優勢、市場機會、替代選擇同目標客群。用[品牌與客群分析](../../references/brand-audience-analysis.md)分清讀者、使用者同付款人。交一句品牌定位同一項支持案例。
-2. **搵客人痛點。** 讀查詢、訪談、購買回饋或實際使用情境，揀一個品牌有材料答嘅真問題。用戶只要痛點分析就直接做下面四類，交結果後停喺嗰步。
+2. **搵客人痛點。** 讀查詢、訪談、購買回饋或實際使用情境，揀一個品牌有材料答嘅真問題。用戶只要搵痛點或想先睇一批候選，就按下面嘅分類清單格式交件。
 3. **搵持續關注嘅價值。** 由痛點同品牌優勢發展實用、資訊、情緒、決策四種內容價值。完整練習配合網上搜尋，每類交 10 個構思；已有分析就接住用。市場發現同品牌實績分開寫。
 4. **交三個自媒體定位方向。** 每個先用一句講清「邊個會因為咩長期返嚟睇」，再按下表交齊十欄。三案要有唔同追蹤理由。按品牌手上有咩素材可以持續做，推薦一案，俾用戶揀。指定只改一個方向就照範圍交。
 
@@ -20,7 +20,11 @@ description: Position a brand and its owned media for a specific audience. Use f
 
 ### 客人痛點分析
 
-先落實一款產品或服務、一組客人同佢想得到嘅結果，再用客人口吻列問題。完整「痛點產生器」練習每類 10 條；日常定位就聚焦最影響選擇嗰幾條。
+先用已知嘅品牌或服務範圍、目標客群同處境縮窄材料。查詢、訪談、帖文留言、搜尋字同購買回饋都可提供線索。按產業同材料所見分組，下面四類可以做起點。
+
+**用戶要一批痛點畀佢揀。** 合併描述同一困難嘅句子，目標約 30 條候選，指定數量就照要求。分組後全表連續編號，每項一句，用客人平時會講嘅方式描述卡位。有原話或搜尋字直接支持就標「有來源」，從已知情境合理推演就標「待驗」。材料有限，列到有實質分別為止。第一輪只交分類同痛點清單，等用戶揀。
+
+**做完整原課練習。** 按第 101 頁每類試 10 條。日常只為定一句品牌定位時，聚焦最影響選擇嗰幾條。
 
 | 類別 | 要搵嘅問題 | 裱畫店示例（模擬） |
 | --- | --- | --- |
@@ -29,7 +33,9 @@ description: Position a brand and its owned media for a specific audience. Use f
 | 技術迷思 | 客人點理解規格、用料或做法？ | 「標示防反光，係咪即係可以防褪色？」 |
 | 場景痛點 | 去到邊個時間、地點或限制先發現有困難？ | 「我間屋西斜，張相應該掛邊幅牆？」 |
 
-每條記低問題出處、理想結果、品牌可用咩案例回答；推演出嚟嘅問題標「待驗」。用查詢記錄判斷邊個問題反覆出現。將一條有依據嘅痛點接到追蹤理由，例如「每次想掛相，都可以返嚟睇同一張相配兩款框嘅實物比較」。
+保留材料嘅出處供核對。用戶揀咗候選再補相關原話或搜尋字、原連結及已提供日期。有多份查詢記錄，可以核對同一問題有冇反覆出現。確認入選嘅問題同業務、客群有關，而且品牌有材料答到。用戶確認入選項同要求保存後，按[品牌知識庫](../../references/brand-library.md)補返目標受眾原頁，已有同一困難就補依據。
+
+接自媒體定位時，可以將一條有依據嘅痛點連到追蹤理由，例如「每次想掛相，都可以返嚟睇同一張相配兩款框嘅實物比較」。
 
 ### 每個定位方向嘅十欄
 
