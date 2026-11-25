@@ -5,6 +5,8 @@ description: Draft or revise a Hong Kong Threads post or reply from the brand’
 
 # 香港 Threads 寫作
 
+有改前後相、客人常問某個效果，只能證明有材料同有呢個問題。要寫「今次做到呢個效果」，先核對相片或交收記錄；未睇過就將該效果寫成讀者想點揀，或畀可核實嘅下一步。
+
 執行時讀[第 120 頁原指令](../../references/source-production.md)，保留相應步驟，依今次素材同指定交件調整。
 
 先讀 [品牌與內容判斷](../../references/marketing-judgment.md)。
