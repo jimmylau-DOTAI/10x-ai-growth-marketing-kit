@@ -26,6 +26,8 @@ Instagram、Carousel、Reel、Screenshot、Image 或 Video source 先讀本檔�
 
 ## 3. Capture a carousel
 
+需要逐張下載檔案時，按 [image-acquisition.md](image-acquisition.md) 讀目前頁面媒體同保存完整 URL；以下係分析時要補嘅證據紀錄。
+
 1. 擷取 slide 1，記錄可見 `1/N` 或其他位置提示。
 2. 每次只前進一張，擷取每個 unique slide，直到實際最後一張或平台阻止繼續。
 3. Content asset 盡量避開 avatar、comments、browser chrome 及重複 UI；保留足以審核來源嘅必要 context。
