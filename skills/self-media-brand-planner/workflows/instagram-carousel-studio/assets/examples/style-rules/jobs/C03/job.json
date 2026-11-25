@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "C03",
+  "status": "DRAFT",
+  "dimensions": [
+    1080,
+    1350
+  ],
+  "role": "Observation",
+  "visible_copy": {
+    "lead": "先睇閱讀次序。",
+    "body": "第一眼睇標題、人物，定產品？再睇第二眼。"
+  },
+  "visual_direction": "清楚視線路徑",
+  "source_note": "source.md；教學建議，不含實證成效",
+  "preferences": "# Preference\n\nCandidate direction: bright lavender-white, dimensional translucent materials, strong editorial Traditional Chinese text; no private brand identity.\n原創教學候選；正式風格由用戶提供，唔自動加入品牌規則。\n",
+  "approval_note": "Demo/review export; no human approval inferred.",
+  "publish": false
+}

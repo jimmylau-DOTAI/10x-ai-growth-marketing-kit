@@ -1,0 +1,4 @@
+interface:
+  display_name: "Save to Vault"
+  short_description: "消化 chatroom，安全分類並儲存到 Company Vault"
+  default_prompt: "Use $save-to-vault to digest this chatroom, show the proposed Vault routes, save only durable information, and report the exact files and review status."

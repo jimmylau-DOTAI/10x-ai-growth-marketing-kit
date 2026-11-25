@@ -1,0 +1,4 @@
+interface:
+  display_name: "Company Vault Learning Loop"
+  short_description: "記錄交付、Human feedback、成效證據及三日學習整理"
+  default_prompt: "使用 $company-vault-learning-loop 處理今次成品的 closeout 或 feedback；未達三個獨立 signals 不可改永久規則，任何更新先等 Human Approval。"

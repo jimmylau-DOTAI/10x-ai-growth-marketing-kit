@@ -16,13 +16,13 @@
 
 所以我整咗呢套 **10x AI Growth Marketing Kit**。
 
-目前有十個可以安裝、閱讀、測試同修改嘅 AI Marketing Skills，將 chatroom business memory、Audience Think & Check、內容研究、SEO／GEO 內容、社交文案、Reference Style／Tone／Skill 拆解、Instagram Carousel、AI 圖像製作、香港 Threads、Sales Funnel Landing Page，串成一條有來源、有判斷、有交接、有 Human Review 嘅工作流。
+目前有十一個可以安裝、閱讀、測試同修改嘅 AI Marketing Skills，將品牌定位、chatroom business memory、Audience Think & Check、內容研究、SEO／GEO 內容、社交文案、Reference Style／Tone／Skill 拆解、Instagram Carousel、AI 圖像製作、香港 Threads、Sales Funnel Landing Page，串成一條有來源、有判斷、有交接、有 Human Review 嘅工作流。
 
-十個 Skills 只係起點。我哋會按照真實 Marketing 工作持續測試、改善同加入更多 Skills，令呢個 Kit 同每一個想用 AI 成長嘅人一齊成長。
+呢批 Skills 只係起點。我哋會按照真實 Marketing 工作持續測試、改善同加入更多 Skills，令呢個 Kit 同每一個想用 AI 成長嘅人一齊成長。
 
 > **目前版本：** `v0.1-team-test`
 >
-> **目前可用：** 10 個完整 Skills
+> **目前可用：** 11 個完整 Skills
 >
 > **發展方向：** [Skill Roadmap](10-SKILL-INTRO-AND-FLOW.md)
 >
@@ -30,13 +30,35 @@
 
 ---
 
+## 第一次用，先做品牌定位
+
+將以下指令交畀 Codex，一次安裝自媒體 Master 同佢會用到嘅方法。
+
+> 請由 https://github.com/jimmylau-DOTAI/10x-ai-growth-marketing-kit 安裝 skills/self-media-brand-planner 到目前 Project 嘅 .agents/skills/。
+
+開新對話，輸入：
+
+> $self-media-brand-planner 呢度係我間公司嘅介紹同最近三條客人查詢。請幫我定自媒體方向。我揀定之後，將定位同原因存返我指定嘅品牌知識庫。
+
+同一個入口可以接住做日常工作，按你問嘅事打開相應方法。
+
+| 你可以點講 | AI 會交咩 |
+| --- | --- |
+| 「幫我定自媒體方向」 | 根據品牌證據、受眾痛點同四種內容價值交三案，你揀定後保存。 |
+| 「沿用已定方向，幫我排兩星期內容」 | 按人手、材料同平台排內容日曆。 |
+| 「幫我儲今日嘅內容靈感」 | 有合資格資料就交最多五篇，等你揀先拆。每日自動執行要另外設定。 |
+| 「用呢宗案例寫一條 Threads」 | 沿用品牌立場，交一條香港廣東話草稿。 |
+
+Master 內有 10 個子 Skill 同 23 個專門方法。[睇完整清單](skills/self-media-brand-planner/references/skill-list.md)
+
 ## 目前可用 Skills
 
 | Skill | 幫你做乜 | 你需要提供 | 主要輸出 |
 | --- | --- | --- | --- |
+| [自媒體品牌定位](skills/self-media-brand-planner/SKILL.md) | 定清楚邊個會持續追蹤你、點解 | 公司介紹、一個真實案例、客人常問嘅問題 | 三個定位選項、內容主題、可寫返公司知識庫嘅定案 |
 | [Save to Vault](skills/save-to-vault/) | 將 chatroom 去噪、分類並安全存入現有 Company Vault | 當前 chatroom、現有 Vault、save intent | Route plan、最小必要寫入、receipt、read-back |
 | [Mira Audience Think & Check](skills/mira-audience-qa/) | 從指定受眾角度檢查 Idea、Plan、Content、Visual 同成品 | 要判斷嘅內容、目標受眾、預期行動 | Audience reaction、Top problems、原因、改善次序、Verdict |
-| [Social Content Research](skills/social-content-research/) | 按平台下載及檢查影片，將社交內容變成可驗證研究 | 連結、影片、截圖或逐字稿 | 本機影片及驗證收據、Evidence、內容分析、原創角度 |
+| [Social Content Research](skills/social-content-research/) | 下載原帖圖片或影片，再按需要做研究 | 貼文連結、影片、截圖或逐字稿 | 可開媒體檔、證據、內容分析、原創角度 |
 | [SEO + GEO Blog Writing](skills/seo-geo-content/) | 將 Source 變成有觀點、有搜尋價值、適合 AI Search 理解嘅 Blog | Source、搜尋問題、客群、Company Brain、CTA | Source Guide、標題、文章、Meta、Links、HTML Review、QA |
 | [Social Post Writing](skills/social-post-writing/) | 將可靠觀點變成平台原生內容 | Idea、Audience、Voice、Platform、CTA | Threads、LinkedIn、Facebook、IG Drafts |
 | [HK Threads Writer](skills/hk-threads-writer/) | 寫自然香港廣東話、手機優先而且逐段驗證嘅 Threads | Source、新聞、觀點、故事或工作紀錄 | 單 Post、筆記 Link Reply、樓梯 Post、Python 字數 Receipt |
@@ -45,7 +67,7 @@
 | [Image Style Lab](skills/image-style-lab/) | 將 Reference 自動拆成可重用視覺 Style、文字 Tone 或工作 Skill | 圖片、Post、頁面、影片、script 或示例，以及目標用途 | `STYLE.md + DESIGN.md`、`TONE.md`、candidate `SKILL.md + evals` |
 | [Sales Funnel Landing Page Builder](skills/sales-funnel-landing-page-builder/) | 將一個 Offer 變成簡單直接、可驗收嘅 Lead Funnel | Offer、Audience、Proof、CTA、Design reference、form／data rules | Brief、Style、Copy、Page、UTM、Design／Operations receipts |
 
-十個 Skills 可以獨立使用；Mira 亦可以喺 Idea、Plan、Content、Visual Direction、成品或 Recheck 階段，以受眾角度檢查工作。其他 Skills 可以由 Research 開始，一路交接到 Style／Tone／Skill、Production、Lead Operations、verified website release，再將真正 durable decisions／learning 安全保存。下面會逐個解釋我點解咁寫、每個 Skill 點樣運作，同埋點樣驗收。
+各個 Skills 可以獨立使用；Mira 亦可以喺 Idea、Plan、Content、Visual Direction、成品或 Recheck 階段，以受眾角度檢查工作。其他 Skills 可以由 Research 開始，一路交接到 Style／Tone／Skill、Production、Lead Operations、verified website release，再將真正 durable decisions／learning 安全保存。下面會逐個解釋我點解咁寫、每個 Skill 點樣運作，同埋點樣驗收。
 
 ---
 
@@ -158,7 +180,7 @@ AI 可以研究、整理、挑戰、建議同起 Draft；事實、品牌立場�
 
 ---
 
-## 目前十個 Skills
+## 目前可用嘅 Skills
 
 ### 1. Social Content Research／社交內容研究
 
@@ -205,7 +227,9 @@ AI 可以研究、整理、挑戰、建議同起 Draft；事實、品牌立場�
 - 風險或盲點；
 - 三個重新發展嘅原創角度。
 
-➡️ [打開 Social Content Research Skill](skills/social-content-research/)
+只想拎素材，可以貼原帖連結，叫 AI 按順序下載每張圖，核對張數後交檔。IG 同 Facebook 有各自嘅輪播／相簿做法，影片按平台取得可播放嘅檔案。
+
+➡️ [打開 Social Content Research Skill](skills/social-content-research/) · [圖片逐張下載](skills/social-content-research/references/image-acquisition.md) · [影片下載](skills/social-content-research/references/video-acquisition.md)
 
 ---
 
@@ -534,7 +558,9 @@ Skill 會分開處理 Hook 強度同 Claim 強度：L3 可以更尖銳，但唔�
 
 ---
 
-## 十個 Skills 點樣一齊工作？
+## 各個 Skills 點樣一齊工作？
+
+由零開始經營品牌，先用 `self-media-brand-planner` 確認主要讀者同追蹤理由。製作時從品牌知識庫拎返定案，再按需要接以下方法。
 
 ```text
 來源／社交內容
@@ -899,7 +925,7 @@ Use $hk-threads-writer。
 
 目前嘅 Skill Roadmap 係第一個發展階段。之後會繼續按照真實工作需要，加入更多有清楚用途、經過測試同可以驗收嘅 Skills，而唔係為咗數量增加 Folder。
 
-目前 Repository 有十個可用 Skills；以下十項仍然係第一階段 Marketing 能力 Roadmap。
+目前 Repository 有十一個可用 Skills；以下十項仍然係第一階段 Marketing 能力 Roadmap。
 
 | # | Skill | 狀態 |
 | --- | --- | --- |

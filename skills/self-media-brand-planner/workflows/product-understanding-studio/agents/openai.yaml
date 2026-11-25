@@ -1,0 +1,4 @@
+interface:
+  display_name: "產品／服務理解工作室"
+  short_description: "按產品或服務核對來源與買家問題，逐關確認理解，按需要檢查視覺再交接設計"
+  default_prompt: "用 $product-understanding-studio 先確認今次需求，按產品或服務研究並讓我核對理解；有需要才做理解預覽，再接我要求的設計工作。"

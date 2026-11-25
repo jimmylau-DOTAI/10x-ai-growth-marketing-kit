@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "C06",
+  "status": "DRAFT",
+  "dimensions": [
+    1080,
+    1350
+  ],
+  "role": "Observation",
+  "visible_copy": {
+    "lead": "字同圖有冇互相配合？",
+    "body": "先核對重點、密度同留白；唔只係揀字體。"
+  },
+  "visual_direction": "文字與主體互相支撑",
+  "source_note": "source.md；教學建議，不含實證成效",
+  "preferences": "# Preference\n\nCandidate direction: bright lavender-white, dimensional translucent materials, strong editorial Traditional Chinese text; no private brand identity.\n原創教學候選；正式風格由用戶提供，唔自動加入品牌規則。\n",
+  "approval_note": "Demo/review export; no human approval inferred.",
+  "publish": false
+}

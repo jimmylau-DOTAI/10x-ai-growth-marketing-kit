@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "C08",
+  "status": "DRAFT",
+  "dimensions": [
+    1080,
+    1350
+  ],
+  "role": "Application",
+  "visible_copy": {
+    "lead": "換自己內容，試一張。",
+    "body": "用自己 source 同文案生成完整 AI 圖。"
+  },
+  "visual_direction": "來源走到新作品",
+  "source_note": "source.md；教學建議，不含實證成效",
+  "preferences": "# Preference\n\nCandidate direction: bright lavender-white, dimensional translucent materials, strong editorial Traditional Chinese text; no private brand identity.\n原創教學候選；正式風格由用戶提供，唔自動加入品牌規則。\n",
+  "approval_note": "Demo/review export; no human approval inferred.",
+  "publish": false
+}

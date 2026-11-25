@@ -1,0 +1,4 @@
+interface:
+  display_name: "Instagram Carousel Studio"
+  short_description: "Plan carousels, route Style choices, and hand off to AI image production."
+  default_prompt: "Use $instagram-carousel-studio to turn my source into a reviewed carousel. Reuse my active Style or automatically route supplied references through $image-style-lab, then hand the selected plan and Style to $ai-social-image-maker."

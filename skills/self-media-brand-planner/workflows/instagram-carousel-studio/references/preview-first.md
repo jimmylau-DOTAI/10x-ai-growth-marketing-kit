@@ -1,0 +1,19 @@
+# Preview first｜由方向到第一張圖
+
+Use when the user requests a first-image draft or a simple direction → image workflow. Keep the source reasoning strong while managing files and handoffs internally. Four cards below are an example; use the actual requested count for other jobs, and review every card in that count.
+
+## Natural entry
+
+「用呢篇 Blog 同見解，幫我做四張 IG Carousel。沿用我個 Style，先畀兩個方向我揀，揀完直接整第一張草圖。」
+
+1. Read the existing Source receipt／insight／Blog, audience, CTA, and preferences. Reuse completed research. If source deconstruction is missing, read and use local `social-content-research` first, then return with its bounded brief. Never infer access to unread sources or present the source author's claim as the user's verified result.
+2. Offer two useful story directions by default; follow the requested count. Each has a cover title, own insight and reader benefit. Separately apply the Style route in `METHOD.md`: use the active reviewed Style, or automatically call package-local `image-style-lab` when suitable references exist and Style exploration is requested. Compare visual treatments separately from editorial directions when requested. If no reference exists, label them own-brand visual directions rather than reusable Styles. When the user requests selection before production, stop at these choices without generating images or completing the whole draft.
+3. If the initial request explicitly says to create a first draft after selection, the user's selection is sufficient to proceed with that C01 draft. Otherwise ask only for the missing creative decision. A direction selection does not approve all card text.
+4. Internally write the complete ordered DRAFT `content-plan.md` and a Caption draft, retaining source support and claim boundaries. Run the existing content checks. Keep plan and project status review-required, never `CAROUSEL_PLAN_APPROVED` without actual approval.
+5. Record the actual user request and selection in a project-local review receipt: preview scope=C01 only, requested total count, selected content direction, selected Style／visual direction, source/insight, dimensions and actual Style／DESIGN paths. Export jobs with `export_image_jobs.py --draft` into a new version directory. The flag only exports files; the recorded user request authorizes this one draft image.
+6. Read `ai-social-image-maker` and required references, hand it the real C01 job and receipt, and execute available generation tools. Source, brand and dimension preflight still apply. Reuse the third-class approved brief of four cards at 1080×1350 only in that class; other jobs use their actual brief. Do not stop after saying a handoff was prepared if image capability is available.
+7. Show the actual C01 image together with four short numbered card summaries and Caption. Link the full ordered copy for review. Ask one combined review question: keep this direction and content, or change something? Do not show only an image and claim the unseen plan was approved.
+8. A clear response such as 「方向同四張內容可以，照呢個做埋其餘三張」 approves the shown content version and C01, and authorizes the remaining three images. Record both approvals; hand off and produce C02–C04 without requiring separate user prompts. If the reply only approves the picture, clarify the remaining content decision before the rest.
+9. Deliver four ordered images and Caption with actual image QA. A requested Blog Banner is a separate placement: reuse the known website slot/brief or resolve only its missing dimensions. Do not count it as a fifth carousel card.
+
+When tools or required brand/source inputs are missing, state that concrete gap. “One instruction” means the AI manages the workflow; it is not a claim that every provider can produce a complete set instantly. None of these local draft/review requests authorizes publishing, customer emails or changes to shared Style rules.

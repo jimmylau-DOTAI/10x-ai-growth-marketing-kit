@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "jobs": [
+    "C01/CONTENT-JOB.md",
+    "C02/CONTENT-JOB.md",
+    "C03/CONTENT-JOB.md",
+    "C04/CONTENT-JOB.md",
+    "C05/CONTENT-JOB.md",
+    "C06/CONTENT-JOB.md",
+    "C07/CONTENT-JOB.md",
+    "C08/CONTENT-JOB.md",
+    "C09/CONTENT-JOB.md",
+    "C10/CONTENT-JOB.md"
+  ],
+  "status": "DRAFT",
+  "note": "CONTENT-JOB is the downstream creative handoff; legacy validate_pilot_job applies only to optional completed pilot receipts."
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lead Email + Proposal Drafter"
+  short_description: "Draft a proposal and lead reply, never auto-send"
+  default_prompt: "Use lead-email-proposal-drafter on one supplied or approved lead email. Read only the exact Company Vault files needed, decide whether a proposal is required, produce local proposal and reply drafts, and stop for Human Review. Do not treat a practice file as a connected Gmail account."
