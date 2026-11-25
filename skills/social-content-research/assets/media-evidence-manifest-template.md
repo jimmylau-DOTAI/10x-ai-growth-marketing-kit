@@ -28,6 +28,22 @@ content_scope: social-post-research-only
 - Missing / blocked:
 - Why this access_state is accurate:
 
+## Local media receipt (when applicable)
+
+- Requested source URL / ID:
+- Actual source URL / ID (flag any substitute):
+- Acquisition method / tool version:
+- Acquisition status: NOT_ATTEMPTED / DOWNLOADED_UNVERIFIED / VERIFIED_LOCAL / FAILED / BLOCKED
+- Attempt results / exact blocker:
+- Local file / bytes / SHA-256:
+- Duration / resolution / video and audio codecs:
+- Full decode verification / receipt file:
+- Identity check (title, ID, duration, representative frames):
+- Intended use: local research / internal review / other specified use
+- Publication or presentation reuse clearance: confirmed / not confirmed / not applicable
+
+For download-only work, use the JSON receipt from `scripts/verify_video.py`; a full research manifest is unnecessary. Successful acquisition does not change `access_state` to FULL automatically.
+
 ## Assets
 
 | Index | Type | File | Capture method | OCR / visible text | Visual evidence | Limitation |

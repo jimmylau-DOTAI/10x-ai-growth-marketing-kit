@@ -1,4 +1,4 @@
 interface:
   display_name: "Social Content Research"
-  short_description: "研究 Social Source、完成 SL，並整理經審核嘅內容見解"
-  default_prompt: "Use $social-content-research to inspect this source, state the access boundary, and choose only the smallest required mode: quick research, deep SL, three-day insight review, or post handoff."
+  short_description: "下載及檢查社交影片、研究 Social Source、完成 SL 同內容見解"
+  default_prompt: "Use $social-content-research to acquire or inspect this source using the smallest required mode: media acquisition, quick research, deep SL, three-day insight review, or post handoff; report actual files and evidence limits."
