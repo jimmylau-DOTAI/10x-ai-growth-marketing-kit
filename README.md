@@ -36,7 +36,7 @@
 | --- | --- | --- | --- |
 | [Save to Vault](skills/save-to-vault/) | 將 chatroom 去噪、分類並安全存入現有 Company Vault | 當前 chatroom、現有 Vault、save intent | Route plan、最小必要寫入、receipt、read-back |
 | [Mira Audience Think & Check](skills/mira-audience-qa/) | 從指定受眾角度檢查 Idea、Plan、Content、Visual 同成品 | 要判斷嘅內容、目標受眾、預期行動 | Audience reaction、Top problems、原因、改善次序、Verdict |
-| [Social Content Research](skills/social-content-research/) | 將社交內容變成可驗證研究 | 連結、影片、截圖或逐字稿 | Evidence、內容分析、原創角度 |
+| [Social Content Research](skills/social-content-research/) | 按平台下載及檢查影片，將社交內容變成可驗證研究 | 連結、影片、截圖或逐字稿 | 本機影片及驗證收據、Evidence、內容分析、原創角度 |
 | [SEO + GEO Blog Writing](skills/seo-geo-content/) | 將 Source 變成有觀點、有搜尋價值、適合 AI Search 理解嘅 Blog | Source、搜尋問題、客群、Company Brain、CTA | Source Guide、標題、文章、Meta、Links、HTML Review、QA |
 | [Social Post Writing](skills/social-post-writing/) | 將可靠觀點變成平台原生內容 | Idea、Audience、Voice、Platform、CTA | Threads、LinkedIn、Facebook、IG Drafts |
 | [HK Threads Writer](skills/hk-threads-writer/) | 寫自然香港廣東話、手機優先而且逐段驗證嘅 Threads | Source、新聞、觀點、故事或工作紀錄 | 單 Post、筆記 Link Reply、樓梯 Post、Python 字數 Receipt |
@@ -192,6 +192,8 @@ AI 可以研究、整理、挑戰、建議同起 Draft；事實、品牌立場�
 ```
 
 讀取方法可以包括瀏覽器、官方字幕、逐字稿、OCR；影片冇字幕時，先考慮用 Whisper 轉錄，FFmpeg 可以協助抽音訊或整理媒體。呢啲只係取證方法，唔代表每一個平台、私人內容或受限制影片都一定讀得到。
+
+只要下載時，選 `Media Acquisition`：按平台嘗試公開影片 extractor、原生下載／匯出或發布方原檔，再交付本機影片及解碼驗證收據。YouTube 支援 `yt-dlp`＋JavaScript runtime＋FFmpeg；官方 Download 按鈕失敗唔代表所有方法失敗，亦唔保證每條影片一定成功。
 
 #### 主要輸出
 
