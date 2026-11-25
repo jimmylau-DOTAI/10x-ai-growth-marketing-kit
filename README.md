@@ -16,13 +16,13 @@
 
 所以我整咗呢套 **10x AI Growth Marketing Kit**。
 
-目前有十個可以安裝、閱讀、測試同修改嘅 AI Marketing Skills，將 chatroom business memory、Audience Think & Check、內容研究、SEO／GEO 內容、社交文案、Reference Style／Tone／Skill 拆解、Instagram Carousel、AI 圖像製作、香港 Threads、Sales Funnel Landing Page，串成一條有來源、有判斷、有交接、有 Human Review 嘅工作流。
+目前有十一個可以安裝、閱讀、測試同修改嘅 AI Marketing Skills，將品牌定位、chatroom business memory、Audience Think & Check、內容研究、SEO／GEO 內容、社交文案、Reference Style／Tone／Skill 拆解、Instagram Carousel、AI 圖像製作、香港 Threads、Sales Funnel Landing Page，串成一條有來源、有判斷、有交接、有 Human Review 嘅工作流。
 
-十個 Skills 只係起點。我哋會按照真實 Marketing 工作持續測試、改善同加入更多 Skills，令呢個 Kit 同每一個想用 AI 成長嘅人一齊成長。
+呢批 Skills 只係起點。我哋會按照真實 Marketing 工作持續測試、改善同加入更多 Skills，令呢個 Kit 同每一個想用 AI 成長嘅人一齊成長。
 
 > **目前版本：** `v0.1-team-test`
 >
-> **目前可用：** 10 個完整 Skills
+> **目前可用：** 11 個完整 Skills
 >
 > **發展方向：** [Skill Roadmap](10-SKILL-INTRO-AND-FLOW.md)
 >
@@ -30,10 +30,23 @@
 
 ---
 
+## 第一次用，先做品牌定位
+
+把下面一句畀 Codex，就可以直接由 GitHub 安裝定位 Skill：
+
+> 請由 https://github.com/jimmylau-DOTAI/10x-ai-growth-marketing-kit 安裝 skills/self-media-brand-planner 到目前 Project 嘅 .agents/skills/。
+
+開新對話，輸入：
+
+> $self-media-brand-planner 呢度係我間公司嘅介紹同最近三條客人查詢。請幫我定自媒體方向。我揀定之後，將定位同原因存返我指定嘅品牌知識庫。
+
+已經有定位嘅團隊，可以直接畀品牌首頁，叫 AI 讀返已確認版本，再按今次需要接 Threads、文案或輪播。[睇定位 Skill](skills/self-media-brand-planner/SKILL.md)
+
 ## 目前可用 Skills
 
 | Skill | 幫你做乜 | 你需要提供 | 主要輸出 |
 | --- | --- | --- | --- |
+| [自媒體品牌定位](skills/self-media-brand-planner/SKILL.md) | 定清楚邊個會持續追蹤你、點解 | 公司介紹、一個真實案例、客人常問嘅問題 | 三個定位選項、內容主題、可寫返公司知識庫嘅定案 |
 | [Save to Vault](skills/save-to-vault/) | 將 chatroom 去噪、分類並安全存入現有 Company Vault | 當前 chatroom、現有 Vault、save intent | Route plan、最小必要寫入、receipt、read-back |
 | [Mira Audience Think & Check](skills/mira-audience-qa/) | 從指定受眾角度檢查 Idea、Plan、Content、Visual 同成品 | 要判斷嘅內容、目標受眾、預期行動 | Audience reaction、Top problems、原因、改善次序、Verdict |
 | [Social Content Research](skills/social-content-research/) | 將社交內容變成可驗證研究 | 連結、影片、截圖或逐字稿 | Evidence、內容分析、原創角度 |
@@ -45,7 +58,7 @@
 | [Image Style Lab](skills/image-style-lab/) | 將 Reference 自動拆成可重用視覺 Style、文字 Tone 或工作 Skill | 圖片、Post、頁面、影片、script 或示例，以及目標用途 | `STYLE.md + DESIGN.md`、`TONE.md`、candidate `SKILL.md + evals` |
 | [Sales Funnel Landing Page Builder](skills/sales-funnel-landing-page-builder/) | 將一個 Offer 變成簡單直接、可驗收嘅 Lead Funnel | Offer、Audience、Proof、CTA、Design reference、form／data rules | Brief、Style、Copy、Page、UTM、Design／Operations receipts |
 
-十個 Skills 可以獨立使用；Mira 亦可以喺 Idea、Plan、Content、Visual Direction、成品或 Recheck 階段，以受眾角度檢查工作。其他 Skills 可以由 Research 開始，一路交接到 Style／Tone／Skill、Production、Lead Operations、verified website release，再將真正 durable decisions／learning 安全保存。下面會逐個解釋我點解咁寫、每個 Skill 點樣運作，同埋點樣驗收。
+各個 Skills 可以獨立使用；Mira 亦可以喺 Idea、Plan、Content、Visual Direction、成品或 Recheck 階段，以受眾角度檢查工作。其他 Skills 可以由 Research 開始，一路交接到 Style／Tone／Skill、Production、Lead Operations、verified website release，再將真正 durable decisions／learning 安全保存。下面會逐個解釋我點解咁寫、每個 Skill 點樣運作，同埋點樣驗收。
 
 ---
 
@@ -158,7 +171,7 @@ AI 可以研究、整理、挑戰、建議同起 Draft；事實、品牌立場�
 
 ---
 
-## 目前十個 Skills
+## 目前可用嘅 Skills
 
 ### 1. Social Content Research／社交內容研究
 
@@ -532,7 +545,9 @@ Skill 會分開處理 Hook 強度同 Claim 強度：L3 可以更尖銳，但唔�
 
 ---
 
-## 十個 Skills 點樣一齊工作？
+## 各個 Skills 點樣一齊工作？
+
+由零開始經營品牌，先用 `self-media-brand-planner` 確認主要讀者同追蹤理由。製作時從品牌知識庫拎返定案，再按需要接以下方法。
 
 ```text
 來源／社交內容
@@ -897,7 +912,7 @@ Use $hk-threads-writer。
 
 目前嘅 Skill Roadmap 係第一個發展階段。之後會繼續按照真實工作需要，加入更多有清楚用途、經過測試同可以驗收嘅 Skills，而唔係為咗數量增加 Folder。
 
-目前 Repository 有十個可用 Skills；以下十項仍然係第一階段 Marketing 能力 Roadmap。
+目前 Repository 有十一個可用 Skills；以下十項仍然係第一階段 Marketing 能力 Roadmap。
 
 | # | Skill | 狀態 |
 | --- | --- | --- |
