@@ -92,6 +92,8 @@ Carousel 未到實際最後一張或有 slide 無法檢查，只可標 `PARTIAL`
 
 ## One selected post: Breakdown and Source Guide
 
+課堂實作可以直接用[複製指令](assets/source-guide.md#課堂複製指令)，貼一篇原帖，再一輪交拆解同 Source Guide。
+
 用戶揀定一篇要拆，就做一次 Evidence Capture，跟[圖文／影片拆解](references/analysis-checklist.md#selected-post-breakdown)記錄原帖。只要拆解，交原帖做法就可以停。要求拆解同 Source Guide，就沿用同一次擷取分兩節交。一帖一卡保留兩節，有已確認 Guide 就沿用，需要補證據先重開原帖。
 
 - **爆款拆解**保留原帖結構。指出第一眼、內文點推、邊度畀證據或兌現承諾、結尾叫人做乜；影片附時間碼，圖文附頁碼或圖號。互動數字是快照，對吸引或留存嘅解釋列為推斷。
