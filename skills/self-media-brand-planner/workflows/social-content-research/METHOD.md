@@ -1,6 +1,6 @@
 ---
 name: social-content-research
-description: Download social images and videos, research sources, review Source Guides, and adapt supplied sources or an existing Blog into multi-platform content. Trigger on natural requests such as 用呢份資料同 Blog 做 IG 圖、Banner、Threads 同 Reels without requiring a Skill name or a Brief request. Explicit requests to open Tasks also route to native app dispatch. Supports source learning; does not publish or change company facts.
+description: Download social images and videos, break down posts, prepare and review Source Guides, and adapt supplied sources or an existing Blog into multi-platform content. Trigger on natural requests such as 用呢份資料同 Blog 做 IG 圖、Banner、Threads 同 Reels without requiring a Skill name or a Brief request. Explicit requests to open Tasks also route to native app dispatch. Supports source learning; does not publish or change company facts.
 ---
 
 # Social Content Research
@@ -87,6 +87,15 @@ Carousel 未到實際最後一張或有 slide 無法檢查，只可標 `PARTIAL`
 6. 若用戶只要 Summary，停止；不要擴張成 SL。
 
 完整輸出可用 [research-output-template.md](assets/research-output-template.md)。
+
+## One selected post: Breakdown and Source Guide
+
+用戶揀定一篇要拆，就做一次 Evidence Capture，跟[圖文／影片拆解](references/analysis-checklist.md#selected-post-breakdown)記錄原帖。只要拆解，交原帖做法就可以停。要求拆解同 Source Guide，就沿用同一次擷取分兩節交。一帖一卡保留兩節，有已確認 Guide 就沿用，需要補證據先重開原帖。
+
+- **爆款拆解**保留原帖結構。指出第一眼、內文點推、邊度畀證據或兌現承諾、結尾叫人做乜；影片附時間碼，圖文附頁碼或圖號。互動數字是快照，對吸引或留存嘅解釋列為推斷。
+- **Source Guide**係畀下一位寫稿同事嘅[內容底稿](assets/source-guide.md)。用拆解已核嘅位置，只交一個讀者問題、一個可以借用嘅做法、已核或待補嘅自家材料、同今次可講嘅範圍。新增或實質改動先交真人確認；確認後先交寫稿同事。需要存入 Notion 時，按用戶指定嘅原卡更新。
+
+收到小紅書或 YouTube／Shorts 連結，按 [平台取材、字幕同畫面](references/social-evidence-capture.md#xiaohongshu-and-youtube) 自動揀路。現成字幕優先；有實際音軌同可用工具先轉錄。圖上字另用 OCR／視覺讀取。只有封面、畫面或逐字稿，按實際證據拆解並標明缺口。已確認嘅 Guide 可以直接接平台製作，無需重拆原帖。
 
 ## Deep SL
 
