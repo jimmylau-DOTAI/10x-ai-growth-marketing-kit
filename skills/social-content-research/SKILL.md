@@ -2,7 +2,7 @@
 name: social-content-research
 description: Retrieve or download images, carousels and videos from social posts, break down social posts and prepare a Source Guide, run SL or Save and Learn, and prepare source-backed social-post research and briefs. Use for a supplied social URL, video, screenshot, carousel, or transcript; download-only requests do not require a research report or Vault write.
 metadata:
-  version: "0.6.1"
+  version: "0.6.2"
 ---
 
 # Social Content Research
@@ -33,6 +33,8 @@ Source → Source Receipt → SL → Source-bounded Post Brief
 不要一次啟動全部模式。不要因為收到一條 URL 就自動做永久知識寫入。
 
 ## Evidence first
+
+小紅書搜尋結果、筆記 ID 或分享網址按[原帖連結核對](references/social-evidence-capture.md#小紅書原帖連結核對)處理，先核可打開嘅原帖先交連結。
 
 先標示 Access state：
 
