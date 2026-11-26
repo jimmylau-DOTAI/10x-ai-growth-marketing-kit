@@ -44,6 +44,21 @@ Instagram、Carousel、Reel、Screenshot、Image 或 Video source 先讀本檔�
 6. 影片不能播放時只可用 `PARTIAL` 或 `BLOCKED`；不要以 cover 推斷完整內容。
 7. `VERIFIED_LOCAL` 只代表檔案經檢查可解碼，唔代表完整內容已檢查或重用授權已確認。檢查來源 ID、標題、時長及代表畫面；瀏覽器可能播放廣告或自動跳去下一條片，唔可以用其時長覆蓋已確認嘅來源影片時長。
 
+### Xiaohongshu and YouTube
+
+先辨認網址、作品 ID 同格式。用戶已貼來源就直接讀嗰篇；要搵小紅書選題先用 TikHub [搜尋筆記](https://docs.tikhub.io/420136398e0)。影片同圖文分開取證。
+
+| 平台 | 攞原帖及媒體 | 攞字幕 |
+| --- | --- | --- |
+| 小紅書 | 如已有授權 TikHub，圖文用 [圖文詳情](https://docs.tikhub.io/420136391e0) 攞正文同逐張圖；影片用 [影片詳情](https://docs.tikhub.io/420136392e0) 攞播放網址，核對同一作品 ID。已有原檔直接用。 | 檢查同一影片嘅回傳資料有冇可讀字幕軌；有先讀，保留來源、語言同時間碼。只得正文、封面或播放網址時，記作未取得字幕。 |
+| YouTube／Shorts | 先開作品原頁，按實際可播放畫面取證。要本機媒體就按 [video-acquisition.md](video-acquisition.md) 或用戶提供嘅原檔。 | 先睇 [Show transcript](https://support.google.com/youtube/answer/15930243) 或播放器字幕；有可用 `yt-dlp` 時，可先用 `--list-subs` 辨認語言同字幕類型，再用 `--skip-download` 配 `--write-subs` 或 `--write-auto-subs` 取需要嘅字幕。標明發佈者字幕定平台自動字幕。 |
+
+之後沿用同一套取證：
+
+1. **圖片同畫面文字。** 圖文逐張讀。影片由真實播放器或本機 `ffmpeg` 抽開頭、中段轉折／示範、答案與結尾嘅畫格，記原時間碼。用可用嘅 OCR／視覺工具讀字，例如 Mac 本機 Apple Vision；雲端環境可用已提供嘅圖片理解。重要數字同專名返原畫面核。畫面文字單獨記，保留同口述嘅關係。
+2. **真音訊轉錄。** 如果字幕缺失或有關鍵缺段，而今次需要拆口述，用可存取嘅實際音軌同可用嘅語音轉文字工具，例如本機 Whisper，產出帶時間碼嘅轉錄。標明 AI 轉錄及未覆核字句。音軌、工具或處理權限有缺口時，交畫面／字幕已見部分，必要時請用戶補原片、音訊或逐字稿。無人聲嘅片直接按畫面拆。
+3. **交研究。** 有咩證據就標咩。只有逐字稿可拆講法同論點，畫面節奏留待核；只有畫面可拆鏡頭同畫面字，口述留待核。照 [拆解清單](analysis-checklist.md#selected-post-breakdown) 交時間碼／頁碼，再沿用已核證據填同一份 Source Guide。
+
 ## 5. OCR and visual inventory
 
 每個 content asset：
