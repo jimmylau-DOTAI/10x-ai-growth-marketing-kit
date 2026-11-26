@@ -45,6 +45,8 @@ Source → Source Guide → Shared Content Brief → Platform Task Pack → Auth
 
 ## Evidence first
 
+小紅書搜尋結果、筆記 ID 或分享網址按[原帖連結核對](references/social-evidence-capture.md#小紅書原帖連結核對)處理，先核可打開嘅原帖先交連結。
+
 先標示 Access state：
 
 - FULL：Caption／正文及所有重要媒體都實際檢查；Carousel 已逐張到最後一張，影片已實際播放並檢查可取得嘅文字／音訊證據；

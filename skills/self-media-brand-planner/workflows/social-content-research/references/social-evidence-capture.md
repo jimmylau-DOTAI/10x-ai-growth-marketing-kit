@@ -24,6 +24,13 @@ Instagram、Carousel、Reel、Screenshot、Image 或 Video source 先讀本檔�
 4. Search snippet、preview card、OpenGraph 圖、metadata 或 thumbnail 只可作定位，不可代替原始內容。
 5. 不繞過 login、private account、paywall、region block、rate limit、CAPTCHA、DRM 或平台限制。
 
+### 小紅書原帖連結核對
+
+1. 優先沿用原生分享短連結或平台回傳嘅完整原帖網址，保留所有參數。用戶已提供完整分享連結時，直接用返嗰條。
+2. TikHub 搜尋只有 Note ID 同同一筆記原樣回傳嘅 `xsec_token` 時，可以用 `https://www.xiaohongshu.com/explore/{note_id}?xsec_token={url_encoded_token}` 作待驗網址。由同一筆記配對，將原始參數值 URL encode 一次。唔猜、唔交換 token，亦唔將只得 ID 嘅網址交做原帖連結。
+3. 實際打開待交嘅完整網址。跟正常重新導向，落到同一 Note ID，而且正文區睇到對應標題或正文，先標「已驗證」並交可點連結。API HTTP 200、網頁 HTTP 200、預覽、首頁或其他筆記都唔足以通過。跳登入、404、權限頁、內容對唔上或冇瀏覽器，就標「網頁未驗證」，只交原標題、Note ID、原因同可核數據。用戶可喺小紅書 App 搜標題，再用「分享 → 複製連結」補返。
+4. 生效範圍只限本次開頁結果。唔將 token 獨立印喺表格、log 或 receipt，唔將失效網址填入「原帖連結」。登入或權限有要求就如實報告。
+
 ## 3. Capture a carousel
 
 需要逐張下載檔案時，按 [image-acquisition.md](image-acquisition.md) 讀目前頁面媒體同保存完整 URL；以下係分析時要補嘅證據紀錄。
