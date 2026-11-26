@@ -22,7 +22,7 @@
 
 > **目前版本：** `v0.1-team-test`
 >
-> **目前可用：** 11 個完整 Skills
+> **目前可用：** 12 個完整 Skills
 >
 > **發展方向：** [Skill Roadmap](10-SKILL-INTRO-AND-FLOW.md)
 >
@@ -66,6 +66,9 @@ Master 內有 10 個子 Skill 同 23 個專門方法。[睇完整清單](skills/
 | [AI Social Image Maker](skills/ai-social-image-maker/) | 將已批准內容直接生成完整 Social Images，唔經 HTML | Approved copy／Carousel Plan、PREFERENCES、Assets | C01 Pilot、1080×1350 Images、Contact-sheet QA |
 | [Image Style Lab](skills/image-style-lab/) | 將 Reference 自動拆成可重用視覺 Style、文字 Tone 或工作 Skill | 圖片、Post、頁面、影片、script 或示例，以及目標用途 | `STYLE.md + DESIGN.md`、`TONE.md`、candidate `SKILL.md + evals` |
 | [Sales Funnel Landing Page Builder](skills/sales-funnel-landing-page-builder/) | 將一個 Offer 變成簡單直接、可驗收嘅 Lead Funnel | Offer、Audience、Proof、CTA、Design reference、form／data rules | Brief、Style、Copy、Page、UTM、Design／Operations receipts |
+| [Product Short Video](skills/product-short-video/) | 由原片／分鏡剪成可核對短片 | 素材、目標、方向及剪輯環境 | First Cut、逐鏡效果、MP4 和字幕 |
+
+[跟做 Grok Bot AI 剪片實習](student-kit/ai-video-editing/) 有四段原鏡、角色設定及逐輪指令。
 
 各個 Skills 可以獨立使用；Mira 亦可以喺 Idea、Plan、Content、Visual Direction、成品或 Recheck 階段，以受眾角度檢查工作。其他 Skills 可以由 Research 開始，一路交接到 Style／Tone／Skill、Production、Lead Operations、verified website release，再將真正 durable decisions／learning 安全保存。下面會逐個解釋我點解咁寫、每個 Skill 點樣運作，同埋點樣驗收。
 
